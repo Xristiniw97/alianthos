@@ -160,7 +160,7 @@ $(document).ready(function () {
     //end of news carousel 
 
 
-    //start of news carousel 
+    //start of ONE IMAGE carousel 
     $('.oneImageCarousel').owlCarousel({
         loop:false,
         margin:0,
@@ -169,13 +169,100 @@ $(document).ready(function () {
         dots: false,
         items: 1
     });
-    //end of news carousel 
+    //end of ONE IMAGE carousel 
 
-    
-    
-   
 });
 
+// START OF ACTIVE HEADER 
 $(window).on("scroll touchmove", function () {
     $('.header').toggleClass('active', $(document).scrollTop() > 0);
 });
+// END OF ACTIVE HEADER 
+
+
+// START VIDEO SLIDER 
+$(document).ready(function() {    
+
+    var linkVideo2 = $(".video-2");
+    var linkVideo3 = $(".video-3");
+    var linkVideo4 = $(".video-4");
+
+    var video2 = $('#video-2');
+    var video3 = $('#video-3');
+    var video4 = $('#video-4');
+
+    linkVideo2.mouseover(function(){
+        video2.addClass('active');
+    });
+
+    linkVideo2.mouseleave(function(){
+        video2.removeClass('active');
+    });
+
+    linkVideo3.mouseover(function(){
+        video3.addClass('active');
+    });
+
+    linkVideo3.mouseleave(function(){
+        video3.removeClass('active');
+    });
+
+    linkVideo4.mouseover(function(){
+        video4.addClass('active');
+    });
+
+    linkVideo4.mouseleave(function(){
+        video4.removeClass('active');
+    });
+});
+// END VIDEO SLIDER 
+
+
+// START MOBILE NAV 
+$(document).ready(function() {  
+
+    $("#menuToggle").click(function() {
+            if ($("input[type=checkbox]").is(
+              ":checked")) {               
+                $(".mobile-nav").addClass("visible");
+            } else {
+                $(".mobile-nav").removeClass("visible");
+            }
+        }); 
+} );
+// END MOBILE NAV 
+
+
+//START STICKY BOTTOM
+$(window).on("scroll", function() {
+    if($(window).scrollTop() > 50) {
+        $(".stickyBottom").removeClass("unvisible");
+        $(".stickyBottom").addClass("visible");
+    } else {
+        //remove the background property so it comes transparent again (defined in your css)
+        $(".stickyBottom").removeClass("visible");
+        $(".stickyBottom").addClass("unvisible");
+
+    }
+});
+//END STICKY BOTTOM
+
+
+//START  HOME VIDEO SLIDER 
+// Targeting video element 
+let clip = document.querySelector(".video-mini")
+
+/* Applying mouseover event on video clip 
+and then we call play() function to play 
+the video when the mouse is over the video */
+clip.addEventListener("mouseover", function (e) {
+    clip.play();
+});
+
+/* Applying mouseout event on video clip 
+and then we call pause() function to stop 
+the video when the mouse is out the video */
+clip.addEventListener("mouseout", function (e) {
+    clip.pause();
+});
+//END HOME VIDEO SLIDER 
