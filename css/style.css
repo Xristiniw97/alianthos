@@ -72,10 +72,14 @@
   --greyd2: #d2d2d2;
   --greyb4: #b4b4b4;
   --grey9f: #9f9f9f;
+  --grey8b: #8B8B8B;
   --greyA5B9: #A5B9B9;
   --grey31: #313131;
   --white: #ffffff;
   --black: #000000;
+  --colorBooking: #003580;
+  --colorTripAdvisor: #34E0A1;
+  --colorHolidayCheck: #0E55CD;
   --transition3s: .3s linear;
 }
 
@@ -135,11 +139,11 @@ body {
 
 /**START OF HEADINGS**/
 h1, .h1 {
-  font-family: inherit;
+  font-family: var(--zonaFont);
   font-size: 30px;
   line-height: 1.5;
-  font-weight: inherit;
-  color: inherit;
+  font-weight: var(--thinWeight);
+  color: var(--grey54);
   margin: 20px 0px;
   letter-spacing: 1.8px;
 }
@@ -153,7 +157,7 @@ h1, .h1 {
 /**END OF HEADINGS**/
 /**START OF SPAN TEXT**/
 .spanText {
-  font-family: inherit;
+  font-family: var(--zonaFont);
   font-weight: var(--boldWeight);
   color: var(--blue);
   font-size: 16px;
@@ -1124,208 +1128,6 @@ footer span {
 }
 
 /** END OF INSTA SECTION **/
-/* Example wrapper */
-.wrap {
-  position: relative;
-  margin: 3em 0;
-  touch-action: none;
-}
-
-.roomList .frame {
-  padding-left: 200px;
-}
-
-/* Frame */
-.frame {
-  overflow: hidden;
-  touch-action: none;
-}
-
-.frame ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  touch-action: none;
-}
-
-.frame ul li {
-  float: left;
-  margin: 0 80px 0 0;
-  text-align: center;
-  cursor: pointer;
-  touch-action: none;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 700px;
-}
-
-.frame ul li a {
-  opacity: 1;
-  height: 100%;
-  width: 100%;
-}
-
-/* Scrollbar */
-.scrollbar {
-  margin: 70px 0 20px 0;
-  height: 1px;
-  background: rgba(112, 112, 112, 0.18);
-  line-height: 0;
-  touch-action: none;
-}
-
-.scrollbar .handle {
-  width: 100px !important;
-  height: 14px;
-  position: relative;
-  top: -5px;
-  left: 200px;
-  border-radius: 50px;
-  background: var(--blue2);
-  cursor: pointer;
-  touch-action: none;
-}
-
-.scrollbar .handle .mousearea {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 20px;
-  touch-action: none;
-}
-
-.vertical-img {
-  height: 650px;
-  width: 500px;
-  touch-action: none;
-}
-
-.horizontal-img {
-  height: 500px;
-  touch-action: none;
-  margin-top: 50px !important;
-}
-
-.roombox {
-  width: 100%;
-  height: 100%;
-  touch-action: none;
-  position: relative;
-}
-
-.roombox-text {
-  position: absolute;
-  bottom: 0;
-  color: white;
-  text-align: center;
-  padding: 10px 70px;
-}
-
-.roombox-text .title {
-  font-family: var(--zonaFont);
-  font-size: 20px;
-  font-weight: var(--boldWeight);
-  letter-spacing: 1.3;
-  display: block;
-}
-
-.roombox-text p {
-  font-family: var(--zonaFont);
-  font-size: 18px;
-  letter-spacing: 1.2;
-  font-weight: var(--thinWeight);
-  opacity: 0;
-  height: 0;
-  padding: 10px 8px 0px;
-  overflow: hidden;
-  transition: all 1.3s ease .15s;
-}
-
-.frame ul li img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  touch-action: none;
-}
-
-.frame ul li:hover .roombox-text p {
-  opacity: 1;
-  height: auto;
-}
-
-@media screen and (max-width: 991px) {
-  .frame ul li {
-    max-width: 530px;
-  }
-  .vertical-img {
-    height: 550px;
-    width: 400px;
-  }
-  .horizontal-img {
-    height: 450px;
-  }
-  .roomList .frame {
-    padding-left: 80px;
-  }
-  .scrollbar .handle {
-    width: 62px !important;
-    left: 5px;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .frame ul li {
-    max-width: 360px;
-    margin: 0 30px 0 0;
-  }
-  .vertical-img {
-    width: 320px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .frame ul li {
-    max-width: 300px;
-    margin: 0 20px 0 0;
-  }
-  .vertical-img {
-    height: 420px;
-    width: 250px;
-  }
-  .horizontal-img {
-    height: 350px;
-  }
-  .roomList .frame {
-    padding-left: 30px;
-  }
-  .scrollbar .handle {
-    width: 62px !important;
-    left: 5px;
-  }
-}
-
-@media screen and (max-width: 350px) {
-  .frame ul li {
-    max-width: 250px;
-    margin: 0 20px 0 0;
-  }
-  .vertical-img {
-    height: 420px;
-    width: 230px;
-  }
-  .roomList .frame {
-    padding-left: 30px;
-  }
-  .scrollbar .handle {
-    width: 62px !important;
-    left: 5px;
-  }
-}
-
 /** START OF MAIN VIDEO SLIDER **/
 .mainVideoSlider {
   position: relative;
@@ -1833,7 +1635,7 @@ nav {
   .logo-header img {
     width: 180px;
   }
-  .show + a, ul {
+  .show + a, .nav ul {
     display: none;
   }
   .nav li, .nav ul li {
@@ -2069,4 +1871,417 @@ nav {
 }
 
 /** END OF STICKY THINGS **/
+/* Example wrapper */
+.wrap {
+  position: relative;
+  margin: 3em 0;
+  touch-action: none;
+}
+
+.roomList .frame {
+  padding-left: 200px;
+}
+
+/* Frame */
+.wrap {
+  overflow: hidden;
+}
+
+.frame {
+  overflow: unset !important;
+  touch-action: none;
+}
+
+.frame ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  touch-action: none;
+}
+
+.frame ul li {
+  float: left;
+  margin: 0 80px 0 0;
+  text-align: center;
+  cursor: pointer;
+  touch-action: none;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 700px;
+}
+
+.frame ul li a {
+  opacity: 1;
+  height: 100%;
+  width: 100%;
+}
+
+/* Scrollbar */
+.scrollbar {
+  margin: 70px 0 20px 0;
+  height: 1px;
+  background: rgba(112, 112, 112, 0.18);
+  line-height: 0;
+  touch-action: none;
+}
+
+.scrollbar .handle {
+  width: 100px !important;
+  height: 14px;
+  position: relative;
+  top: -5px;
+  left: 200px;
+  border-radius: 50px;
+  background: var(--blue2);
+  cursor: pointer;
+  touch-action: none;
+}
+
+.scrollbar .handle .mousearea {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  touch-action: none;
+}
+
+.vertical-img {
+  height: 650px;
+  width: 500px;
+  touch-action: none;
+}
+
+.horizontal-img {
+  height: 500px;
+  touch-action: none;
+  margin-top: 50px !important;
+}
+
+.roombox {
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+  position: relative;
+}
+
+.roombox-text {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  text-align: center;
+  padding: 10px 70px;
+}
+
+.roombox-text .title {
+  font-family: var(--zonaFont);
+  font-size: 20px;
+  font-weight: var(--boldWeight);
+  letter-spacing: 1.3;
+  display: block;
+}
+
+.roombox-text p {
+  font-family: var(--zonaFont);
+  font-size: 18px;
+  letter-spacing: 1.2;
+  font-weight: var(--thinWeight);
+  opacity: 0;
+  height: 0;
+  padding: 10px 8px 0px;
+  overflow: hidden;
+  transition: all 1.3s ease .15s;
+}
+
+.frame ul li img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  touch-action: none;
+}
+
+.frame ul li:hover .roombox-text p {
+  opacity: 1;
+  height: auto;
+}
+
+@media screen and (max-width: 991px) {
+  .frame ul li {
+    max-width: 530px;
+  }
+  .vertical-img {
+    height: 550px;
+    width: 400px;
+  }
+  .horizontal-img {
+    height: 450px;
+  }
+  .roomList .frame {
+    padding-left: 80px;
+  }
+  .scrollbar .handle {
+    width: 62px !important;
+    left: 5px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .frame ul li {
+    max-width: 360px;
+    margin: 0 30px 0 0;
+  }
+  .vertical-img {
+    width: 320px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .frame ul li {
+    max-width: 300px;
+    margin: 0 20px 0 0;
+  }
+  .vertical-img {
+    height: 420px;
+    width: 250px;
+  }
+  .horizontal-img {
+    height: 350px;
+  }
+  .roomList .frame {
+    padding-left: 30px;
+  }
+  .scrollbar .handle {
+    width: 62px !important;
+    left: 5px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .frame ul li {
+    max-width: 250px;
+    margin: 0 20px 0 0;
+  }
+  .vertical-img {
+    height: 420px;
+    width: 230px;
+  }
+  .roomList .frame {
+    padding-left: 30px;
+  }
+  .scrollbar .handle {
+    width: 62px !important;
+    left: 5px;
+  }
+}
+
+/** START OF MODAL REVIEWS **/
+.modal-review {
+  width: 60%;
+  font-family: var(--zonaFont);
+  font-weight: var(--thinWeight);
+  font-size: 20px;
+  line-height: 2;
+  text-align: left;
+  color: var(--grey54);
+  letter-spacing: 1.4px;
+}
+
+.fancybox-button svg {
+  height: auto;
+  width: 30px;
+}
+
+.fancybox-slide--html .fancybox-close-small {
+  right: 5px;
+  top: 0px;
+}
+
+.modal-review-date {
+  font-size: 13px;
+  color: var(--grey8b);
+  font-weight: var(--boldWeight);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.modal-review-rate {
+  font-weight: var(--boldWeight);
+  font-size: 40px;
+  letter-spacing: 3px;
+}
+
+.modal-review-rate.booking {
+  color: var(--colorBooking);
+}
+
+.modal-review-rate.tripadvisor {
+  color: var(--colorTripAdvisor);
+}
+
+.modal-review-rate.holidaycheck {
+  color: var(--colorHolidayCheck);
+}
+
+.modal-review-author {
+  font-size: 24px;
+  margin: 10px 0px;
+}
+
+.reviewList ul {
+  padding-left: 200px;
+}
+
+.reviewList .frame ul li {
+  margin: 0px 0px 0px 0px;
+  align-items: flex-start;
+}
+
+.card-review {
+  padding: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+  width: 85%;
+  background: var(--white);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.card-review a {
+  font-family: var(--zonaFont);
+  font-weight: var(--thinWeight);
+  font-size: 20px;
+  line-height: 2;
+  text-align: left;
+  color: var(--grey54);
+  letter-spacing: 1.4px;
+  color: var(--grey54);
+}
+
+.card-review .review-name {
+  margin: 10px 0px 0px 0px;
+}
+
+.card-review-2 {
+  position: relative;
+  left: 60px;
+}
+
+@media screen and (max-width: 991px) {
+  .reviewList ul {
+    padding-left: 40px;
+  }
+  .card-review {
+    width: 95%;
+  }
+  .card-review-2 {
+    left: 30px;
+  }
+  .modal-review {
+    width: 80%;
+  }
+  .modal-review-rate {
+    font-size: 30px;
+  }
+  .modal-review, .card-review a {
+    font-size: 18px;
+  }
+  .card-review .review-name {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .modal-review {
+    width: 95%;
+  }
+  .fancybox-content {
+    padding: 20px;
+  }
+  .modal-review, .card-review a {
+    font-size: 16px;
+  }
+  .card-review .review-name {
+    font-size: 20px;
+  }
+}
+
+/** END OF MODAL REVIEWS **/
+/** START OF REVIEWS FILTER **/
+.review-filter-holder {
+  min-height: 65px;
+  text-align: center;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.review-filter-holder::-webkit-scrollbar {
+  display: none !important;
+}
+
+.review-data.active {
+  height: auto;
+}
+
+.review-list {
+  display: flex;
+  justify-content: space-around;
+  vertical-align: top;
+  padding: 0px 30px 10px;
+  border-bottom: 1px solid rgba(112, 112, 112, 0.18);
+}
+
+.review-list .review-filter {
+  font-family: var(--zonaFont);
+  font-weight: var(--lightWeight);
+  font-size: 16px;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  padding: 4px 15px;
+  margin: 0 3px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.review-data {
+  height: 0;
+  overflow: hidden;
+}
+
+.review-filter::after {
+  content: "";
+  display: inline;
+  position: absolute;
+  bottom: -16px;
+  left: 0;
+  right: 0;
+  height: 12px;
+  width: 0;
+  opacity: 0;
+  background: var(--blue2);
+  border-radius: 30px;
+  transition: var(--transition3s);
+}
+
+.review-filter:hover::after {
+  width: 100%;
+  opacity: 1;
+}
+
+.review-filter.active::after {
+  width: 100%;
+  opacity: 1;
+}
+
+@media screen and (max-width: 991px) {
+  .review-list {
+    display: flex;
+    justify-content: unset;
+    min-width: min-content;
+  }
+}
+
+/** END OF REVIEWS FILTER **/
 /*# sourceMappingURL=style.css.map */

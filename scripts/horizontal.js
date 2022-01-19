@@ -2,10 +2,249 @@ jQuery(function($){
 	'use strict';
 
 	// -------------------------------------------------------------
-	//   Basic Navigation
+	//   Basic Navigation Hotel
 	// -------------------------------------------------------------
 	(function () {
-		var $frame  = $('.basic');
+		var $frame  = $('#basic-hotel');
+		var $wrap   = $frame.parent();
+
+		// Call Sly on frame
+		$frame.sly({
+			horizontal: 1,
+			itemNav: 'basic',
+			smart: 1,
+			activateOn: 'click',
+			mouseDragging: 1,
+			touchDragging: 1,
+			releaseSwing: 1,
+			startAt: 0,
+            endAt: 25,
+			scrollBar: $wrap.find('.scrollbar'),
+			scrollBy: null,
+			speed: 300,
+			elasticBounds: 1,
+			easing: 'easeOutExpo',
+			dragHandle: 1,
+			dynamicHandle: 1,
+			clickBar: 1,
+
+		});
+	}());
+});
+
+jQuery(function($){
+	'use strict';
+
+	// -------------------------------------------------------------
+	//   Basic Navigation Staff
+	// -------------------------------------------------------------
+	(function () {
+		var $frame  = $('#basic-staff');
+		var $wrap   = $frame.parent();
+
+		// Call Sly on frame
+		$frame.sly({
+			horizontal: 1,
+			itemNav: 'basic',
+			smart: 1,
+			activateOn: 'click',
+			mouseDragging: 1,
+			touchDragging: 1,
+			releaseSwing: 1,
+			startAt: 0,
+            endAt: 25,
+			scrollBar: $wrap.find('.scrollbar'),
+			scrollBy: null,
+			speed: 300,
+			elasticBounds: 1,
+			easing: 'easeOutExpo',
+			dragHandle: 1,
+			dynamicHandle: 1,
+			clickBar: 1,
+
+		});
+	}());
+});
+
+jQuery(function($){
+	'use strict';
+
+	// -------------------------------------------------------------
+	//   Basic Navigation Restaurant
+	// -------------------------------------------------------------
+	(function () {
+		var $frame  = $('#basic-restaurant');
+		var $wrap   = $frame.parent();
+
+		// Call Sly on frame
+		$frame.sly({
+			horizontal: 1,
+			itemNav: 'basic',
+			smart: 1,
+			activateOn: 'click',
+			mouseDragging: 1,
+			touchDragging: 1,
+			releaseSwing: 1,
+			startAt: 0,
+            endAt: 25,
+			scrollBar: $wrap.find('.scrollbar'),
+			scrollBy: null,
+			speed: 300,
+			elasticBounds: 1,
+			easing: 'easeOutExpo',
+			dragHandle: 1,
+			dynamicHandle: 1,
+			clickBar: 1,
+
+		});
+	}());
+});
+
+jQuery(function($){
+	'use strict';
+
+	// -------------------------------------------------------------
+	//   Basic Navigation Bar
+	// -------------------------------------------------------------
+	(function () {
+		var $frame  = $('#basic-bar');
+		var $wrap   = $frame.parent();
+
+		// Call Sly on frame
+		$frame.sly({
+			horizontal: 1,
+			itemNav: 'basic',
+			smart: 1,
+			activateOn: 'click',
+			mouseDragging: 1,
+			touchDragging: 1,
+			releaseSwing: 1,
+			startAt: 0,
+            endAt: 25,
+			scrollBar: $wrap.find('.scrollbar'),
+			scrollBy: null,
+			speed: 300,
+			elasticBounds: 1,
+			easing: 'easeOutExpo',
+			dragHandle: 1,
+			dynamicHandle: 1,
+			clickBar: 1,
+
+		});
+	}());
+});
+
+
+jQuery(function($){
+	'use strict';
+
+	// -------------------------------------------------------------
+	//   Basic Navigation Rooms
+	// -------------------------------------------------------------
+	(function () {
+		var $frame  = $('#basic-rooms');
+		var $wrap   = $frame.parent();
+
+		// Call Sly on frame
+		$frame.sly({
+			horizontal: 1,
+			itemNav: 'basic',
+			smart: 1,
+			activateOn: 'click',
+			mouseDragging: 1,
+			touchDragging: 1,
+			releaseSwing: 1,
+			startAt: 0,
+            endAt: 25,
+			scrollBar: $wrap.find('.scrollbar'),
+			scrollBy: null,
+			speed: 300,
+			elasticBounds: 1,
+			easing: 'easeOutExpo',
+			dragHandle: 1,
+			dynamicHandle: 1,
+			clickBar: 1,
+
+		});
+	}());
+});
+
+jQuery(function($){
+	'use strict';
+
+	// -------------------------------------------------------------
+	//   Basic Navigation Location
+	// -------------------------------------------------------------
+	(function () {
+		var $frame  = $('#basic-location');
+		var $wrap   = $frame.parent();
+
+		// Call Sly on frame
+		$frame.sly({
+			horizontal: 1,
+			itemNav: 'basic',
+			smart: 1,
+			activateOn: 'click',
+			mouseDragging: 1,
+			touchDragging: 1,
+			releaseSwing: 1,
+			startAt: 0,
+            endAt: 25,
+			scrollBar: $wrap.find('.scrollbar'),
+			scrollBy: null,
+			speed: 300,
+			elasticBounds: 1,
+			easing: 'easeOutExpo',
+			dragHandle: 1,
+			dynamicHandle: 1,
+			clickBar: 1,
+
+		});
+	}());
+});
+
+jQuery(function($){
+	'use strict';
+
+	// -------------------------------------------------------------
+	//   Basic Navigation Excursions
+	// -------------------------------------------------------------
+	(function () {
+		var $frame  = $('#basic-excursions');
+		var $wrap   = $frame.parent();
+
+		// Call Sly on frame
+		$frame.sly({
+			horizontal: 1,
+			itemNav: 'basic',
+			smart: 1,
+			activateOn: 'click',
+			mouseDragging: 1,
+			touchDragging: 1,
+			releaseSwing: 1,
+			startAt: 0,
+            endAt: 25,
+			scrollBar: $wrap.find('.scrollbar'),
+			scrollBy: null,
+			speed: 300,
+			elasticBounds: 1,
+			easing: 'easeOutExpo',
+			dragHandle: 1,
+			dynamicHandle: 1,
+			clickBar: 1,
+
+		});
+	}());
+});
+
+jQuery(function($){
+	'use strict';
+
+	// -------------------------------------------------------------
+	//   Basic Navigation Cooking Lessons
+	// -------------------------------------------------------------
+	(function () {
+		var $frame  = $('#basic-cooking-lessons');
 		var $wrap   = $frame.parent();
 
 		// Call Sly on frame

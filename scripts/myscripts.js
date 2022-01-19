@@ -248,6 +248,68 @@ $(window).on("scroll", function() {
 //END STICKY BOTTOM
 
 
+// START OF REVIEWS FILTERING 
+$(document).ready(function() {  
+    $(".review-list li:nth-child(1)").on("click" , function(){
+        $(this).addClass("active");
+        $(this).siblings("li").removeClass("active");
+        $(".reviews-data-holder .review-data").siblings().removeClass("active");
+        $(".reviews-data-holder .review-data:nth-child(1)").addClass("active");
+      });
+    
+      $(".review-list li:nth-child(2)").on("click" , function(){
+        $(this).addClass("active");
+        $(this).siblings("li").removeClass("active");
+        $(".reviews-data-holder .review-data").siblings().removeClass("active");
+        $(".reviews-data-holder .review-data:nth-child(2)").addClass("active");
+      });
+    
+      $(".review-list li:nth-child(3)").on("click" , function(){
+        $(this).addClass("active");
+        $(this).siblings("li").removeClass("active");
+        $(".reviews-data-holder .review-data").siblings().removeClass("active");
+        $(".reviews-data-holder .review-data:nth-child(3)").addClass("active");
+      });
+    
+      $(".review-list li:nth-child(4)").on("click" , function(){
+        $(this).addClass("active");
+        $(this).siblings("li").removeClass("active");
+        $(".reviews-data-holder .review-data").siblings().removeClass("active");
+        $(".reviews-data-holder .review-data:nth-child(4)").addClass("active");
+      });
+    
+      $(".review-list li:nth-child(5)").on("click" , function(){
+        $(this).addClass("active");
+        $(this).siblings("li").removeClass("active");
+        $(".reviews-data-holder .review-data").siblings().removeClass("active");
+        $(".reviews-data-holder .review-data:nth-child(5)").addClass("active");
+      });
+    
+      $(".review-list li:nth-child(6)").on("click" , function(){
+        $(this).addClass("active");
+        $(this).siblings("li").removeClass("active");
+        $(".reviews-data-holder .review-data").siblings().removeClass("active");
+        $(".reviews-data-holder .review-data:nth-child(6)").addClass("active");
+      });
+    
+      $(".review-list li:nth-child(7)").on("click" , function(){
+        $(this).addClass("active");
+        $(this).siblings("li").removeClass("active");
+        $(".reviews-data-holder .review-data").siblings().removeClass("active");
+        $(".reviews-data-holder .review-data:nth-child(7)").addClass("active");
+      });
+    
+      $(".review-list li:nth-child(8)").on("click" , function(){
+        $(this).addClass("active");
+        $(this).siblings("li").removeClass("active");
+        $(".reviews-data-holder .review-data").siblings().removeClass("active");
+        $(".reviews-data-holder .review-data:nth-child(8)").addClass("active");
+      });
+
+});
+// END OF REVIEWS FILTERING 
+
+
 //START  HOME VIDEO SLIDER 
 // Targeting video element 
 let clip = document.querySelector(".video-mini")

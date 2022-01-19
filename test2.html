@@ -1,172 +1,340 @@
-
-
 <!DOCTYPE html>
-<html lang="en" >
-
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alianthos Garden Hotel in Plakias, Rethymno Crete</title>
+    <link rel="icon" type="image/png" href="./img/alianthos_garden_icon.png" />
+   
+    <!-- PREFETCH  -->
+    <link href="https://cdn.jsdelivr.net" rel="dns-prefetch" crossorigin="anonymous">
+    <link href="https://code.jquery.com" rel="dns-prefetch" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com" rel="dns-prefetch" crossorigin="anonymous">
+    <!-- PREFETCH  -->
 
-  <meta charset="UTF-8">
-  
-<link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
-<meta name="apple-mobile-web-app-title" content="CodePen">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- FONTS -->
 
-<link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+    <!-- BOOTSTRAP  -->
+    <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- BOOTSTRAP  -->
 
-<link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+    <!-- OWL CAROUSEL  -->
+    <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- OWL CAROUSEL  -->
 
+    <!-- FANCYBOX  -->
+    <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- FANCYBOX  -->
 
-  <title>CodePen - Tabs</title>
-  
-  
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-  
-<style>
-body {
-  background:#ddd;
-  font-family:"Raleway";
-}
-.tabs {
-  position:absolute;
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%);
-  width:500px;
-  height:250px;
-  background:#f5f5f5;
-  padding:20px 30px;
-  overflow:hidden;
-  border-radius:50px;
-  box-shadow:5px 10px 5px #ccc;
-}
-.tabs .tab-header {
-  height:60px;
-  display:flex;
-  align-items:center;
-}
-.tabs .tab-header > div {
-  width:calc(100% / 4);
-  text-align:center;
-  color:#888;
-  font-weight:600;
-  cursor:pointer;
-  font-size:14px;
-  text-transform:uppercase;
-  outline:none;
-}
-.tabs .tab-header > div > i {
-  display:block;
-  margin-bottom:5px;
-}
-.tabs .tab-header > div.active {
-  color:#00acee;
-}
-.tabs .tab-indicator {
-  position:relative;
-  width:calc(100% / 4);
-  height:5px;
-  background:#00acee;
-  left:0px;
-  border-radius:5px;
-  transition:all 500ms ease-in-out;
-}
-.tabs .tab-body {
-  position:relative;
-  height:calc(100% - 60px);
-  padding:10px 5px;
-}
-.tabs .tab-body > div {
-  position:absolute;
-  top:-200%;
-  opacity:0;
-  transform:scale(0.9);
-  transition:opacity 500ms ease-in-out 0ms,
-    transform 500ms ease-in-out 0ms;
-}
-.tabs .tab-body > div.active {
-  top:0px;
-  opacity:1;
-  transform:scale(1);
-}
-</style>
+    <!-- MY STYLE -->
+    <link rel="preload" as="style" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- MY STYLE -->
 
-  <script>
-  window.console = window.console || function(t) {};
-</script>
-
-  
-  
-  <script>
-  if (document.location.search.match(/type=embed/gi)) {
-    window.parent.postMessage("resize", "*");
-  }
-</script>
-
+    <!-- SCRIPTS PRELOAD  -->
+    <!-- JQUERY  -->
+    <link rel="preload" as="script" href="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    <!-- BOOTSTRAP  -->
+    <link rel="preload" as="script" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    <!-- OWL CAROUSEL  -->
+    <link rel="preload" as="script" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- FANCYBOX  -->
+    <link rel="preload" as="script" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- SCRIPTS PRELOAD  -->
 
 </head>
+<body>
 
-<body translate="no" >
-  <div class="tabs">
-  <div class="tab-header">
-    <div class="active">
-      <i class="fa fa-code"></i> Code
+    <!-- START OF ROOM LIST  -->
+    <div class="wrap roomList">
+        <div class="frame basic">
+            <ul class="clearfix">
+                <li class="vertical-img">
+                    <a href="#" aria-label="room-link">
+                        <div class="roombox">
+                            <picture>
+                                <source srcset="./img/xd-photos/for-desktop/room1.webp" type="image/webp" media="(min-width: 992px)">
+                                <source srcset="./img/xd-photos/for-desktop/room1.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                <source srcset="./img/xd-photos/for-mobile/room1.jpg" type="image/jpeg">
+                                <img src="./img/xd-photos/for-mobile/room1.webp" alt="image 1">
+                            </picture>
+                        </div>
+                        <div class="roombox-text">
+                            <div class="title">Double room with sea view</div>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, dolorum         reprehenderit. Consequatur ipsam, officia obcaecati culpa magni dicta provident eum.
+                            </p>
+                        </div>
+                    </a>  
+                </li>
+                <li class="horizontal-img">
+                    <a href="#" aria-label="room-link">
+                        <div class="roombox">
+                            <picture>
+                                <source srcset="./img/xd-photos/for-desktop/room2.webp" type="image/webp" media="(min-width: 992px)">
+                                <source srcset="./img/xd-photos/for-desktop/room2.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                <source srcset="./img/xd-photos/for-mobile/room2.jpg" type="image/jpeg">
+                                <img src="./img/xd-photos/for-mobile/room2.webp" alt="image 1">
+                            </picture>
+                        </div>
+                        <div class="roombox-text">
+                            <div class="title">Double room with sea view</div>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, dolorum         reprehenderit. Consequatur ipsam, officia obcaecati culpa magni dicta provident eum.
+                            </p>
+                        </div> 
+                    </a> 
+                </li>
+                <li class="vertical-img">
+                    <a href="#" aria-label="room-link">
+                        <div class="roombox">
+                            <picture>
+                                <source srcset="./img/xd-photos/for-desktop/room1.webp" type="image/webp" media="(min-width: 992px)">
+                                <source srcset="./img/xd-photos/for-desktop/room1.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                <source srcset="./img/xd-photos/for-mobile/room1.jpg" type="image/jpeg">
+                                <img src="./img/xd-photos/for-mobile/room1.webp" alt="image 1">
+                            </picture>
+                        </div>
+                        <div class="roombox-text">
+                            <div class="title">Double room with sea view</div>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, dolorum         reprehenderit. Consequatur ipsam, officia obcaecati culpa magni dicta provident eum.
+                            </p>
+                        </div> 
+                    </a> 
+                </li>
+                <li class="horizontal-img">
+                    <a href="#" aria-label="room-link">
+                        <div class="roombox">
+                            <picture>
+                                <source srcset="./img/xd-photos/for-desktop/room2.webp" type="image/webp" media="(min-width: 992px)">
+                                <source srcset="./img/xd-photos/for-desktop/room2.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                <source srcset="./img/xd-photos/for-mobile/room2.jpg" type="image/jpeg">
+                                <img src="./img/xd-photos/for-mobile/room2.webp" alt="image 1">
+                            </picture>
+                        </div>
+                        <div class="roombox-text">
+                            <div class="title">Double room with sea view</div>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, dolorum         reprehenderit. Consequatur ipsam, officia obcaecati culpa magni dicta provident eum.
+                            </p>
+                        </div>
+                    </a>  
+                </li>
+                <li class="vertical-img">
+                    <a href="#" aria-label="room-link">
+                        <div class="roombox">
+                            <picture>
+                                <source srcset="./img/xd-photos/for-desktop/room1.webp" type="image/webp" media="(min-width: 992px)">
+                                <source srcset="./img/xd-photos/for-desktop/room1.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                <source srcset="./img/xd-photos/for-mobile/room1.jpg" type="image/jpeg">
+                                <img src="./img/xd-photos/for-mobile/room1.webp" alt="image 1">
+                            </picture>
+                        </div>
+                        <div class="roombox-text">
+                            <div class="title">Double room with sea view</div>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, dolorum         reprehenderit. Consequatur ipsam, officia obcaecati culpa magni dicta provident eum.
+                            </p>
+                        </div>
+                    </a>  
+                </li>
+                <li class="horizontal-img">
+                    <a href="#" aria-label="room-link">
+                        <div class="roombox">
+                            <picture>
+                                <source srcset="./img/xd-photos/for-desktop/room2.webp" type="image/webp" media="(min-width: 992px)">
+                                <source srcset="./img/xd-photos/for-desktop/room2.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                <source srcset="./img/xd-photos/for-mobile/room2.jpg" type="image/jpeg">
+                                <img src="./img/xd-photos/for-mobile/room2.webp" alt="image 1">
+                            </picture>
+                        </div>
+                        <div class="roombox-text">
+                            <div class="title">Double room with sea view</div>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, dolorum         reprehenderit. Consequatur ipsam, officia obcaecati culpa magni dicta provident eum.
+                            </p>
+                        </div>
+                    </a>  
+                </li>
+                <li class="vertical-img">
+                    <a href="#" aria-label="room-link">
+                        <div class="roombox">
+                            <picture>
+                                <source srcset="./img/xd-photos/for-desktop/room1.webp" type="image/webp" media="(min-width: 992px)">
+                                <source srcset="./img/xd-photos/for-desktop/room1.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                <source srcset="./img/xd-photos/for-mobile/room1.jpg" type="image/jpeg">
+                                <img src="./img/xd-photos/for-mobile/room1.webp" alt="image 1">
+                            </picture>
+                        </div>
+                        <div class="roombox-text">
+                            <div class="title">Double room with sea view</div>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, dolorum         reprehenderit. Consequatur ipsam, officia obcaecati culpa magni dicta provident eum.
+                            </p>
+                        </div>  
+                    </a>
+                </li>
+                <li class="horizontal-img">
+                    <a href="#" aria-label="room-link">
+                        <div class="roombox">
+                            <picture>
+                                <source srcset="./img/xd-photos/for-desktop/room2.webp" type="image/webp" media="(min-width: 992px)">
+                                <source srcset="./img/xd-photos/for-desktop/room2.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                <source srcset="./img/xd-photos/for-mobile/room2.jpg" type="image/jpeg">
+                                <img src="./img/xd-photos/for-mobile/room2.webp" alt="image 1">
+                            </picture>
+                        </div>
+                        <div class="roombox-text">
+                            <div class="title">Double room with sea view</div>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, dolorum         reprehenderit. Consequatur ipsam, officia obcaecati culpa magni dicta provident eum.
+                            </p>
+                        </div>
+                    </a> 
+                </li>
+                <li class="vertical-img">
+                    <a href="#" aria-label="room-link">
+                        <div class="roombox">
+                            <picture>
+                                <source srcset="./img/xd-photos/for-desktop/room1.webp" type="image/webp" media="(min-width: 992px)">
+                                <source srcset="./img/xd-photos/for-desktop/room1.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                <source srcset="./img/xd-photos/for-mobile/room1.jpg" type="image/jpeg">
+                                <img src="./img/xd-photos/for-mobile/room1.webp" alt="image 1">
+                            </picture>
+                        </div>
+                        <div class="roombox-text">
+                            <div class="title">Double room with sea view</div>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, dolorum         reprehenderit. Consequatur ipsam, officia obcaecati culpa magni dicta provident eum.
+                            </p>
+                        </div>
+                    </a>  
+                </li>
+                <li class="horizontal-img">
+                    <a href="#" aria-label="room-link">
+                        <div class="roombox">
+                            <picture>
+                                <source srcset="./img/xd-photos/for-desktop/room2.webp" type="image/webp" media="(min-width: 992px)">
+                                <source srcset="./img/xd-photos/for-desktop/room2.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                <source srcset="./img/xd-photos/for-mobile/room2.jpg" type="image/jpeg">
+                                <img src="./img/xd-photos/for-mobile/room2.webp" alt="image 1">
+                            </picture>
+                        </div>
+                        <div class="roombox-text">
+                            <div class="title">Double room with sea view</div>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, dolorum         reprehenderit. Consequatur ipsam, officia obcaecati culpa magni dicta provident eum.
+                            </p>
+                        </div> 
+                    </a>     
+                </li>
+                <li class="vertical-img">
+                    <a href="#" aria-label="room-link">
+                         <div class="roombox">
+                            <picture>
+                                <source srcset="./img/xd-photos/for-desktop/room1.webp" type="image/webp" media="(min-width: 992px)">
+                                <source srcset="./img/xd-photos/for-desktop/room1.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                <source srcset="./img/xd-photos/for-mobile/room1.jpg" type="image/jpeg">
+                                <img src="./img/xd-photos/for-mobile/room1.webp" alt="image 1">
+                            </picture>
+                        </div>
+                        <div class="roombox-text">
+                            <div class="title">Double room with sea view</div>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, dolorum         reprehenderit. Consequatur ipsam, officia obcaecati culpa magni dicta provident eum.
+                            </p>
+                        </div>
+                    </a>     
+                </li>
+                <li class="horizontal-img">
+                    <a href="#" aria-label="room-link">
+                        <div class="roombox">
+                            <picture>
+                                <source srcset="./img/xd-photos/for-desktop/room2.webp" type="image/webp" media="(min-width: 992px)">
+                                <source srcset="./img/xd-photos/for-desktop/room2.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                <source srcset="./img/xd-photos/for-mobile/room2.jpg" type="image/jpeg">
+                                <img src="./img/xd-photos/for-mobile/room2.webp" alt="image 1">
+                            </picture>
+                        </div>
+                        <div class="roombox-text">
+                            <div class="title">Double room with sea view</div>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, dolorum         reprehenderit. Consequatur ipsam, officia obcaecati culpa magni dicta provident eum.
+                            </p>
+                        </div>
+                    </a>  
+                </li>
+                <li class="vertical-img">
+                    <a href="#" aria-label="room-link">
+                        <div class="roombox">
+                            <picture>
+                                <source srcset="./img/xd-photos/for-desktop/room1.webp" type="image/webp" media="(min-width: 992px)">
+                                <source srcset="./img/xd-photos/for-desktop/room1.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                <source srcset="./img/xd-photos/for-mobile/room1.jpg" type="image/jpeg">
+                                <img src="./img/xd-photos/for-mobile/room1.webp" alt="image 1">
+                            </picture>
+                        </div>
+                        <div class="roombox-text">
+                            <div class="title">Double room with sea view</div>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, dolorum         reprehenderit. Consequatur ipsam, officia obcaecati culpa magni dicta provident eum.
+                            </p>
+                        </div>
+                    </a>  
+                </li>
+                <li class="horizontal-img">
+                    <a href="#" aria-label="room-link">
+                        <div class="roombox">
+                            <picture>
+                                <source srcset="./img/xd-photos/for-desktop/room2.webp" type="image/webp" media="(min-width: 992px)">
+                                <source srcset="./img/xd-photos/for-desktop/room2.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                <source srcset="./img/xd-photos/for-mobile/room2.jpg" type="image/jpeg">
+                                <img src="./img/xd-photos/for-mobile/room2.webp" alt="image 1">
+                            </picture>
+                        </div>
+                        <div class="roombox-text">
+                            <div class="title">Double room with sea view</div>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, dolorum         reprehenderit. Consequatur ipsam, officia obcaecati culpa magni dicta provident eum.
+                            </p>
+                        </div>
+                    </a>  
+                </li>
+            </ul>
+        </div>
+        <div class="scrollbar">
+            <div class="handle">
+                <div class="mousearea"></div>
+            </div>
+        </div>
     </div>
-    <div>
-      <i class="fa fa-pencil-square-o"></i> About
-    </div>
-    <div>
-      <i class="fa fa-bar-chart"></i> Services
-    </div>
-    <div>
-      <i class="fa fa-envelope-o"></i> Contact
-    </div>
-  </div>
-  <div class="tab-indicator"></div>
-  <div class="tab-body">
-    <div class="active">
-      <h2>This is code section</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error neque saepe commodi blanditiis fugiat nisi aliquam ratione porro quibusdam in, eveniet accusantium cumque. Dolore officia reprehenderit perferendis quod libero omnis.</p>
-      <a href="">cdd</a>
-    </div>
-    <div>
-      <h2>This is about section</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi minus exercitationem vero, id autem fugit assumenda a molestiae numquam at, quisquam cumque. Labore eligendi perspiciatis quia incidunt quaerat ut ducimus?</p>
-    </div>
-    <div>
-      <h2>This is services section</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi minus exercitationem vero, id autem fugit assumenda a molestiae numquam at, quisquam cumque. Labore eligendi perspiciatis quia incidunt quaerat ut ducimus?</p>
-    </div>
-    <div>
-      <h2>This is contact section</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi minus exercitationem vero, id autem fugit assumenda a molestiae numquam at, quisquam cumque. Labore eligendi perspiciatis quia incidunt quaerat ut ducimus?</p>
-    </div>
-  </div>
-</div>
-    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
+    <!-- END OF ROOM LIST  -->
 
-  
-      <script id="rendered-js" >
-let tabHeader = document.getElementsByClassName("tab-header")[0];
-let tabIndicator = document.getElementsByClassName("tab-indicator")[0];
-let tabBody = document.getElementsByClassName("tab-body")[0];
 
-let tabsPane = tabHeader.getElementsByTagName("div");
 
-for (let i = 0; i < tabsPane.length; i++) {if (window.CP.shouldStopExecution(0)) break;
-  tabsPane[i].addEventListener("click", function () {
-    tabHeader.getElementsByClassName("active")[0].classList.remove("active");
-    tabsPane[i].classList.add("active");
-    tabBody.getElementsByClassName("active")[0].classList.remove("active");
-    tabBody.getElementsByTagName("div")[i].classList.add("active");
 
-    tabIndicator.style.left = `calc(calc(100% / 4) * ${i})`;
-  });
-}window.CP.exitedLoop(0);
-//# sourceURL=pen.js
-    </script>
 
-  
+
+
+
+
+
+
+    <!-- CDN SCRIPTS -->
+    <!-- JQUERY CDN  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- BOOTSTRAP CDN  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- OWL CAROUSEL CDN  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- FANCYBOX  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- CDN SCRIPTS -->
+
+
+    <!-- MY SCRIPTS  -->
+    <!-- <script src="scripts/myscripts.js"></script> -->
+    <script src="./scripts/plugins.js"></script>
+	<script src="./scripts/sly.min.js"></script>
+	<script src="./scripts/horizontal.js"></script>
+    <!-- MY SCRIPTS  -->
+
 
 </body>
-
 </html>
- 
