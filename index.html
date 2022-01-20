@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
     <title>Alianthos Garden Hotel in Plakias, Rethymno Crete</title>
     <link rel="icon" type="image/png" href="./img/alianthos_garden_icon.png" />
    
@@ -61,7 +61,7 @@
             <div class="logo-header">
                 <a href="index.html">
                     <img src="./img/xd-photos/logoGreytext.svg" alt="" class="d-none d-xxl-block">
-                    <img src="./img/xd-photos/mini-logo-white.svg" alt="" class="d-xxl-none">
+                    <img src="./img/xd-photos/mini-logo-blue.svg" alt="" class="d-xxl-none">
                 </a>
             </div>
         </div>
@@ -147,12 +147,12 @@
   <!-- END OF HEADER  -->
 
   <!-- START OF MOBILE HEADER  -->
-  <div class="mobile-header fixed-top d-block d-xl-none" id="mobile-header">
+  <div class="mobile-header fixed-top shadow d-block d-xl-none" id="mobile-header">
     <div class="row g-0">
-        <div class="col-2">
+        <div class="col-3 d-flex align-items-center justify-content-start">
             <nav role="navigation">
                 <div id="menuToggle">
-                    <input type="checkbox" />
+                    <input type="checkbox" class="menuToggleInput"/>
                     <span></span>
                     <span></span>
                     <span></span>
@@ -227,15 +227,25 @@
                     </ul>
                 </div>
             </nav>
+            <div class="languagesDrop dropdown d-flex ps-2">
+                <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    EN 
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="">
+                        EL 
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="col-8 text-center">
+        <div class="col-6 text-center">
             <div class="logo-header">
                 <a href="index.html">
                     <img src="./img/xd-photos/logoGreytext.svg" alt="">
                 </a>
             </div>
         </div>
-        <div class="col-2">
+        <div class="col-3">
             <div class="bookBtn d-flex justify-content-center align-items-center float-end">
                 <a href="#" class="btn">BOOK NOW</a>
             </div>
@@ -373,20 +383,18 @@
   <!-- END OF STICKY RIGHT BOTTOM BUTTON  -->
 
 
-  <!-- START OF WELCOME SECTION  -->
-  <section class="homeWelcome text-center marginTop">
-      <div class="d-flex align-items-center justify-content-center">
-          <div class="col-10 col-lg-8">
-              <div class="genContainer">
-                  <span class="spanText">HOTEL PLAKIAS CRETE</span>
-                  <h1>ALIANTHOS GARDEN - TREAT YOURSELF TO A PEACEFUL YET ACTIVE HOLIDAY IN A FAMILY CRETE HOTEL IN PLAKIAS</h1>
-                  <p>Prepare for a holiday of a lifetime in Crete. Discover Alianthos Garden Hotel, a spectacular hotel in Plakias, Crete, and take a break away from the crowds. Reward yourself and your beloved ones with an unforgettable trip to Plakias, Crete, and marvel at the area’s convenient beachfront location. Find paradise 37 kilometres away from the cosmopolitan Venetian city of Rethymno and enjoy top-quality services and customisable amenities.</p>
-                  <a href="#" class="mainLink mt-3">… our Crete Hotel in Plakias</a>
-              </div>
-          </div>
-      </div>
-  </section>
-  <!-- END OF WELCOME SECTION  -->
+    <!-- START OF WELCOME SECTION  -->
+    <section class="homeWelcome text-center marginTop">
+        <div class="col-10 col-lg-8 m-auto">
+            <div class="genContainer">
+                <span class="spanText">HOTEL PLAKIAS CRETE</span>
+                <h1>ALIANTHOS GARDEN - TREAT YOURSELF TO A PEACEFUL YET ACTIVE HOLIDAY IN A FAMILY CRETE HOTEL IN PLAKIAS</h1>
+                <p>Prepare for a holiday of a lifetime in Crete. Discover Alianthos Garden Hotel, a spectacular hotel in Plakias, Crete, and take a break away from the crowds. Reward yourself and your beloved ones with an unforgettable trip to Plakias, Crete, and marvel at the area’s convenient beachfront location. Find paradise 37 kilometres away from the cosmopolitan Venetian city of Rethymno and enjoy top-quality services and customisable amenities.</p>
+                <a href="#" class="mainLink mt-3">… our Crete Hotel in Plakias</a>
+            </div>
+        </div>
+    </section>
+    <!-- END OF WELCOME SECTION  -->
 
   <!-- START FACILITIES SECTION  -->
   <div class="leftText-rightImg marginTop home">
@@ -404,8 +412,8 @@
             </div>
             <div class="col-lg-7">
                 <!-- Video element -->
-                <video src="./video/alianthos-video-1.mp4" type="video/mp4" muted class="video-mini" 
-                loop></video>
+                <video src="./video/alianthos-video-1.mp4" width='100%' height='100%' type="video/mp4" muted class="video-mini" 
+                autoplay muted loop></video>
             </div>
         </div>
     </div>
@@ -480,157 +488,576 @@
 
   <!-- START OF ACCOMMODATION SECTION  -->
   <div class="text-center marginTop">
-    <div class="d-flex align-items-center justify-content-center">
-        <div class="col-10 col-lg-8">
-            <div class="genContainer">
-                <span class="spanText">ACCOMMODATION</span>
-                <div class="h1">UNWIND AT THE ACCOMMODATION OF YOUR CHOICE</div>
-                <p>Live moments of absolute relaxation and find well-sought after rest in one of Alianthos Garden Hotel’s rooms, studios, or apartments. Whether you’re travelling with family, friends, your significant other, or yourself, Alianthos Hotel in Plakias, Crete, caters to your needs. Choose amongst a large variety of accommodation types designed for your utmost comfort. Fully equipped and modern, the Alianthos rooms boast excellent amenities and soothing decoration inspired by the Aegean allure. Rest your eyes, wake up revitalised, and have a coffee on your balcony while taking in the incredible views.</p>
-                <a href="#" class="mainLink mt-3">...explore rooms</a>
-            </div>
-            <a href="#sectionNext"><img src="./img/xd-photos/down-arrow.svg" alt="" class="mt-5"></a>
+    <div class="col-10 col-lg-8 m-auto">
+        <div class="genContainer">
+            <span class="spanText">ACCOMMODATION</span>
+            <div class="h1">UNWIND AT THE ACCOMMODATION OF YOUR CHOICE</div>
+            <p>Live moments of absolute relaxation and find well-sought after rest in one of Alianthos Garden Hotel’s rooms, studios, or apartments. Whether you’re travelling with family, friends, your significant other, or yourself, Alianthos Hotel in Plakias, Crete, caters to your needs. Choose amongst a large variety of accommodation types designed for your utmost comfort. Fully equipped and modern, the Alianthos rooms boast excellent amenities and soothing decoration inspired by the Aegean allure. Rest your eyes, wake up revitalised, and have a coffee on your balcony while taking in the incredible views.</p>
+            <a href="#" class="mainLink mt-3">...explore rooms</a>
         </div>
+        <a href="#sectionNext"><img src="./img/xd-photos/down-arrow.svg" alt="" class="mt-5"></a>
     </div>
   </div>
   <!-- END OF WELCOME SECTION  -->
 
-  <!-- START OF AWARDS SECTION  -->
-  <div class="homeAwards text-center marginTop" id="sectionNext">
-    <div class="d-flex align-items-center justify-content-center">
-        <div class="col-10">
-        <span class="spanText">AWARDS</span>
-        <div class="h1">ALIANTHOS AWARDS</div>
-        <div class="owl-carousel awards-carousel mt-5">
-            <div class="item">
-            <a href="./img/xd-photos/award-1.png" data-fancybox="images">
-                <img src="./img/xd-photos/award-1.png" />
-            </a>
-            </div>
-            <div class="item">
-            <a href="./img/xd-photos/award-2.png" data-fancybox="images">
-                <img src="./img/xd-photos/award-2.png" />
-            </a>
-            </div>
-            <div class="item">
-            <a href="./img/xd-photos/award-3.png" data-fancybox="images">
-                <img src="./img/xd-photos/award-3.png" />
-            </a>
-            </div>
-            <div class="item">
-            <a href="./img/xd-photos/award-4.png" data-fancybox="images">
-                <img src="./img/xd-photos/award-4.png" />
-            </a>
-            </div>
-            <div class="item">
-            <a href="./img/xd-photos/award-5.png" data-fancybox="images">
-                <img src="./img/xd-photos/award-5.png" />
-            </a>
-            </div>
-            <div class="item">
-            <a href="./img/xd-photos/award-7.png" data-fancybox="images">
-                <img src="./img/xd-photos/award-7.png" />
-            </a>
-            </div>
-            <div class="item">
-            <a href="./img/xd-photos/award-8.png" data-fancybox="images">
-                <img src="./img/xd-photos/award-8.png" />
-            </a>
-            </div>
-            <div class="item">
-            <a href="./img/xd-photos/award-9.png" data-fancybox="images">
-                <img src="./img/xd-photos/award-9.png" />
-            </a>
-            </div>
-            <div class="item">
-            <a href="./img/xd-photos/award-10.png" data-fancybox="images">
-                <img src="./img/xd-photos/award-10.png" />
-            </a>
-            </div>
-            <div class="item">
-            <a href="./img/xd-photos/award-11.png" data-fancybox="images">
-                <img src="./img/xd-photos/award-11.png" />
-            </a>
-            </div>
-            <div class="item">
-            <a href="./img/xd-photos/award-1.png" data-fancybox="images">
-                <img src="./img/xd-photos/award-1.png" />
-            </a>
-            </div>
-            <div class="item">
-            <a href="./img/xd-photos/award-2.png" data-fancybox="images">
-                <img src="./img/xd-photos/award-2.png" />
-            </a>
-            </div>
-            <div class="item">
-            <a href="./img/xd-photos/award-1.png" data-fancybox="images">
-                <img src="./img/xd-photos/award-1.png" />
-            </a>
-            </div>
-            <div class="item">
-            <a href="./img/xd-photos/award-2.png" data-fancybox="images">
-                <img src="./img/xd-photos/award-2.png" />
-            </a>
-            </div>
-            <div class="item">
-            <a href="./img/xd-photos/award-3.png" data-fancybox="images">
-                <img src="./img/xd-photos/award-3.png" />
-            </a>
-            </div>
-            <div class="item">
-            <a href="./img/xd-photos/award-4.png" data-fancybox="images">
-                <img src="./img/xd-photos/award-4.png" />
-            </a>
-            </div>
-            <div class="item">
-            <a href="./img/xd-photos/award-5.png" data-fancybox="images">
-                <img src="./img/xd-photos/award-5.png" />
-            </a>
-            </div>
-            <div class="item">
-            <a href="./img/xd-photos/award-7.png" data-fancybox="images">
-                <img src="./img/xd-photos/award-7.png" />
-            </a>
-            </div>
-            <div class="item">
-            <a href="./img/xd-photos/award-8.png" data-fancybox="images">
-                <img src="./img/xd-photos/award-8.png" />
-            </a>
-            </div>
-            <div class="item">
-            <a href="./img/xd-photos/award-9.png" data-fancybox="images">
-                <img src="./img/xd-photos/award-9.png" />
-            </a>
-            </div>
-            <div class="item">
-            <a href="./img/xd-photos/award-10.png" data-fancybox="images">
-                <img src="./img/xd-photos/award-10.png" />
-            </a>
-            </div>
-            <div class="item">
-            <a href="./img/xd-photos/award-11.png" data-fancybox="images">
-                <img src="./img/xd-photos/award-11.png" />
-            </a>
-            </div>
-            <div class="item">
-            <a href="./img/xd-photos/award-1.png" data-fancybox="images">
-                <img src="./img/xd-photos/award-1.png" />
-            </a>
-            </div>
-            <div class="item">
-            <a href="./img/xd-photos/award-2.png" data-fancybox="images">
-                <img src="./img/xd-photos/award-2.png" />
-            </a>
-            </div> 
-          </div>
+  <!-- START OF ACCOMMODATION HOME  -->
+  <div class="accommodationTabs-home marginTop"  id="sectionNext">
+    <div class="col-12 col-lg-12 col-xxl-8 m-auto mt-5">
+        <div class="accommodation-filter-holder">
+            <ul class="accommodation-list">
+                <li class="accommodation-filter active">All</li>
+                <li class="accommodation-filter">Sea View</li>
+                <li class="accommodation-filter">Side Sea View</li>
+                <li class="accommodation-filter">Garden View</li>
+                <li class="accommodation-filter">Mountain View</li>
+                <li class="accommodation-filter">Single Room</li>
+            </ul>  
         </div>
     </div>
-  </div>
-  <!-- END OF AWARDS SECTION  -->
+    
+    <div class="accommodations-data-holder">
+        <div id="accommodation-all" class="accommodation-data active">
+            <!-- START OF ROOM LIST  -->
+            <div class="wrap roomList">
+                <div class="frame basic" id="basic-room-all">
+                    <ul class="clearfix">
+                        <li class="vertical-img">
+                            <a href="#" aria-label="room-link">
+                                <div class="roombox">
+                                    <picture>
+                                        <source srcset="./img/xd-photos/for-desktop/room1.webp" type="image/webp" media="(min-width: 992px)">
+                                        <source srcset="./img/xd-photos/for-desktop/room1.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                        <source srcset="./img/xd-photos/for-mobile/room1.jpg" type="image/jpeg">
+                                        <img src="./img/xd-photos/for-mobile/room1.webp" alt="image 1">
+                                    </picture>
+                                </div>
+                                <div class="roombox-text">
+                                    <div class="title">Double room sea view</div>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, dolorum         reprehenderit. Consequatur ipsam, officia obcaecati culpa magni dicta provident eum.
+                                    </p>
+                                </div>
+                            </a>  
+                        </li>
+                        <li class="horizontal-img">
+                            <a href="#" aria-label="room-link">
+                                <div class="roombox">
+                                    <picture>
+                                        <source srcset="./img/xd-photos/for-desktop/room2.webp" type="image/webp" media="(min-width: 992px)">
+                                        <source srcset="./img/xd-photos/for-desktop/room2.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                        <source srcset="./img/xd-photos/for-mobile/room2.jpg" type="image/jpeg">
+                                        <img src="./img/xd-photos/for-mobile/room2.webp" alt="image 1">
+                                    </picture>
+                                </div>
+                                <div class="roombox-text">
+                                    <div class="title">Triple room sea view</div>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, dolorum         reprehenderit. Consequatur ipsam, officia obcaecati culpa magni dicta provident eum.
+                                    </p>
+                                </div> 
+                            </a> 
+                        </li>
+                        <li class="vertical-img">
+                            <a href="#" aria-label="room-link">
+                                <div class="roombox">
+                                    <picture>
+                                        <source srcset="./img/xd-photos/for-desktop/room1.webp" type="image/webp" media="(min-width: 992px)">
+                                        <source srcset="./img/xd-photos/for-desktop/room1.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                        <source srcset="./img/xd-photos/for-mobile/room1.jpg" type="image/jpeg">
+                                        <img src="./img/xd-photos/for-mobile/room1.webp" alt="image 1">
+                                    </picture>
+                                </div>
+                                <div class="roombox-text">
+                                    <div class="title">Double room side sea view</div>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, dolorum         reprehenderit. Consequatur ipsam, officia obcaecati culpa magni dicta provident eum.
+                                    </p>
+                                </div> 
+                            </a> 
+                        </li>
+                        <li class="horizontal-img">
+                            <a href="#" aria-label="room-link">
+                                <div class="roombox">
+                                    <picture>
+                                        <source srcset="./img/xd-photos/for-desktop/room2.webp" type="image/webp" media="(min-width: 992px)">
+                                        <source srcset="./img/xd-photos/for-desktop/room2.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                        <source srcset="./img/xd-photos/for-mobile/room2.jpg" type="image/jpeg">
+                                        <img src="./img/xd-photos/for-mobile/room2.webp" alt="image 1">
+                                    </picture>
+                                </div>
+                                <div class="roombox-text">
+                                    <div class="title">Triple room side sea view</div>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, dolorum         reprehenderit. Consequatur ipsam, officia obcaecati culpa magni dicta provident eum.
+                                    </p>
+                                </div>
+                            </a>  
+                        </li>
+                        <li class="vertical-img">
+                            <a href="#" aria-label="room-link">
+                                <div class="roombox">
+                                    <picture>
+                                        <source srcset="./img/xd-photos/for-desktop/room1.webp" type="image/webp" media="(min-width: 992px)">
+                                        <source srcset="./img/xd-photos/for-desktop/room1.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                        <source srcset="./img/xd-photos/for-mobile/room1.jpg" type="image/jpeg">
+                                        <img src="./img/xd-photos/for-mobile/room1.webp" alt="image 1">
+                                    </picture>
+                                </div>
+                                <div class="roombox-text">
+                                    <div class="title">Double room garden view</div>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, dolorum         reprehenderit. Consequatur ipsam, officia obcaecati culpa magni dicta provident eum.
+                                    </p>
+                                </div>
+                            </a>  
+                        </li>
+                        <li class="horizontal-img">
+                            <a href="#" aria-label="room-link">
+                                <div class="roombox">
+                                    <picture>
+                                        <source srcset="./img/xd-photos/for-desktop/room2.webp" type="image/webp" media="(min-width: 992px)">
+                                        <source srcset="./img/xd-photos/for-desktop/room2.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                        <source srcset="./img/xd-photos/for-mobile/room2.jpg" type="image/jpeg">
+                                        <img src="./img/xd-photos/for-mobile/room2.webp" alt="image 1">
+                                    </picture>
+                                </div>
+                                <div class="roombox-text">
+                                    <div class="title">Studio garden view</div>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, dolorum         reprehenderit. Consequatur ipsam, officia obcaecati culpa magni dicta provident eum.
+                                    </p>
+                                </div>
+                            </a>  
+                        </li>
+                        <li class="vertical-img">
+                            <a href="#" aria-label="room-link">
+                                <div class="roombox">
+                                    <picture>
+                                        <source srcset="./img/xd-photos/for-desktop/room1.webp" type="image/webp" media="(min-width: 992px)">
+                                        <source srcset="./img/xd-photos/for-desktop/room1.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                        <source srcset="./img/xd-photos/for-mobile/room1.jpg" type="image/jpeg">
+                                        <img src="./img/xd-photos/for-mobile/room1.webp" alt="image 1">
+                                    </picture>
+                                </div>
+                                <div class="roombox-text">
+                                    <div class="title">Apartment mountain view</div>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, dolorum         reprehenderit. Consequatur ipsam, officia obcaecati culpa magni dicta provident eum.
+                                    </p>
+                                </div>  
+                            </a>
+                        </li>
+                        <li class="horizontal-img">
+                            <a href="#" aria-label="room-link">
+                                <div class="roombox">
+                                    <picture>
+                                        <source srcset="./img/xd-photos/for-desktop/room2.webp" type="image/webp" media="(min-width: 992px)">
+                                        <source srcset="./img/xd-photos/for-desktop/room2.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                        <source srcset="./img/xd-photos/for-mobile/room2.jpg" type="image/jpeg">
+                                        <img src="./img/xd-photos/for-mobile/room2.webp" alt="image 1">
+                                    </picture>
+                                </div>
+                                <div class="roombox-text">
+                                    <div class="title">Imperial apartment mountain view</div>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, dolorum         reprehenderit. Consequatur ipsam, officia obcaecati culpa magni dicta provident eum.
+                                    </p>
+                                </div>
+                            </a> 
+                        </li>
+                    </ul>
+                </div>
+                <div class="scrollbar">
+                    <div class="handle">
+                        <div class="mousearea"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- END OF ROOM LIST  -->
+        
+        </div>
+    
+        <div id="accommodation-seaview" class="accommodation-data">
+            <!-- START OF ROOM LIST  -->
+            <div class="wrap roomList">
+                <div class="frame basic" id="basic-room-seaview">
+                    <ul class="clearfix">
+                        <li class="vertical-img">
+                            <a href="#" aria-label="room-link">
+                                <div class="roombox">
+                                    <picture>
+                                        <source srcset="./img/xd-photos/for-desktop/room1.webp" type="image/webp" media="(min-width: 992px)">
+                                        <source srcset="./img/xd-photos/for-desktop/room1.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                        <source srcset="./img/xd-photos/for-mobile/room1.jpg" type="image/jpeg">
+                                        <img src="./img/xd-photos/for-mobile/room1.webp" alt="image 1">
+                                    </picture>
+                                </div>
+                                <div class="roombox-text">
+                                    <div class="title">Double room with sea view</div>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, dolorum         reprehenderit. Consequatur ipsam, officia obcaecati culpa magni dicta provident eum.
+                                    </p>
+                                </div>
+                            </a>  
+                        </li>
+                        <li class="horizontal-img">
+                            <a href="#" aria-label="room-link">
+                                <div class="roombox">
+                                    <picture>
+                                        <source srcset="./img/xd-photos/for-desktop/room2.webp" type="image/webp" media="(min-width: 992px)">
+                                        <source srcset="./img/xd-photos/for-desktop/room2.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                        <source srcset="./img/xd-photos/for-mobile/room2.jpg" type="image/jpeg">
+                                        <img src="./img/xd-photos/for-mobile/room2.webp" alt="image 1">
+                                    </picture>
+                                </div>
+                                <div class="roombox-text">
+                                    <div class="title">Triple room with sea view</div>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, dolorum         reprehenderit. Consequatur ipsam, officia obcaecati culpa magni dicta provident eum.
+                                    </p>
+                                </div> 
+                            </a> 
+                        </li>
+                    </ul>
+                </div>
+                <div class="scrollbar">
+                    <div class="handle">
+                        <div class="mousearea"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- END OF ROOM LIST  -->
+        </div>
+          
+        <div id="accommodation-sideseaview" class="accommodation-data">
+            <!-- START OF ROOM LIST  -->
+            <div class="wrap roomList">
+                <div class="frame basic" id="basic-room-sideseaview">
+                    <ul class="clearfix">
+                        <li class="vertical-img">
+                            <a href="#" aria-label="room-link">
+                                <div class="roombox">
+                                    <picture>
+                                        <source srcset="./img/xd-photos/for-desktop/room1.webp" type="image/webp" media="(min-width: 992px)">
+                                        <source srcset="./img/xd-photos/for-desktop/room1.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                        <source srcset="./img/xd-photos/for-mobile/room1.jpg" type="image/jpeg">
+                                        <img src="./img/xd-photos/for-mobile/room1.webp" alt="image 1">
+                                    </picture>
+                                </div>
+                                <div class="roombox-text">
+                                    <div class="title">Double room with side sea view</div>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, dolorum         reprehenderit. Consequatur ipsam, officia obcaecati culpa magni dicta provident eum.
+                                    </p>
+                                </div>
+                            </a>  
+                        </li>
+                        <li class="horizontal-img">
+                            <a href="#" aria-label="room-link">
+                                <div class="roombox">
+                                    <picture>
+                                        <source srcset="./img/xd-photos/for-desktop/room2.webp" type="image/webp" media="(min-width: 992px)">
+                                        <source srcset="./img/xd-photos/for-desktop/room2.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                        <source srcset="./img/xd-photos/for-mobile/room2.jpg" type="image/jpeg">
+                                        <img src="./img/xd-photos/for-mobile/room2.webp" alt="image 1">
+                                    </picture>
+                                </div>
+                                <div class="roombox-text">
+                                    <div class="title">Triple room with side sea view</div>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, dolorum         reprehenderit. Consequatur ipsam, officia obcaecati culpa magni dicta provident eum.
+                                    </p>
+                                </div> 
+                            </a> 
+                        </li>
+                        <li class="vertical-img">
+                            <a href="#" aria-label="room-link">
+                                <div class="roombox">
+                                    <picture>
+                                        <source srcset="./img/xd-photos/for-desktop/room1.webp" type="image/webp" media="(min-width: 992px)">
+                                        <source srcset="./img/xd-photos/for-desktop/room1.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                        <source srcset="./img/xd-photos/for-mobile/room1.jpg" type="image/jpeg">
+                                        <img src="./img/xd-photos/for-mobile/room1.webp" alt="image 1">
+                                    </picture>
+                                </div>
+                                <div class="roombox-text">
+                                    <div class="title">Double room for people with disabilities side sea view
+                                    </div>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, dolorum         reprehenderit. Consequatur ipsam, officia obcaecati culpa magni dicta provident eum.
+                                    </p>
+                                </div> 
+                            </a> 
+                        </li>
+                    </ul>
+                </div>
+                <div class="scrollbar">
+                    <div class="handle">
+                        <div class="mousearea"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- END OF ROOM LIST  -->
+        </div>
+          
+        <div id="accommodation-gardenview" class="accommodation-data">
+            <!-- START OF ROOM LIST  -->
+            <div class="wrap roomList">
+                <div class="frame basic" id="basic-room-gardenview">
+                    <ul class="clearfix">
+                        <li class="vertical-img">
+                            <a href="#" aria-label="room-link">
+                                <div class="roombox">
+                                    <picture>
+                                        <source srcset="./img/xd-photos/for-desktop/room1.webp" type="image/webp" media="(min-width: 992px)">
+                                        <source srcset="./img/xd-photos/for-desktop/room1.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                        <source srcset="./img/xd-photos/for-mobile/room1.jpg" type="image/jpeg">
+                                        <img src="./img/xd-photos/for-mobile/room1.webp" alt="image 1">
+                                    </picture>
+                                </div>
+                                <div class="roombox-text">
+                                    <div class="title">Double room with garden view</div>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, dolorum         reprehenderit. Consequatur ipsam, officia obcaecati culpa magni dicta provident eum.
+                                    </p>
+                                </div>
+                            </a>  
+                        </li>
+                        <li class="horizontal-img">
+                            <a href="#" aria-label="room-link">
+                                <div class="roombox">
+                                    <picture>
+                                        <source srcset="./img/xd-photos/for-desktop/room2.webp" type="image/webp" media="(min-width: 992px)">
+                                        <source srcset="./img/xd-photos/for-desktop/room2.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                        <source srcset="./img/xd-photos/for-mobile/room2.jpg" type="image/jpeg">
+                                        <img src="./img/xd-photos/for-mobile/room2.webp" alt="image 1">
+                                    </picture>
+                                </div>
+                                <div class="roombox-text">
+                                    <div class="title">Studio with sea view</div>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, dolorum         reprehenderit. Consequatur ipsam, officia obcaecati culpa magni dicta provident eum.
+                                    </p>
+                                </div> 
+                            </a> 
+                        </li>
+                    </ul>
+                </div>
+                <div class="scrollbar">
+                    <div class="handle">
+                        <div class="mousearea"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- END OF ROOM LIST  -->
+        </div>
+          
+        <div id="accommodation-mountainview" class="accommodation-data">
+            <!-- START OF ROOM LIST  -->
+            <div class="wrap roomList">
+                <div class="frame basic" id="basic-room-mountainview">
+                    <ul class="clearfix">
+                        <li class="vertical-img">
+                            <a href="#" aria-label="room-link">
+                                <div class="roombox">
+                                    <picture>
+                                        <source srcset="./img/xd-photos/for-desktop/room1.webp" type="image/webp" media="(min-width: 992px)">
+                                        <source srcset="./img/xd-photos/for-desktop/room1.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                        <source srcset="./img/xd-photos/for-mobile/room1.jpg" type="image/jpeg">
+                                        <img src="./img/xd-photos/for-mobile/room1.webp" alt="image 1">
+                                    </picture>
+                                </div>
+                                <div class="roombox-text">
+                                    <div class="title">Apartment with mountain view</div>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, dolorum         reprehenderit. Consequatur ipsam, officia obcaecati culpa magni dicta provident eum.
+                                    </p>
+                                </div>
+                            </a>  
+                        </li>
+                        <li class="horizontal-img">
+                            <a href="#" aria-label="room-link">
+                                <div class="roombox">
+                                    <picture>
+                                        <source srcset="./img/xd-photos/for-desktop/room2.webp" type="image/webp" media="(min-width: 992px)">
+                                        <source srcset="./img/xd-photos/for-desktop/room2.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                        <source srcset="./img/xd-photos/for-mobile/room2.jpg" type="image/jpeg">
+                                        <img src="./img/xd-photos/for-mobile/room2.webp" alt="image 1">
+                                    </picture>
+                                </div>
+                                <div class="roombox-text">
+                                    <div class="title">Imperial apartment with mountain view</div>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, dolorum         reprehenderit. Consequatur ipsam, officia obcaecati culpa magni dicta provident eum.
+                                    </p>
+                                </div> 
+                            </a> 
+                        </li>
+                    </ul>
+                </div>
+                <div class="scrollbar">
+                    <div class="handle">
+                        <div class="mousearea"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- END OF ROOM LIST  -->
+        </div>
 
-  <!-- START OF AMENITIES SECTION  -->
-  <div class="homeAmenities text-center marginTop">
-    <div class="d-flex align-items-center justify-content-center">
-      <div class="col-10">
+        <div id="accommodation-singleroom" class="accommodation-data">
+            <!-- START OF ROOM LIST  -->
+            <div class="wrap roomList">
+                <div class="frame basic" id="basic-room-single">
+                    <ul class="clearfix">
+                        <li class="vertical-img">
+                            <a href="#" aria-label="room-link">
+                                <div class="roombox">
+                                    <picture>
+                                        <source srcset="./img/xd-photos/for-desktop/room1.webp" type="image/webp" media="(min-width: 992px)">
+                                        <source srcset="./img/xd-photos/for-desktop/room1.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                        <source srcset="./img/xd-photos/for-mobile/room1.jpg" type="image/jpeg">
+                                        <img src="./img/xd-photos/for-mobile/room1.webp" alt="image 1">
+                                    </picture>
+                                </div>
+                                <div class="roombox-text">
+                                    <div class="title">Single room</div>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, dolorum         reprehenderit. Consequatur ipsam, officia obcaecati culpa magni dicta provident eum.
+                                    </p>
+                                </div>
+                            </a>  
+                        </li>
+                    </ul>
+                </div>
+                <div class="scrollbar">
+                    <div class="handle">
+                        <div class="mousearea"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- END OF ROOM LIST  -->
+        </div>
+    </div>
+</div>
+<!-- END OF ACCOMMODATION HOME  -->
+
+
+  <!-- START OF AWARDS SECTION  -->
+  <div class="homeAwards text-center marginTop">
+        <div class="col-10 m-auto">
+            <span class="spanText">AWARDS</span>
+            <div class="h1">ALIANTHOS AWARDS</div>
+            <div class="owl-carousel awards-carousel mt-5">
+                <div class="item">
+                <a href="./img/xd-photos/award-1.png" data-fancybox="images">
+                    <img src="./img/xd-photos/award-1.png" />
+                </a>
+                </div>
+                <div class="item">
+                <a href="./img/xd-photos/award-2.png" data-fancybox="images">
+                    <img src="./img/xd-photos/award-2.png" />
+                </a>
+                </div>
+                <div class="item">
+                <a href="./img/xd-photos/award-3.png" data-fancybox="images">
+                    <img src="./img/xd-photos/award-3.png" />
+                </a>
+                </div>
+                <div class="item">
+                <a href="./img/xd-photos/award-4.png" data-fancybox="images">
+                    <img src="./img/xd-photos/award-4.png" />
+                </a>
+                </div>
+                <div class="item">
+                <a href="./img/xd-photos/award-5.png" data-fancybox="images">
+                    <img src="./img/xd-photos/award-5.png" />
+                </a>
+                </div>
+                <div class="item">
+                <a href="./img/xd-photos/award-7.png" data-fancybox="images">
+                    <img src="./img/xd-photos/award-7.png" />
+                </a>
+                </div>
+                <div class="item">
+                <a href="./img/xd-photos/award-8.png" data-fancybox="images">
+                    <img src="./img/xd-photos/award-8.png" />
+                </a>
+                </div>
+                <div class="item">
+                <a href="./img/xd-photos/award-9.png" data-fancybox="images">
+                    <img src="./img/xd-photos/award-9.png" />
+                </a>
+                </div>
+                <div class="item">
+                <a href="./img/xd-photos/award-10.png" data-fancybox="images">
+                    <img src="./img/xd-photos/award-10.png" />
+                </a>
+                </div>
+                <div class="item">
+                <a href="./img/xd-photos/award-11.png" data-fancybox="images">
+                    <img src="./img/xd-photos/award-11.png" />
+                </a>
+                </div>
+                <div class="item">
+                <a href="./img/xd-photos/award-1.png" data-fancybox="images">
+                    <img src="./img/xd-photos/award-1.png" />
+                </a>
+                </div>
+                <div class="item">
+                <a href="./img/xd-photos/award-2.png" data-fancybox="images">
+                    <img src="./img/xd-photos/award-2.png" />
+                </a>
+                </div>
+                <div class="item">
+                <a href="./img/xd-photos/award-1.png" data-fancybox="images">
+                    <img src="./img/xd-photos/award-1.png" />
+                </a>
+                </div>
+                <div class="item">
+                <a href="./img/xd-photos/award-2.png" data-fancybox="images">
+                    <img src="./img/xd-photos/award-2.png" />
+                </a>
+                </div>
+                <div class="item">
+                <a href="./img/xd-photos/award-3.png" data-fancybox="images">
+                    <img src="./img/xd-photos/award-3.png" />
+                </a>
+                </div>
+                <div class="item">
+                <a href="./img/xd-photos/award-4.png" data-fancybox="images">
+                    <img src="./img/xd-photos/award-4.png" />
+                </a>
+                </div>
+                <div class="item">
+                <a href="./img/xd-photos/award-5.png" data-fancybox="images">
+                    <img src="./img/xd-photos/award-5.png" />
+                </a>
+                </div>
+                <div class="item">
+                <a href="./img/xd-photos/award-7.png" data-fancybox="images">
+                    <img src="./img/xd-photos/award-7.png" />
+                </a>
+                </div>
+                <div class="item">
+                <a href="./img/xd-photos/award-8.png" data-fancybox="images">
+                    <img src="./img/xd-photos/award-8.png" />
+                </a>
+                </div>
+                <div class="item">
+                <a href="./img/xd-photos/award-9.png" data-fancybox="images">
+                    <img src="./img/xd-photos/award-9.png" />
+                </a>
+                </div>
+                <div class="item">
+                <a href="./img/xd-photos/award-10.png" data-fancybox="images">
+                    <img src="./img/xd-photos/award-10.png" />
+                </a>
+                </div>
+                <div class="item">
+                <a href="./img/xd-photos/award-11.png" data-fancybox="images">
+                    <img src="./img/xd-photos/award-11.png" />
+                </a>
+                </div>
+                <div class="item">
+                <a href="./img/xd-photos/award-1.png" data-fancybox="images">
+                    <img src="./img/xd-photos/award-1.png" />
+                </a>
+                </div>
+                <div class="item">
+                <a href="./img/xd-photos/award-2.png" data-fancybox="images">
+                    <img src="./img/xd-photos/award-2.png" />
+                </a>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <!-- END OF AWARDS SECTION  -->
+
+    <!-- START OF AMENITIES SECTION  -->
+    <div class="homeAmenities text-center marginTop">
+      <div class="col-10 m-auto">
         <div class="genContainer2">
           <span class="spanText">AMENITIES</span>
           <div class="h1">TOP-NOTCH AMENITIES FEATURED IN ALIANTHOS GARDEN ROOMS & APARTMENTS:</div>
@@ -662,14 +1089,13 @@
         </div>
       </div>
     </div>
-  </div>
-  <!-- END OF AMENITIES SECTION  -->
+    <!-- END OF AMENITIES SECTION  -->
 
   <!-- START OF DESTINATION HOME SECTION  -->
   <div class="blockleftText-downText marginTop destinationHome">
     <div class="col-12 col-lg-10 mx-auto">
         <div class="row g-0">
-            <div class="col-lg-5 col-xl-4 text-content mb-5">
+            <div class="col-lg-5 col-xl-4 text-content mb-5 mb-lg-0">
                 <span class="spanText">PLAKIAS CRETE</span>
                 <div class="h1">EXPLORE PLAKIAS, CRETE, A QUAINT VILLAGE CLOSE TO RETHYMNO TOWN</div>
                 <hr class="left-hr d-none d-lg-block">
@@ -721,7 +1147,7 @@
             </div>
         </div>
     </div>
-    <div class="col-10 mx-auto mt-5 text-center">
+    <div class="col-10 mx-auto mt-5 mt-lg-3 mt-xxl-5 text-center">
         <p>
             Marvel at the diverse landscapes and immerse yourself in a natural setting boasting exotic flora and fauna. Access Plakias Beach, a large stretch of coastline a stone’s throw away from the hotel’s premises. Get the chance to familiarise yourself with the surroundings at your own pace by renting a car, visiting historical sites, or strolling to the beaches to swim in crystal-clear azure coastlines.
         </p>
@@ -740,8 +1166,8 @@
 
   <!-- START OF WINE AND DINE  CAROUSEL-->
   <div class="homeWineDine marginTop text-center">
-    <div class="d-flex justify-content-center">
-      <div class="col-12 col-xl-10 wineDineCarousel-container">
+   
+      <div class="col-12 col-xl-10 m-auto wineDineCarousel-container">
         <div class="wineDineCarousel owl-carousel">
             <div class="item">
                 <picture>
@@ -778,42 +1204,30 @@
           </div>
           <div class="navPrev">
             <span>
-                <picture>
-                    <source srcset="./img/xd-photos/for-desktop/image-20.webp" type="image/webp" media="(min-width: 992px)">
-                    <source srcset="./img/xd-photos/for-desktop/image-20.jpg" type="image/jpeg" media="(min-width: 992px)">
-                    <source srcset="./img/xd-photos/for-mobile/image-20.jpg" type="image/jpeg">
-                    <img src="./img/xd-photos/for-mobile/image-20.webp" alt="image 1">
-                </picture>
+                <img src="./img/xd-photos/for-mobile/image-20.jpg" alt="image 1">
             </span>
           </div>
           <div class="navNext">
             <span>
-                <picture>
-                    <source srcset="./img/xd-photos/for-desktop/image-18.webp" type="image/webp" media="(min-width: 992px)">
-                    <source srcset="./img/xd-photos/for-desktop/image-18.jpg" type="image/jpeg" media="(min-width: 992px)">
-                    <source srcset="./img/xd-photos/for-mobile/image-18.jpg" type="image/jpeg">
-                    <img src="./img/xd-photos/for-mobile/image-18.webp" alt="image 1">
-                </picture>
+                <img src="./img/xd-photos/for-mobile/image-18.jpg" alt="image 1">
             </span>
           </div>
-      </div>
-      <div class="titleBig">
-          Wine & Dine
-      </div>
+        </div>
+        <div class="titleBig">
+            Wine & Dine
+        </div>
+        
     </div>
-  </div>
-  <!-- END OF WINE AND DINE  CAROUSEL-->
+    <!-- END OF WINE AND DINE  CAROUSEL-->
 
     <!-- START OF DINING SECTION  -->
-    <div class="homeDining text-center marginTop">
-        <div class="d-flex align-items-center justify-content-center">
-            <div class="col-10 col-lg-8">
-                <div class="genContainer">
-                    <span class="spanText">WINE & DINE</span>
-                    <div class="h1">PLUNGE IN THE AUTHENTIC CRETAN CUISINE</div>
-                    <p>Indulge in the authentic Cretan gastronomy at Alianthos Garden restaurant and bar. Find out why Cretan cuisine is amongst the most renowned in the world and feel the essence of real hospitality through taste! Rejuvenate yourself with fresh juices, smoothies, and tasty snacks at the exclusive poolside bar of Plakias Hotel in Crete. Lounge by the pool, bathe carefree under the sun and sip your favourite beverage or signature cocktail. Dive deeper into the local cuisine and treat yourself to a savoury meal at Amalthea Restaurant, where you can find a carefully designed buffet featuring organic products, fresh vegetables, and locally sourced meats. Try unique recipes inspired by experienced chefs and hop on a gastronomic journey to discover the unique cultural heritage through flavours and aromas!</p>
-                    <a href="#" class="mainLink mt-3">...Cretan Gastronomy</a>
-                </div>
+    <div class="homeDining text-center mt-3">
+        <div class="col-10 col-lg-8 m-auto">
+            <div class="genContainer">
+                <span class="spanText">WINE & DINE</span>
+                <div class="h1">PLUNGE IN THE AUTHENTIC CRETAN CUISINE</div>
+                <p>Indulge in the authentic Cretan gastronomy at Alianthos Garden restaurant and bar. Find out why Cretan cuisine is amongst the most renowned in the world and feel the essence of real hospitality through taste! Rejuvenate yourself with fresh juices, smoothies, and tasty snacks at the exclusive poolside bar of Plakias Hotel in Crete. Lounge by the pool, bathe carefree under the sun and sip your favourite beverage or signature cocktail. Dive deeper into the local cuisine and treat yourself to a savoury meal at Amalthea Restaurant, where you can find a carefully designed buffet featuring organic products, fresh vegetables, and locally sourced meats. Try unique recipes inspired by experienced chefs and hop on a gastronomic journey to discover the unique cultural heritage through flavours and aromas!</p>
+                <a href="#" class="mainLink mt-3">...Cretan Gastronomy</a>
             </div>
         </div>
     </div>
@@ -821,64 +1235,61 @@
 
     <!-- START OF WHY BOOK SECTION  -->
     <div class="homeWhyBook text-center marginTop">
-        <div class="d-flex align-items-center justify-content-center">
-            <div class="col-10 col-lg-12"> 
-              <div class="miniBoxes-container">
-                <span class="spanText">DIRECT BOOKING</span>
-                <div class="h1">WHY YOU SHOULD BOOK FROM US</div>
-                <div class="row justify-content-center g-0">
-                  <div class="col-12 col-lg-3 mini-box shadow py-5 px-5 px-lg-3">
-                      <div class="mini-box-icon">
-                        <img src="./img/xd-photos/pricetag-icon.svg" alt="">
-                      </div>
-                      <div class="mini-box-text">
-                        <span>BEST PRICE AVAILIABLE</span>
-                      </div>
-                  </div>
-                  <div class="col-12 col-lg-3 mini-box shadow py-5 px-5 px-lg-3">
-                      <div class="mini-box-icon">
-                        <img src="./img/xd-photos/cancel-icon.svg" alt="">
-                      </div>
-                      <div class="mini-box-text">
-                        <span>FREE CANCELLATION EVEN ON THE DAY OF YOUR ARRIVAL WITH A REFUND OF THE ENTIRE AMOUNT OF YOUR DEPOSIT WITHIN 24 HOURS!</span>
-                      </div>
-                  </div>
-                  <div class="col-12 col-lg-3 mini-box shadow py-5 px-5 px-lg-3">
+        <div class="col-10 col-lg-12 m-auto"> 
+            <div class="miniBoxes-container">
+            <span class="spanText">DIRECT BOOKING</span>
+            <div class="h1">WHY YOU SHOULD BOOK FROM US</div>
+            <div class="row justify-content-center g-0">
+                <div class="col-12 col-lg-5 col-xl-3 mini-box shadow py-5 px-5 px-lg-3">
                     <div class="mini-box-icon">
-                      <img src="./img/xd-photos/map-car-rental-icon.svg" alt="">
+                    <img src="./img/xd-photos/pricetag-icon.svg" alt="">
                     </div>
                     <div class="mini-box-text">
-                      <span>CAR RENTAL WITH A DISCOUNT OF -20% FROM OUR COMPANY AUTOPREVELI</span>
+                    <span>BEST PRICE AVAILIABLE</span>
                     </div>
-                  </div>
-                  <div class="col-12 col-lg-3 mini-box shadow py-5 px-5 px-lg-3">
-                      <div class="mini-box-icon">
-                        <img src="./img/xd-photos/eye-icon.svg" alt="">
-                      </div>
-                      <div class="mini-box-text">
-                        <span>POSSIBILITY TO BOOK A ROOM WITH SEA VIEW</span>
-                      </div>
-                  </div>
-                  <div class="col-12 col-lg-3 mini-box shadow py-5 px-5 px-lg-3">
-                      <div class="mini-box-icon">
-                        <img src="./img/xd-photos/shuttle-van-icon.svg" alt="">
-                      </div>
-                      <div class="mini-box-text">
-                        <span>A FREE AND SAFE TRANSFER FROM THE AIRPORT OR A DISCOUNT ON THE TRANSFER</span>
-                      </div>
-                  </div>
-                  <div class="col-12 col-lg-3 mini-box shadow py-5 px-5 px-lg-3">
-                      <div class="mini-box-icon">
-                        <img src="./img/xd-photos/map-food-icon.svg" alt="">
-                      </div>
-                      <div class="mini-box-text">
-                        <span>FREE HALF BOARD IN RICH BUFFET</span>
-                      </div>
-                  </div>
                 </div>
-              </div>        
-                
+                <div class="col-12 col-lg-5 col-xl-3 mini-box shadow py-5 px-5 px-lg-3">
+                    <div class="mini-box-icon">
+                    <img src="./img/xd-photos/cancel-icon.svg" alt="">
+                    </div>
+                    <div class="mini-box-text">
+                    <span>FREE CANCELLATION EVEN ON THE DAY OF YOUR ARRIVAL WITH A REFUND OF THE ENTIRE AMOUNT OF YOUR DEPOSIT WITHIN 24 HOURS!</span>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-5 col-xl-3 mini-box shadow py-5 px-5 px-lg-3">
+                <div class="mini-box-icon">
+                    <img src="./img/xd-photos/map-car-rental-icon.svg" alt="">
+                </div>
+                <div class="mini-box-text">
+                    <span>CAR RENTAL WITH A DISCOUNT OF -20% FROM OUR COMPANY AUTOPREVELI</span>
+                </div>
+                </div>
+                <div class="col-12 col-lg-5 col-xl-3 mini-box shadow py-5 px-5 px-lg-3">
+                    <div class="mini-box-icon">
+                    <img src="./img/xd-photos/eye-icon.svg" alt="">
+                    </div>
+                    <div class="mini-box-text">
+                    <span>POSSIBILITY TO BOOK A ROOM WITH SEA VIEW</span>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-5 col-xl-3 mini-box shadow py-5 px-5 px-lg-3">
+                    <div class="mini-box-icon">
+                    <img src="./img/xd-photos/shuttle-van-icon.svg" alt="">
+                    </div>
+                    <div class="mini-box-text">
+                    <span>A FREE AND SAFE TRANSFER FROM THE AIRPORT OR A DISCOUNT ON THE TRANSFER</span>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-5 col-xl-3 mini-box shadow py-5 px-5 px-lg-3">
+                    <div class="mini-box-icon">
+                    <img src="./img/xd-photos/map-food-icon.svg" alt="">
+                    </div>
+                    <div class="mini-box-text">
+                    <span>FREE HALF BOARD IN RICH BUFFET</span>
+                    </div>
+                </div>
             </div>
+            </div>        
         </div>
     </div>   
     <!-- END OF WHY BOOK SECTION  --> 
@@ -944,19 +1355,19 @@
 
 
   <!-- START OF EXPRERIENCES SECTION  -->
-  <div class="homeExperiences text-center">
-        <div class="d-flex align-items-center justify-content-center">
-            <div class="col-10 col-lg-8">
-                  <div class="calligrafText">Experiences</div>
-                  <p>
-                    Immerse yourself in recreational activities in Plakias Hotel, Crete<br> Make your entertainment a priority and join cultural and recreational activities and events organised at the hotel’s premises. Part of Alianthos Hotel’s philosophy is to make all guests feel like members of a big family! Attend cooking lessons, dance your heart away on Greek nights and make new friends while your children are having fun at the playground with a variety of outdoor games and toys. 
-                  </p>
-                  <p>
-                    Consult the hotel’s staff and get personalised recommendations on what to do around the area. Travel, exercise, or treat yourself to a wellness session for absolute relaxation. If you feel active and ready to explore, rent a car at Autopreveli, the most reliable car rental company in the area and affiliate of Alianthos Garden Plakias Hotel in Rethymno. Find a remarkable range of cars at competitive prices and get an extra discount as a perk of being an Alianthos guest.
-                  </p>
-                  <a href="#" class="mainLink mt-3">...activities near Plakias</a>
-            </div>
+    <div class="homeExperiences text-center">
+        
+        <div class="col-10 col-lg-8 m-auto">
+            <div class="calligrafText">Experiences</div>
+            <p>
+            Immerse yourself in recreational activities in Plakias Hotel, Crete<br> Make your entertainment a priority and join cultural and recreational activities and events organised at the hotel’s premises. Part of Alianthos Hotel’s philosophy is to make all guests feel like members of a big family! Attend cooking lessons, dance your heart away on Greek nights and make new friends while your children are having fun at the playground with a variety of outdoor games and toys. 
+            </p>
+            <p>
+            Consult the hotel’s staff and get personalised recommendations on what to do around the area. Travel, exercise, or treat yourself to a wellness session for absolute relaxation. If you feel active and ready to explore, rent a car at Autopreveli, the most reliable car rental company in the area and affiliate of Alianthos Garden Plakias Hotel in Rethymno. Find a remarkable range of cars at competitive prices and get an extra discount as a perk of being an Alianthos guest.
+            </p>
+            <a href="#" class="mainLink mt-3">...activities near Plakias</a>
         </div>
+       
     </div>
     <!-- END OF EXPERIENCES SECTION  -->
 
@@ -2655,14 +3066,12 @@
 
     <!-- START OF WHY US SECTION  -->
     <div class="homeWhyUs text-center marginTop">
-        <div class="d-flex align-items-center justify-content-center">
-            <div class="col-10">
-            <div class="container">
-                <div class="genContainer container">
+       
+        <div class="col-10 m-auto">
+            <div class="genContainer container">
                 <span class="spanText">WHY ALIANTHOS GARDEN?</span>
                 <h1>FIND OUT WHY YOU SHOULD CHOSE ALIANTHOS GARDEN HOTEL</h1>
                 <p>Choose Alianthos Garden Hotel for your accommodation and ensure a fantastic holiday in Plakias, Crete. Contact the hotel to get the best available rates and book the accommodation of your choice for a memorable summer in Crete.</p>
-                </div>
             </div>
             <div class="whyUs-container miniBoxes-container mt-5">
                 <div class="title">
@@ -2751,15 +3160,13 @@
                     </div>
                 </div>
             </div>
-            </div>
         </div>
     </div>
     <!-- END OF WHY US SECTION  -->
 
     <!-- START OF NEWSLETTER SECTION  -->
     <div class="homeNewsletter text-center marginTop">
-        <div class="d-flex align-items-center justify-content-center">
-        <div class="col-10 col-lg-7 col-xl-5">
+        <div class="col-10 col-lg-7 col-xl-5 m-auto">
             <span class="spanText">NEWSLETTER</span>
             <div class="h1">SUMMER SPOILERS</div>
             <form action="#" class="newsletterform mt-5">
@@ -2768,70 +3175,69 @@
             <a type="submit" class="mainLink mt-5">send</a>
             </form>
         </div>
-        </div>
     </div>
     <!-- END OF NEWSLETTER SECTION  -->
 
     <!-- START OF OFFERS SECTION  -->
     <div class="homeOffers text-center marginTop">
-        <div class="d-flex align-items-center justify-content-center">
-            <div class="col-12 col-md-10">
+        <div class="col-12 col-md-10 m-auto">
+            <div class="px-3">
                 <span class="spanText">OFFERS</span>
                 <div class="h1">OFFERS TAILORED JUST FOR YOU</div>
-                <div class="owl-carousel offersCarousel mt-5">
-                <div class="item">
-                    <div class="offer-image">
-                      <picture>
-                          <source srcset="./img/xd-photos/for-desktop/offer-1.webp" type="image/webp" media="(min-width: 992px)">
-                          <source srcset="./img/xd-photos/for-desktop/offer-1.jpg" type="image/jpeg" media="(min-width: 992px)">
-                          <source srcset="./img/xd-photos/for-mobile/offer-1.jpg" type="image/jpeg">
-                          <img src="./img/xd-photos/for-mobile/offer-1.webp" alt="image 1">
-                      </picture>
-                    </div>
-                    <div class="offer-text p-4 p-lg-5">
-                    Benefit from a discount of up to 25% for October and experience this autumn in Plakias!
-                    </div>
+            </div>
+            <div class="owl-carousel offersCarousel mt-5">
+            <div class="item">
+                <div class="offer-image">
+                    <picture>
+                        <source srcset="./img/xd-photos/for-desktop/offer-1.webp" type="image/webp" media="(min-width: 992px)">
+                        <source srcset="./img/xd-photos/for-desktop/offer-1.jpg" type="image/jpeg" media="(min-width: 992px)">
+                        <source srcset="./img/xd-photos/for-mobile/offer-1.jpg" type="image/jpeg">
+                        <img src="./img/xd-photos/for-mobile/offer-1.webp" alt="image 1">
+                    </picture>
                 </div>
-                <div class="item">
-                    <div class="offer-image">
-                      <picture>
-                          <source srcset="./img/xd-photos/for-desktop/offer-2.webp" type="image/webp" media="(min-width: 992px)">
-                          <source srcset="./img/xd-photos/for-desktop/offer-2.jpg" type="image/jpeg" media="(min-width: 992px)">
-                          <source srcset="./img/xd-photos/for-mobile/offer-2.jpg" type="image/jpeg">
-                          <img src="./img/xd-photos/for-mobile/offer-2.webp" alt="image 1">
-                      </picture>
-                    </div>
-                    <div class="offer-text p-4 p-lg-5">
-                    Benefit from a discount of up to 25% for October and experience this autumn in Plakias!
-                    </div>
+                <div class="offer-text p-4 p-lg-5">
+                Benefit from a discount of up to 25% for October and experience this autumn in Plakias!
                 </div>
-                <div class="item">
-                    <div class="offer-image">
-                      <picture>
-                          <source srcset="./img/xd-photos/for-desktop/offer-1.webp" type="image/webp" media="(min-width: 992px)">
-                          <source srcset="./img/xd-photos/for-desktop/offer-1.jpg" type="image/jpeg" media="(min-width: 992px)">
-                          <source srcset="./img/xd-photos/for-mobile/offer-1.jpg" type="image/jpeg">
-                          <img src="./img/xd-photos/for-mobile/offer-1.webp" alt="image 1">
-                      </picture>
-                    </div>
-                    <div class="offer-text p-4 p-lg-5">
-                    Benefit from a discount of up to 25% for October and experience this autumn in Plakias!
-                    </div>
+            </div>
+            <div class="item">
+                <div class="offer-image">
+                    <picture>
+                        <source srcset="./img/xd-photos/for-desktop/offer-2.webp" type="image/webp" media="(min-width: 992px)">
+                        <source srcset="./img/xd-photos/for-desktop/offer-2.jpg" type="image/jpeg" media="(min-width: 992px)">
+                        <source srcset="./img/xd-photos/for-mobile/offer-2.jpg" type="image/jpeg">
+                        <img src="./img/xd-photos/for-mobile/offer-2.webp" alt="image 1">
+                    </picture>
                 </div>
-                <div class="item">
-                    <div class="offer-image">
-                      <picture>
-                          <source srcset="./img/xd-photos/for-desktop/offer-2.webp" type="image/webp" media="(min-width: 992px)">
-                          <source srcset="./img/xd-photos/for-desktop/offer-2.jpg" type="image/jpeg" media="(min-width: 992px)">
-                          <source srcset="./img/xd-photos/for-mobile/offer-2.jpg" type="image/jpeg">
-                          <img src="./img/xd-photos/for-mobile/offer-2.webp" alt="image 1">
-                      </picture>
-                    </div>
-                    <div class="offer-text p-4 p-lg-5">
-                    Benefit from a discount of up to 25% for October and experience this autumn in Plakias!
-                    </div>
+                <div class="offer-text p-4 p-lg-5">
+                Benefit from a discount of up to 25% for October and experience this autumn in Plakias!
                 </div>
+            </div>
+            <div class="item">
+                <div class="offer-image">
+                    <picture>
+                        <source srcset="./img/xd-photos/for-desktop/offer-1.webp" type="image/webp" media="(min-width: 992px)">
+                        <source srcset="./img/xd-photos/for-desktop/offer-1.jpg" type="image/jpeg" media="(min-width: 992px)">
+                        <source srcset="./img/xd-photos/for-mobile/offer-1.jpg" type="image/jpeg">
+                        <img src="./img/xd-photos/for-mobile/offer-1.webp" alt="image 1">
+                    </picture>
                 </div>
+                <div class="offer-text p-4 p-lg-5">
+                Benefit from a discount of up to 25% for October and experience this autumn in Plakias!
+                </div>
+            </div>
+            <div class="item">
+                <div class="offer-image">
+                    <picture>
+                        <source srcset="./img/xd-photos/for-desktop/offer-2.webp" type="image/webp" media="(min-width: 992px)">
+                        <source srcset="./img/xd-photos/for-desktop/offer-2.jpg" type="image/jpeg" media="(min-width: 992px)">
+                        <source srcset="./img/xd-photos/for-mobile/offer-2.jpg" type="image/jpeg">
+                        <img src="./img/xd-photos/for-mobile/offer-2.webp" alt="image 1">
+                    </picture>
+                </div>
+                <div class="offer-text p-4 p-lg-5">
+                Benefit from a discount of up to 25% for October and experience this autumn in Plakias!
+                </div>
+            </div>
             </div>
         </div>
     </div>
@@ -2962,8 +3368,7 @@
 
     <!-- START OF FOOTER SECTION -->
   <footer class="marginTop">
-    <div class="d-flex align-items-center justify-content-center">
-      <div class="co-12 col-xl-10">
+      <div class="col-12 col-xl-10 m-auto">
         <div class="row footer-row g-0">
           <div class="col-xl-4 d-flex flex-column justify-content-between align-items-center align-items-xl-start text-center text-xl-start mb-5 mb-xl-0">
               <div class="footer-logo">
@@ -3086,9 +3491,8 @@
           </div>
         </div>
       </div>
-    </div>
-  </footer>
-  <!-- END OF FOOTER SECTION  -->
+    </footer>
+    <!-- END OF FOOTER SECTION  -->
 
 
     <!-- CDN SCRIPTS -->
@@ -3105,9 +3509,12 @@
 
     <!-- MY SCRIPTS  -->
     <script src="scripts/myscripts.js"></script>
+    <!-- SCRIPTS FOR SLY SLIDERS  -->
     <script src="scripts/horizontal.js"></script>
     <script src="scripts/plugins.js"></script>
     <script src="scripts/sly.min.js"></script>
+    <!-- SCRIPTS FOR SLY SLIDERS  -->
+
     <script src="scripts/weather-widget.js"></script>
     <!-- MY SCRIPTS  -->
 

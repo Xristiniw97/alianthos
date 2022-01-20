@@ -25,7 +25,6 @@ $(document).ready(function () {
 
 // if we dont have touchscreen 
 
-
 $(".navNext").on( "mouseover", function() {
     mainSlider.trigger('next.owl.carousel', [300]);
     return false;
@@ -36,17 +35,16 @@ $(".navPrev").on( "mouseover", function() {
     return false;
 });
 
-
 //if we have touchscreen
 if(window.matchMedia("(pointer: coarse)").matches) {
     
-
-    $(".navNext").on( "click", function() {
+   
+    $('.navNext').on('click', function () {
         mainSlider.trigger('next.owl.carousel', [300]);
         return false;
     });
-
-    $(".navPrev").on( "click", function() {
+    
+    $('.navPrev').on('click', function () {
         mainSlider.trigger('prev.owl.carousel', [300]);
         return false;
     });
@@ -222,7 +220,7 @@ $(document).ready(function() {
 $(document).ready(function() {  
 
     $("#menuToggle").click(function() {
-            if ($("input[type=checkbox]").is(
+            if ($(".menuToggleInput").is(
               ":checked")) {               
                 $(".mobile-nav").addClass("visible");
             } else {
@@ -247,6 +245,53 @@ $(window).on("scroll", function() {
 });
 //END STICKY BOTTOM
 
+
+// START OF ACCOMMODATION FILTERING 
+
+$(document).ready(function() {  
+    $(".accommodation-list li:nth-child(1)").on("click" , function(){
+        $(this).addClass("active");
+        $(this).siblings("li").removeClass("active");
+        $(".accommodations-data-holder .accommodation-data").siblings().removeClass("active");
+        $(".accommodations-data-holder .accommodation-data:nth-child(1)").addClass("active");
+      });
+    
+      $(".accommodation-list li:nth-child(2)").on("click" , function(){
+        $(this).addClass("active");
+        $(this).siblings("li").removeClass("active");
+        $(".accommodations-data-holder .accommodation-data").siblings().removeClass("active");
+        $(".accommodations-data-holder .accommodation-data:nth-child(2)").addClass("active");
+      });
+    
+      $(".accommodation-list li:nth-child(3)").on("click" , function(){
+        $(this).addClass("active");
+        $(this).siblings("li").removeClass("active");
+        $(".accommodations-data-holder .accommodation-data").siblings().removeClass("active");
+        $(".accommodations-data-holder .accommodation-data:nth-child(3)").addClass("active");
+      });
+    
+      $(".accommodation-list li:nth-child(4)").on("click" , function(){
+        $(this).addClass("active");
+        $(this).siblings("li").removeClass("active");
+        $(".accommodations-data-holder .accommodation-data").siblings().removeClass("active");
+        $(".accommodations-data-holder .accommodation-data:nth-child(4)").addClass("active");
+      });
+    
+      $(".accommodation-list li:nth-child(5)").on("click" , function(){
+        $(this).addClass("active");
+        $(this).siblings("li").removeClass("active");
+        $(".accommodations-data-holder .accommodation-data").siblings().removeClass("active");
+        $(".accommodations-data-holder .accommodation-data:nth-child(5)").addClass("active");
+      });
+
+      $(".accommodation-list li:nth-child(6)").on("click" , function(){
+        $(this).addClass("active");
+        $(this).siblings("li").removeClass("active");
+        $(".accommodations-data-holder .accommodation-data").siblings().removeClass("active");
+        $(".accommodations-data-holder .accommodation-data:nth-child(6)").addClass("active");
+      });
+});
+// END OF ACCOMMODATION FILTERING 
 
 // START OF REVIEWS FILTERING 
 $(document).ready(function() {  
@@ -327,4 +372,8 @@ the video when the mouse is out the video */
 clip.addEventListener("mouseout", function (e) {
     clip.pause();
 });
+
+if(!window.matchMedia("(pointer: coarse)").matches) { 
+    $('.video-mini').removeAttr("autoplay");
+}
 //END HOME VIDEO SLIDER 
