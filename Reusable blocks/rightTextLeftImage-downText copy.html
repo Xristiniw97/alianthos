@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
     <title>Alianthos Garden Hotel in Plakias, Rethymno Crete</title>
     <link rel="icon" type="image/png" href="./img/alianthos_garden_icon.png" />
    
@@ -51,41 +51,45 @@
     <link rel="preload" as="script" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <!-- SCRIPTS PRELOAD  -->
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-
-  
-
 </head>
-<body>
+<body class="innerPage">
 
 
-    <!-- START OF MODAL WHY BOOK  -->
-    <div class="modal whyBookModal" tabindex="-1" id="whyBookModal">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-body">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                <div class="text-center mt-3">
-                    <span class="spanText mb-3">DIRECT BOOKING</span>
-                    <h1>WHY YOU SHOULD DIRECTLY BOOK</h1>
+
+
+     <!-- START OF RIGHT TEXT LEFT IMAGE & DOWN TEXT BLOCK  -->
+     <div class="blockrightText-downText marginTop text-center text-lg-start">
+        <div class="col-10 m-auto">
+            <div class="row g-0 align-items-center">
+                <div class="col-lg-6 image-content mb-5 mb-lg-0">
+                    <picture>
+                        <source srcset="./img/xd-photos/for-desktop/alianthos01.webp" type="image/webp" media="(min-width: 992px)">
+                        <source srcset="./img/xd-photos/for-desktop/alianthos01.jpg" type="image/jpeg" media="(min-width: 992px)">
+                        <source srcset="./img/xd-photos/for-mobile/alianthos01.jpg" type="image/jpeg">
+                        <img src="./img/xd-photos/for-mobile/alianthos01.webp" alt="image 1" class="img-fluid">
+                    </picture>
                 </div>
-                <ul class="list-unstyled mt-5">
-                    <li class="shadow p-3"><img src="./img/xd-photos/pricetag-icon.svg" alt="">BEST PRICE AVAILIABLE</li>
-                    <li class="shadow p-3"><img src="./img/xd-photos/cancel-icon.svg" alt="">FREE CANCELLATION EVEN ON THE DAY OF YOUR ARRIVAL WITH A REFUND OF THE ENTIRE AMOUNT OF YOUR DEPOSIT WITHIN 24 HOURS!</li>
-                    <li class="shadow p-3"><img src="./img/xd-photos/map-car-rental-icon.svg" alt="">CAR RENTAL WITH A DISCOUNT OF -10% FROM OUR COMPANY AUTOPREVELI</li>
-                    <li class="shadow p-3"><img src="./img/xd-photos/eye-icon.svg" alt="">POSSIBILITY TO BOOK A ROOM WITH SEA VIEW</li>
-                    <li class="shadow p-3"><img src="./img/xd-photos/shuttle-van-icon.svg" alt="">A FREE AND SAFE TRANSFER FROM THE AIRPORT OR A DISCOUNT ON THE TRANSFER</li>
-                    <li class="shadow p-3"><img src="./img/xd-photos/map-food-icon.svg" alt="">FREE HALF BOARD IN RICH BUFFET</li>
-                </ul>
+                <div class="col-lg-6 text-content">
+                    <div class="padding-sections">
+                        <div class="h1 h1-hr">EXPLORE THE VILLAGE<br> OF PLAKIAS AND SHARE PHOTOS<br> WITH YOUR FRIENDS</div>
+                        <hr class="right-hr d-none d-lg-block">
+                        <p>Discover the charming little village of Plakias Crete, built alongside a single street and ideal for strolls and watching magical sunsets. Take a walk late in the afternoon with the sea on one side and shops and restaurants on the other. Find all amenities at a close range, and take a photo of anything that fits in your memory album.</p>
+                    </div> 
+                </div>
             </div>
-          </div>
+        </div>
+        <div class="col-10 mx-auto mt-5 mt-lg-3 mt-xxl-5 text-center">
+            <p>The area has all basic infrastructures, whereas every local business is organised to cater to every need, providing exceptional services: car rental, gift shopping, water sports, daily excursions, or a nice Mediterranean meal with genuine Cretan natural products. Don’t forget to taste the famous Cretan oil and sit back and relax with a glass of raki, the popular fragrant, grape-based pomace brandy of Crete.<br> Spend your day at the wonderful beaches of Plakias, Crete. </p>
+            <p>Plan your holidays to Plakias Crete to enjoy the famous Cretan blue waters, the warm sand, and the exquisite sunlight. Sit back and relax at one of the region’s major attractions, the Plakias Beach, the long beachfront, also known as Gialia, extending to the east for 1.3 km, up to Cape Mouri. It is a well-organized, kid-friendly beach with blue-green waters where everyone can swim, dive or lie down under an umbrella or a tamarisk tree. </p>
+            <p>Alternatively, visit Calypso Beach Crete, where you can find a remarkable scenery of impressive rocks surrounding the bay, cool waters, and a mythical atmosphere that goes back in time when it was the setting of an old historic pirate shelter. Opt for some action and prepare to explore the Cretan seabed - the area is considered an ideal place for scuba aficionados looking to dive deeper into the majestic underwater world.</p>
         </div>
     </div>
-    <!-- END OF MODAL WHY BOOK  -->
+    <!-- END OF RIGHT TEXT LEFT IMAGE & DOWN TEXT BLOCK  -->
 
-    <section style="height: 10000px; background-color: red;"></section>
 
+
+
+    
 
     <!-- CDN SCRIPTS -->
     <!-- JQUERY CDN  -->
@@ -97,13 +101,16 @@
     <!-- FANCYBOX  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- CDN SCRIPTS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
 
     <!-- MY SCRIPTS  -->
     <script src="scripts/myscripts.js"></script>
+    <!-- SCRIPTS FOR SLY SLIDERS  -->
     <script src="scripts/horizontal.js"></script>
     <script src="scripts/plugins.js"></script>
     <script src="scripts/sly.min.js"></script>
+    <!-- SCRIPTS FOR SLY SLIDERS  -->
+
     <script src="scripts/weather-widget.js"></script>
     <!-- MY SCRIPTS  -->
 

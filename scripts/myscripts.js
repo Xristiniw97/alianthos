@@ -169,6 +169,25 @@ $(document).ready(function () {
     });
     //end of ONE IMAGE carousel 
 
+
+    //start of others carousel 
+    $('.othersCarousel').owlCarousel({
+        loop:true,
+        margin:5,
+        nav:true,
+        navText: ["", ""],
+        dots: false,
+        responsive:{
+            0:{
+                items:1
+            },
+            1024:{
+                items:2
+            }
+        }
+    });
+    //end of others carousel 
+
 });
 
 // START OF ACTIVE HEADER 
@@ -176,6 +195,14 @@ $(window).on("scroll touchmove", function () {
     $('.header').toggleClass('active', $(document).scrollTop() > 0);
 });
 // END OF ACTIVE HEADER 
+
+// START OF MODAL  
+$(document).ready(function(){
+    setTimeout(function() {
+        $('#whyBookModal').modal('show');
+    }, 3000);
+});    
+// END OF MODAL  
 
 
 // START VIDEO SLIDER 
@@ -377,3 +404,5 @@ if(!window.matchMedia("(pointer: coarse)").matches) {
     $('.video-mini').removeAttr("autoplay");
 }
 //END HOME VIDEO SLIDER 
+
+
