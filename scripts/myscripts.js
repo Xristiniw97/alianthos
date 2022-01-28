@@ -272,9 +272,7 @@ $(window).on("scroll", function() {
 });
 //END STICKY BOTTOM
 
-
 // START OF ACCOMMODATION FILTERING 
-
 $(document).ready(function() {  
     $(".accommodation-list li:nth-child(1)").on("click" , function(){
         $(this).addClass("active");
@@ -380,6 +378,46 @@ $(document).ready(function() {
 
 });
 // END OF REVIEWS FILTERING 
+
+// START OF EXPERIENCE FILTERING 
+$(document).ready(function() {  
+    $(".experience-list li:nth-child(1)").on("click" , function(){
+        $(this).addClass("active");
+        $(this).siblings("li").removeClass("active");
+        $(".experiences-data-holder .experience-data").siblings().removeClass("active");
+        $(".experiences-data-holder .experience-data:nth-child(1)").addClass("active");
+      });
+    
+      $(".experience-list li:nth-child(2)").on("click" , function(){
+        $(this).addClass("active");
+        $(this).siblings("li").removeClass("active");
+        $(".experiences-data-holder .experience-data").siblings().removeClass("active");
+        $(".experiences-data-holder .experience-data:nth-child(2)").addClass("active");
+      });
+    
+      $(".experience-list li:nth-child(3)").on("click" , function(){
+        $(this).addClass("active");
+        $(this).siblings("li").removeClass("active");
+        $(".experiences-data-holder .experience-data").siblings().removeClass("active");
+        $(".experiences-data-holder .experience-data:nth-child(3)").addClass("active");
+      });
+    
+      $(".experience-list li:nth-child(4)").on("click" , function(){
+        $(this).addClass("active");
+        $(this).siblings("li").removeClass("active");
+        $(".experiences-data-holder .experience-data").siblings().removeClass("active");
+        $(".experiences-data-holder .experience-data:nth-child(4)").addClass("active");
+      });
+    
+      $(".experience-list li:nth-child(5)").on("click" , function(){
+        $(this).addClass("active");
+        $(this).siblings("li").removeClass("active");
+        $(".experiences-data-holder .experience-data").siblings().removeClass("active");
+        $(".experiences-data-holder .experience-data:nth-child(5)").addClass("active");
+      });
+
+});
+// END OF EXPERIENCES FILTERING 
 
 
 //START  HOME VIDEO SLIDER 
