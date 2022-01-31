@@ -220,16 +220,25 @@ h1, .h1 {
 /**END OFGENERAL SECTION **/
 /** START OF BOOK BUTTON **/
 .bookBtn {
-  width: 85px;
-  height: 85px;
+  width: 100px;
+  height: 100px;
   background: var(--blue);
   border-radius: 50px;
   transition: var(--transition3s);
 }
 
+.header .bookBtn, .mobile-header .bookBtn {
+  width: 85px;
+  height: 85px;
+}
+
+.header .bookBtn a, .mobile-header .bookBtn a {
+  font-size: 16px;
+}
+
 .bookBtn a {
   color: var(--white);
-  font-size: 15px;
+  font-size: 14px;
   font-weight: var(--lightWeight);
   line-height: 1.2;
   margin-top: 2px;
@@ -246,11 +255,11 @@ h1, .h1 {
 }
 
 @media screen and (max-width: 575px) {
-  .bookBtn {
+  .header .bookBtn, .mobile-header .bookBtn {
     width: 65px;
     height: 65px;
   }
-  .bookBtn a {
+  .header .bookBtn a, .mobile-header .bookBtn a {
     font-size: 14px;
   }
 }
@@ -260,6 +269,7 @@ h1, .h1 {
 .mainLink {
   font-family: var(--zonaFont);
   font-size: 20px;
+  line-height: 2;
   font-weight: var(--boldWeight);
   color: var(--grey54);
   position: relative;
@@ -2448,6 +2458,7 @@ nav {
   margin-right: 10px;
   position: relative;
   padding-right: 20px;
+  line-height: 1.5;
 }
 
 .breadcrumbs ul li.active {
@@ -3180,6 +3191,7 @@ nav {
 }
 
 /** END OF EXPERIENCES **/
+/** START ABOUT US SECTION **/
 .story-img-1, .story-img-4 {
   width: 280px;
 }
@@ -3315,5 +3327,22 @@ nav {
   .applyBox {
     width: auto;
   }
+}
+
+/** END ABOUT US SECTION **/
+.offersListing {
+  font-weight: var(--lightWeight);
+  color: var(--grey70);
+  line-height: 1.1;
+  letter-spacing: 0px;
+}
+
+.offersListing .offer-title {
+  font-size: 22px;
+}
+
+.offersListing p {
+  font-size: 18px;
+  margin: 30px 0px;
 }
 /*# sourceMappingURL=style.css.map */
