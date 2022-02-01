@@ -449,6 +449,16 @@ h1,.h1 {
     left: -25px;
 }
 
+.down-arrows .owl-nav button.owl-prev {  
+    top: unset;
+    bottom: 20px;
+}
+
+.down-arrows .owl-nav button.owl-next {  
+    top: unset;
+    bottom: 30px;
+}
+
 @media screen and (max-width:991px) {
     .oneImageCarousel img{
         min-height: 450px;
@@ -2478,7 +2488,12 @@ nav {
 /** START OF FILTERS **/
 .review-filter-holder, 
 .accommodation-filter-holder,
-.experience-filter-holder{
+.experience-filter-holder,
+.bar-filter-holder,
+.resto-filter-holder,
+.gallery-filter-holder,
+.video-filter-holder
+{
     min-height: 65px;
     text-align: center;
     overflow-x: auto;
@@ -2487,7 +2502,12 @@ nav {
 
 .review-filter-holder::-webkit-scrollbar,
 .accommodation-filter-holder::-webkit-scrollbar,
-.experience-filter-holder::-webkit-scrollbar{ 
+.experience-filter-holder::-webkit-scrollbar,
+.bar-filter-holder::-webkit-scrollbar,
+.resto-filter-holder::-webkit-scrollbar,
+.gallery-filter-holder::-webkit-scrollbar,
+.video-filter-holder::-webkit-scrollbar
+{ 
     display: none !important;
 }
 
@@ -2500,11 +2520,17 @@ nav {
 
 .review-data.active, 
 .accommodation-data.active,
-.experience-data.active{
+.experience-data.active,
+.bar-data.active,
+.resto-data.active,
+.gallery-data.active,
+.video-data.active{
     height: auto;
 }
   
-.review-list, .accommodation-list, .experience-list{
+.review-list, .accommodation-list, 
+.experience-list, .bar-list,.resto-list,
+.gallery-list,.video-list{
     display: flex;
     justify-content: space-around;
     vertical-align: top;
@@ -2514,8 +2540,9 @@ nav {
   
 .review-list .review-filter, 
 .accommodation-list .accommodation-filter,
-.experience-list .experience-filter
-{
+.experience-list .experience-filter,
+.bar-list .bar-filter,.resto-list .resto-filter,
+.gallery-list .gallery-filter,.video-list .video-filter{
     font-family: var(--zonaFont);
     font-weight: var(--lightWeight);
     font-size: 16px;
@@ -2528,14 +2555,24 @@ nav {
     white-space: nowrap;
 }
    
-.review-data, .accommodation-data, .experience-data{
+.review-data, .accommodation-data, 
+.experience-data, .bar-data, .resto-data,
+.gallery-data,.video-data{
     height: 0;
     overflow: hidden;
 }
 
+.bars-data-holder{ 
+    margin-top: -40px;
+}
+
 .review-filter::after, 
 .accommodation-filter::after,
-.experience-filter::after {
+.experience-filter::after,
+.bar-filter::after,
+.resto-filter::after,
+.gallery-filter::after,
+.video-filter::after {
     content: "";
     display: inline;
     position: absolute;
@@ -2552,14 +2589,22 @@ nav {
 
 .review-filter:hover::after, 
 .accommodation-filter:hover::after,
-.experience-filter:hover::after   { 
+.experience-filter:hover::after,
+.bar-filter:hover::after,
+.resto-filter:hover::after,
+.gallery-filter:hover::after,
+.video-filter:hover::after{ 
     width: 100%;
     opacity: 1;
 }
 
 .review-filter.active::after, 
 .accommodation-filter.active::after,
-.experience-filter.active::after{
+.experience-filter.active::after,
+.bar-filter.active::after,
+.resto-filter.active::after,
+.gallery-filter.active::after,
+.video-filter.active::after{
     width: 100%;
     opacity: 1;
 }
@@ -2568,16 +2613,16 @@ nav {
     margin-top: 70px;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1199px) {
     .review-list,.accommodation-list,
-    .experience-list{
+    .experience-list,.bar-list,
+    .resto-list,.gallery-list,.video-list{
         display: flex;
         justify-content: unset; 
         width: max-content;
     }
 }
-
-/** END OF REVIEWS FILTER **/
+/** END OF FILTERS**/
 
 /** START OF BREADCRUMBS **/
 .breadcrumbs ul li{
@@ -3427,8 +3472,7 @@ nav {
          column-gap: 20px;
     -moz-column-fill: balance;
          column-fill: balance;
-    margin: 20px auto 0;
-    padding: 2rem;
+    margin: 0px auto 0;
   }
 .container-photos .item {
     display: inline-block;
@@ -3519,6 +3563,7 @@ nav {
 /** END OF BLOG PAGES **/
 
 
+/** START OF CAR HIRE **/
 .car-benefits .box{
     border-bottom: 1px solid var(--blue);
 }
@@ -3560,13 +3605,10 @@ nav {
     font-size: 20px;
 }
 
-
-
 .car-rental-form ,.car-rental-info, .car-rental-info .title{
     color: var(--grey8b);
 
 }
-
 .car-rental-form p {
     font-weight: var(--regularWeight);
     letter-spacing: 0.3px;
@@ -3634,7 +3676,6 @@ nav {
     .cars .bookBtn a{ 
         font-size: 16px;
     }
-
 }
 
 @media screen and (max-width: 575px) {
@@ -3645,5 +3686,251 @@ nav {
         margin-top: 50px;
     }
 
-    
 }
+/** END OF CAR HIRE **/
+
+/** START OF LANDING DINNING **/
+.dinningButton {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--black);
+    border-radius: 70px;
+    padding: 20px 30px;
+    color: var(--black);
+    line-height: 1.5;
+}
+
+.dinningTitle {
+    display: block;
+    font-size: 30px;
+    font-weight: var(--lightWeight);
+}
+
+.dinningSubtitle {
+    font-weight: var(--boldWeight);
+}
+
+.landingDining-slider {
+    height: 100vh;
+}
+
+.landingDining-slider-box {
+    position: relative;
+}
+
+.landingDining-slider::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background: linear-gradient(180deg, rgba(0,0,0,0.65) 0%, rgba(255,255,255,0) 50%, rgba(0,0,0,0.65) 100%);
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.landingDining-slider {
+    position: relative;
+}
+
+.landingDining-slider .dinningButton {
+    border: none;
+    width: unset;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    z-index: 6;
+}
+
+.landingDining-slider a{
+    color: var(--white);
+}
+
+@media screen and (max-width:1399px) {
+    .dinningButton {
+        width: 400px;
+    }
+    .dinningTitle {
+        font-size: 22px;
+    }
+}
+
+
+@media screen and (max-width:991px) {
+    .dinningButton {
+        width: 100%; 
+    }
+    .buttons-dinning {
+        flex-direction: column;
+    }
+
+    .landingDining-slider-box { 
+        height: 50vh !important;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .dinningTitle {
+        font-size: 18px;
+    }
+}
+/** END OF LANDING DINNING **/
+
+
+.leftText-rightImg.with-image .h1-hr {
+    min-height: 250px;
+}
+
+
+.bigImageCarousel .oneImageCarousel img {
+    height: 500px; 
+}
+
+.resto-image-content img {
+    min-height: unset !important;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    max-height: 500px;
+}
+
+.resto3-img {
+    border: 30px solid var(--white);
+    position: relative;
+    top: -120px;
+}
+
+.resto2-img {
+    margin-left: 30px;
+    position: relative;
+    top: -45px;
+}   
+
+.no-hr .h1-hr {
+    min-height: unset !important;
+}
+
+@media screen and (max-width: 1199px) { 
+    .resto-image-content {
+        padding-top: 70px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .resto3-img {
+        border: 15px solid var(--white);
+        top: -60px;
+    }
+}
+
+.resto-inside-list {
+    border: none;
+    display: inline-flex;
+    position: relative;
+    float: right;
+}
+
+.resto-inside-list .resto-filter::after{
+   content: unset !important;
+}
+
+.resto-inside-list .resto-filter.active {
+    color: var(--blue2);
+    font-weight: var(--boldWeight);
+}
+
+
+/** START GALLERY PAGE **/
+.gallery-buttons svg{
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.gallery-slider .carousel-item {
+    height: 400px;
+}
+
+.gallery-button {
+    font-weight: var(--regularWeight);
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.gallery-button.active {
+    color: var(--blue);
+}
+
+.gallery-button.active svg path{
+    stroke: var(--blue);
+}
+
+.lazy-yt-wrapper {
+	max-width: 1200px;
+	margin: 0px auto;
+	padding: 0px;
+}
+
+.lazy-youtube {
+	background-color: #000;
+	margin-bottom: 30px;
+	position: relative;
+	padding-top: 56.25%;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.lazy-youtube img {
+	width: 100%;
+	top: -16.82%;
+	left: 0;
+	opacity: 1;
+}
+
+.lazy-youtube .lazy-play-btn {
+	width: 90px;
+	height: 60px;
+	background-color: #333;
+	box-shadow: 0 0 30px rgba( 0,0,0,0.6 );
+	z-index: 1;
+	opacity: 0.8;
+	border-radius: 6px;
+}
+
+.lazy-youtube .lazy-play-btn:before {
+	content: "";
+	border-style: solid;
+	border-width: 15px 0 15px 26.0px;
+	border-color: transparent transparent transparent #fff;
+}
+
+.lazy-youtube img,
+.lazy-youtube .lazy-play-btn {
+	cursor: pointer;
+}
+
+.lazy-youtube img,
+.lazy-youtube iframe,
+.lazy-youtube .lazy-play-btn,
+.lazy-youtube .lazy-play-btn:before {
+	position: absolute;
+}
+
+.lazy-youtube .lazy-play-btn,
+.lazy-youtube .lazy-play-btn:before {
+	top: 50%;
+	left: 50%;
+	transform: translate3d( -50%, -50%, 0 );
+}
+
+.lazy-youtube iframe {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+/** END GALLERY PAGE **/

@@ -15,38 +15,69 @@
 <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
 
 
-  <title>CodePen - owl carousel next and previous buttons thumbnail 2</title>
+  <title>CodePen - Lazy Load Embedded YouTube Videos</title>
   
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
   
   
 <style>
-.navNext,
-.navPrev {
-  position: absolute;
-  z-index: 2;
-  width: 100px;
-  height: 100px;
-  background-size: 100px 100px;
-  opacity: 0.5;
-}
-.navNext img,
-.navPrev img{
-  width: 100px;
-  height: 100px;
-}
-.navPrev {
-  top: 40%;
-  left: 15px;
-}
-.navNext {
-  top: 40%;
-  right: 15px;
+.lazy-yt-wrapper {
+	max-width: 1200px;
+	margin: 0px auto;
+	padding: 0px;
 }
 
-.navPrev:hover,
-.navNext:hover {
-  opacity: 1;
+.lazy-youtube {
+	background-color: #000;
+	margin-bottom: 30px;
+	position: relative;
+	padding-top: 56.25%;
+	overflow: hidden;
+	cursor: pointer;
+}
+.lazy-youtube img {
+	width: 100%;
+	top: -16.82%;
+	left: 0;
+	opacity: 1;
+}
+.lazy-youtube .lazy-play-btn {
+	width: 90px;
+	height: 60px;
+	background-color: #333;
+	box-shadow: 0 0 30px rgba( 0,0,0,0.6 );
+	z-index: 1;
+	opacity: 0.8;
+	border-radius: 6px;
+}
+.lazy-youtube .lazy-play-btn:before {
+	content: "";
+	border-style: solid;
+	border-width: 15px 0 15px 26.0px;
+	border-color: transparent transparent transparent #fff;
+}
+.lazy-youtube img,
+.lazy-youtube .lazy-play-btn {
+	cursor: pointer;
+}
+.lazy-youtube img,
+.lazy-youtube iframe,
+.lazy-youtube .lazy-play-btn,
+.lazy-youtube .lazy-play-btn:before {
+	position: absolute;
+}
+.lazy-youtube .lazy-play-btn,
+.lazy-youtube .lazy-play-btn:before {
+	top: 50%;
+	left: 50%;
+	transform: translate3d( -50%, -50%, 0 );
+}
+.lazy-youtube iframe {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
 }
 </style>
 
@@ -66,121 +97,44 @@
 </head>
 
 <body translate="no" >
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
-<link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
-
-
-
-<div class="homeWineDine marginTop text-center">
-  <div class="d-flex justify-content-center">
-    <div class="col-12 col-xl-10 wineDineCarousel-container">
-      <div class="wineDineCarousel owl-carousel">
-          <div class="item">
-              <picture>
-                  <source srcset="./img/xd-photos/for-desktop/image-17.webp" type="image/webp" media="(min-width: 992px)">
-                  <source srcset="./img/xd-photos/for-desktop/image-17.jpg" type="image/jpeg" media="(min-width: 992px)">
-                  <source srcset="./img/xd-photos/for-mobile/image-17.jpg" type="image/jpeg">
-                  <img src="./img/xd-photos/for-mobile/image-17.webp" alt="image 1">
-              </picture>
-          </div>
-          <div class="item">
-              <picture>
-                  <source srcset="./img/xd-photos/for-desktop/image-18.webp" type="image/webp" media="(min-width: 992px)">
-                  <source srcset="./img/xd-photos/for-desktop/image-18.jpg" type="image/jpeg" media="(min-width: 992px)">
-                  <source srcset="./img/xd-photos/for-mobile/image-18.jpg" type="image/jpeg">
-                  <img src="./img/xd-photos/for-mobile/image-18.webp" alt="image 1">
-              </picture>
-          </div>
-          <div class="item">
-              <picture>
-                  <source srcset="./img/xd-photos/for-desktop/image-19.webp" type="image/webp" media="(min-width: 992px)">
-                  <source srcset="./img/xd-photos/for-desktop/image-19.jpg" type="image/jpeg" media="(min-width: 992px)">
-                  <source srcset="./img/xd-photos/for-mobile/image-19.jpg" type="image/jpeg">
-                  <img src="./img/xd-photos/for-mobile/image-19.webp" alt="image 1">
-              </picture>
-          </div>
-          <div class="item">
-              <picture>
-                  <source srcset="./img/xd-photos/for-desktop/image-20.webp" type="image/webp" media="(min-width: 992px)">
-                  <source srcset="./img/xd-photos/for-desktop/image-20.jpg" type="image/jpeg" media="(min-width: 992px)">
-                  <source srcset="./img/xd-photos/for-mobile/image-20.jpg" type="image/jpeg">
-                  <img src="./img/xd-photos/for-mobile/image-20.webp" alt="image 1">
-              </picture>
-          </div>
-        </div>
-        <div class="navPrev">
-          <span>
-             
-                  <img src="./img/xd-photos/for-mobile/image-20.webp" alt="image 1">
-              
-          </span>
-        </div>
-        <div class="navNext">
-          
-                  <img src="./img/xd-photos/for-mobile/image-18.webp" alt="image 1">
-             
-          </span>
-        </div>
-      </div>
-      <div class="titleBig">
-          Wine & Dine
-      </div>
-      </div>
-  </div>
-<!-- <div class="owl-carousel">
-  <div class="item">
-    <a href="#"> <img src="https://placeimg.com/640/480/animals" alt=""></a>
-  </div>
-  <div class="item">
-    <a href="#"> <img src="https://placeimg.com/640/480/arch" alt=""></a>
-  </div>
-  <div class="item">
-    <a href="#"> <img src="https://placeimg.com/640/480/nature" alt=""></a>
-  </div>
+  <div class="lazy-yt-wrapper">
+	<div class="lazy-youtube" data-embed="h8Dmcl0ULiI">
+		<div class="lazy-play-btn"></div>
+	</div>
 </div>
-<div class="navPrev">
-  <span><img src="https://placeimg.com/100/100/animals" alt=""></span>
-</div>
-<div class="navNext">
-  <span><img src="https://placeimg.com/100/100/arch" alt=""></span>
-</div> -->
     <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
 
   
       <script id="rendered-js" >
-var mainSlider;
-$(document).ready(function () {
-  mainSlider = $('.owl-carousel');
-  mainSlider.owlCarousel({
-    // autoplay: true,
-    // autoplayTimeout: 5000,
-    lazyLoad: true,
-    loop: true,
-    items: 1,
-    smartSpeed: 500 });
+(function () {
 
+  var youtube = document.querySelectorAll(".lazy-youtube");
 
-  mainSlider.on('changed.owl.carousel', function (property) {
-    var current = property.item.index;
-    var prev = $(property.target).find(".owl-item").eq(current).prev().find("img").attr('src');
-    var next = $(property.target).find(".owl-item").eq(current).next().find("img").attr('src');
+  for (var i = 0; i < youtube.length; i++) {if (window.CP.shouldStopExecution(0)) break;
 
-    $('.navPrev').find('img').attr('src', prev);
-    $('.navNext').find('img').attr('src', next);
-  });
+    var source = "https://img.youtube.com/vi/" + youtube[i].dataset.embed + "/sddefault.jpg";
 
-});
+    var image = new Image();
+    image.src = source;
+    image.addEventListener("load", function () {
+      youtube[i].appendChild(image);
+    }(i));
 
-$('.navNext').on('click', function () {
-  mainSlider.trigger('next.owl.carousel', [300]);
-  return false;
-});
+    youtube[i].addEventListener("click", function () {
 
-$('.navPrev').on('click', function () {
-  mainSlider.trigger('prev.owl.carousel', [300]);
-  return false;
-});
+      var iframe = document.createElement("iframe");
+
+      iframe.setAttribute("allow", "autoplay");
+      iframe.setAttribute("frameborder", "0");
+      iframe.setAttribute("allowfullscreen", "");
+      iframe.setAttribute("src", "https://www.youtube.com/embed/" + this.dataset.embed + "?rel=0&showinfo=0&autoplay=1");
+
+      this.innerHTML = "";
+      this.appendChild(iframe);
+    });
+  }window.CP.exitedLoop(0);;
+
+})();
 //# sourceURL=pen.js
     </script>
 

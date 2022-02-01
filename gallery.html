@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
     <title>Alianthos Garden Hotel in Plakias, Rethymno Crete</title>
     <link rel="icon" type="image/png" href="./img/alianthos_garden_icon.png" />
    
@@ -51,36 +51,410 @@
     <link rel="preload" as="script" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <!-- SCRIPTS PRELOAD  -->
 
-</head>
-<body>
 
-    <!-- START OF restoS TABS  -->
-    <div class="resto-tabs marginTop">
-        <div class="col-12 col-lg-12 col-xxl-8 m-auto mt-5">
-            <div class="resto-filter-holder">
-                <ul class="resto-list">
-                    <li class="resto-filter active">OVERVIEW</li>
-                    <li class="resto-filter">BREAKFAST</li>
-                    <li class="resto-filter">GREEK BREAKFAST</li>
-                    <li class="resto-filter">LUNCH</li>
-                    <li class="resto-filter">DIΝNER</li>
-                    <li class="resto-filter">CRETAN CUIZINE</li>
-                    <li class="resto-filter">CHEF SUGGESTIONS</li>
-                </ul>  
-                <ul class="resto-list resto-inside-list mt-3">
-                    <li class="resto-filter">Private dinner</li>
-                    <li class="resto-filter">Celebration menu</li>
-                    <li class="resto-filter">Picnic</li>
+
+    <style>
+.lazy-yt-wrapper {
+	max-width: 1200px;
+	margin: 0px auto;
+	padding: 0px;
+}
+
+.lazy-youtube {
+	background-color: #000;
+	margin-bottom: 30px;
+	position: relative;
+	padding-top: 56.25%;
+	overflow: hidden;
+	cursor: pointer;
+}
+.lazy-youtube img {
+	width: 100%;
+	top: -16.82%;
+	left: 0;
+	opacity: 1;
+}
+.lazy-youtube .lazy-play-btn {
+	width: 90px;
+	height: 60px;
+	background-color: #333;
+	box-shadow: 0 0 30px rgba( 0,0,0,0.6 );
+	z-index: 1;
+	opacity: 0.8;
+	border-radius: 6px;
+}
+.lazy-youtube .lazy-play-btn:before {
+	content: "";
+	border-style: solid;
+	border-width: 15px 0 15px 26.0px;
+	border-color: transparent transparent transparent #fff;
+}
+.lazy-youtube img,
+.lazy-youtube .lazy-play-btn {
+	cursor: pointer;
+}
+.lazy-youtube img,
+.lazy-youtube iframe,
+.lazy-youtube .lazy-play-btn,
+.lazy-youtube .lazy-play-btn:before {
+	position: absolute;
+}
+.lazy-youtube .lazy-play-btn,
+.lazy-youtube .lazy-play-btn:before {
+	top: 50%;
+	left: 50%;
+	transform: translate3d( -50%, -50%, 0 );
+}
+.lazy-youtube iframe {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+</style>
+
+</head>
+<body class="innerPage">
+
+
+
+  <!-- START OF SLIDER CAROUSEL -->
+  <div id="carouselExampleControls" class="carousel slide slider-carousel gallery-slider" data-bs-interval="5000" data-ride="carousel" data-pause="hover">
+    <div class="carousel-inner">
+        <div class="carousel-item active" style="background: url('./img/xd-photos/for-desktop/alianthos02.jpg') no-repeat center center/cover;">
+        
+        </div>
+        <!-- σε περίπτωση που θέλουν βίντεο στην αρχική πρίν τις εικόνες  -->
+        <!-- <div class="carousel-item active">
+            <div class="intro-video-bg">
+                <div class="embed-responsive embed-responsive-16by9" id="video">
+                    <div id="background-video" class="background-video"><div id="ytplayer"></div></div> 
+                </div>
+            </div>
+        </div> -->
+      <div class="carousel-item" style="background: url('./img/xd-photos/for-desktop/alianthos01.jpg') no-repeat center center/cover;">
+        
+      </div>
+      <div class="carousel-item" style="background: url('./img/xd-photos/for-desktop/alianthos02.jpg') no-repeat center center/cover;">
+        
+      </div>
+      <div class="carousel-item" style="background: url('./img/xd-photos/for-desktop/alianthos01.jpg') no-repeat center center/cover;">
+       
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- END OF SLIDER CAROUSEL -->
+
+     <!-- START OF HEADER  -->
+    <header class="header fixed-top" id="header-desktop">
+        <div class="row g-0 align-items-center">
+            <div class="col-1 col-xxl-2">
+                <div class="logo-header">
+                    <a href="index.html">
+                        <img src="./img/xd-photos/logoGreytext.svg" alt="" class="d-none d-xxl-block">
+                        <img src="./img/xd-photos/mini-logo-blue.svg" alt="" class="d-xxl-none">
+                    </a>
+                </div>
+            </div>
+            <div class="col-10 col-xxl-9 d-flex align-items-center">
+                <ul>
+                    <li>
+                    <label for="btn-1" class="show">Hotel</label>
+                    <a href="#">HOTEL</a>
+                    <input type="checkbox" id="btn-1">
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Facilities</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Location</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Health &amp; Safety</a></li>
+                        <li><a href="#">Covid-19</a></li>
+                    </ul>
+                    </li>
+                    <li>
+                    <label for="btn-2" class="show">Accommodation</label>
+                    <a href="#">Accommodation</a>
+                    <input type="checkbox" id="btn-2">
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Double room with Sea View</a></li>
+                        <li><a href="#">Double room with Side Sea View</a></li>
+                        <li><a href="#">Double room with Garden View</a></li>
+                        <li><a href="#">Studio with Garden View</a></li>
+                        <li><a href="#">Triple room with Sea View</a></li>
+                        <li><a href="#">Triple room with Side Sea View</a></li>
+                        <li><a href="#">Apartment</a></li>
+                        <li><a href="#">Imperial Apartment with Mountain View</a></li>
+                        <li><a href="#">Single room</a></li>
+                    </ul>
+                    </li>
+                    <li>
+                        <label for="btn-3" class="show">DINING</label>
+                        <a href="#">DINING</a>
+                        <input type="checkbox" id="btn-3">
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Plakias Restaurant</a></li>
+                            <li><a href="#">Bar</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <label for="btn-3" class="show">EXPERIENCES +</label>
+                        <a href="#">EXPERIENCES</a>
+                        <input type="checkbox" id="btn-3">
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Experience 1</a></li>
+                            <li><a href="#">Experience 2</a></li>
+                            <li><a href="#">Experience 3</a></li>
+                            <li><a href="#">Experience 4</a></li>
+                            <li><a href="#">Experience 5</a></li>
+                            <li><a href="#">Experience 6</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">CAR HIRE</a></li>
+                    <li><a href="#">OFFERS</a></li>
+                    <li><a href="#">GALLERY</a></li>
                 </ul>
+                
+            <!-- weather widget start --><div id="m-booked-vertical-one-prime-84340"> <div class="weather-customize weather-booked-vertical-one-prime" style="width:230px;" >  <div class="booked-vertical-prime-in"> <div class="booked-vertical-prime"> <div class="bwop-city">Ρέθυμνο</div> <div class="bwop-icon wm18 "></div> <div class="booked-bwop-today"> <div class="booked-bwop-today-temperature"> <div class="booked-wzs-bwop-val"> <div class="booked-bwop-number"><span class="plus">+</span>9</div> <div class="booked-bwop-dergee"> <div class="booked-wzs-bwop-dergee-val">&deg;</div> <div class="booked-wzs-bwop-dergee-name">C</div> </div> </div> </div> <div class="booked-bwop-today-extreme"> <div class="booked-bwop booked-pd-h"><span>Μεγ.:</span><span class="plus">+</span>10</div> <div class="booked-bwop booked-pd-l"><span>Ελάχ.:</span><span class="plus">+</span>8</div> </div> </div> <div class="bwop-state"> Βροχή </div> </div> </div> </div> </div>
+
+            <div class="languagesDrop dropdown d-flex ps-3">
+                    <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        EN 
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="">
+                            EL 
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1">
+                <div class="bookBtn d-flex justify-content-center align-items-center float-end">
+                    <a href="#" class="btn">BOOK NOW</a>
+                </div>
+            
+            </div>
+        </div>
+    </header>
+    <!-- END OF HEADER  -->
+
+    <!-- START OF MOBILE HEADER  -->
+    <div class="mobile-header fixed-top shadow d-block d-xl-none" id="mobile-header">
+        <div class="row g-0">
+            <div class="col-3 d-flex align-items-center justify-content-start">
+                <nav role="navigation">
+                    <div id="menuToggle">
+                        <input type="checkbox" class="menuToggleInput"/>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="mobile-nav">
+                        <ul class="nav">
+                            <li class="active">
+                                <label for="btn-1" class="d-none">Hotel</label>
+                                <a href="#">HOTEL</a>
+                                <input type="checkbox" id="btn-1">
+                                <ul>
+                                <li><a href="#">Facilities</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Location</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Health &amp; Safety</a></li>
+                                <li><a href="#">Covid-19</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <label for="btn-2" class="d-none">Accommodation</label>
+                                <a href="#">Accommodation</a>
+                                <input type="checkbox" id="btn-2">
+                                <ul>
+                                <li><a href="#">Double room with Sea View</a></li>
+                                <li><a href="#">Double room with Side Sea View</a></li>
+                                <li><a href="#">Double room with Garden View</a></li>
+                                <li><a href="#">Studio with Garden View</a></li>
+                                <li><a href="#">Triple room with Sea View</a></li>
+                                <li><a href="#">Triple room with Side Sea View</a></li>
+                                <li><a href="#">Apartment</a></li>
+                                <li><a href="#">Imperial Apartment with Mountain View</a></li>
+                                <li><a href="#">Single room</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <label for="btn-3" class="d-none">DINING</label>
+                                <a href="#">DINING</a>
+                                <input type="checkbox" id="btn-3">
+                                <ul>
+                                    <li><a href="#">Plakias Restaurant</a></li>
+                                    <li><a href="#">Bar</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <label for="btn-3" class="d-none">EXPERIENCES +</label>
+                                <a href="#">EXPERIENCES</a>
+                                <input type="checkbox" id="btn-3">
+                                <ul>
+                                    <li><a href="#">Experience 1</a></li>
+                                    <li><a href="#">Experience 2</a></li>
+                                    <li><a href="#">Experience 3</a></li>
+                                    <li><a href="#">Experience 4</a></li>
+                                    <li><a href="#">Experience 5</a></li>
+                                    <li><a href="#">Experience 6</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">CAR HIRE</a></li>
+                            <li><a href="#">LOCATION</a></li>
+                            <li>
+                                <label for="btn-3" class="d-none">ABOUT US +</label>
+                                <a href="#">ABOUT US</a>
+                                <input type="checkbox" id="btn-3">
+                                <ul>
+                                    <li><a href="#">Our Story</a></li>
+                                    <li><a href="#">Our Team</a></li>
+                                    <li><a href="#">Our Values</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">OFFERS</a></li>
+                            <li><a href="#">GALLERY</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="languagesDrop dropdown d-flex ps-2">
+                    <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        EN 
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="">
+                            EL 
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 text-center">
+                <div class="logo-header">
+                    <a href="index.html">
+                        <img src="./img/xd-photos/logoGreytext.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="bookBtn d-flex justify-content-center align-items-center float-end">
+                    <a href="#" class="btn">BOOK NOW</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END OF MOBILE HEADER  -->
+
+    <!-- START OF STICKY RIGHT BOTTOM BUTTON  -->
+    <div class="stickyBottomRightButton">
+        <div class="stickyRightBtn">
+            <ul class="list-unstyled d-inline-flex social-icons">
+                <li class="shadow">
+                    <div class="stickyBottomRightButton-icon">
+                        <a href="#">
+                            <img src="./img/xd-photos/facebook.svg" alt="">
+                        </a>
+                    </div>
+                </li class="shadow">
+                <li class="shadow">
+                    <div class="stickyBottomRightButton-icon">
+                        <a href="#">
+                            <img src="./img/xd-photos/instagram.svg" alt="">
+                        </a>
+                    </div>
+                </li>
+                <li class="shadow">
+                    <div class="stickyBottomRightButton-icon">
+                    <a href="#">
+                        <img src="./img/xd-photos/icons8-youtube.svg" alt="">
+                    </a>
+                    </div>
+                </li>
+                <li class="shadow">
+                    <div class="stickyBottomRightButton-icon">
+                    <a href="#">
+                        <img src="./img/xd-photos/linkedin.svg" alt="">
+                    </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- END OF STICKY RIGHT BOTTOM BUTTON  -->
+
+
+    <!-- START OF BREADCRUMBS  -->
+    <div class="breadcrumbs my-5">
+        <div class="col-10 m-auto text-center d-flex justify-content-center justify-content-lg-start">
+            <ul class="list-unstyled d-inline-flex flex-wrap justify-content-center">
+                <li><a href="#">HOME</a></li>
+                <li class="active"><a href="#">GALLERY</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- END OF BREADCRUMBS  -->
+
+    <!-- START OF TEXT ONLY WITH LINK BLOCK  -->
+    <section class="text-center text-lg-start">
+        <div class="col-10 m-auto">
+            <div class="genContainer">
+                <span class="spanText">ALIANTHOS GARDEN PHOTOS AND VIDEOS</span>
+                <h1>OUR PHOTO AND VIDEO GALLERY</h1>
+            </div>
+        </div>
+    </section>
+    <!-- END OF TEXT ONLY WITH LINK BLOCK  -->
+
+    <div class="mt-5">
+        <div class="col-10 m-auto">
+            <div class="gallery-buttons d-inline-flex">
+                <div class="gallery-button active me-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="41.5" height="32.5" viewBox="0 0 41.5 32.5">
+                        <path id="Icon_awesome-images" data-name="Icon awesome-images" d="M33.75,29.25v1.125a3.375,3.375,0,0,1-3.375,3.375h-27A3.375,3.375,0,0,1,0,30.375v-18A3.375,3.375,0,0,1,3.375,9H4.5V23.625a5.631,5.631,0,0,0,5.625,5.625Zm6.75-5.625v-18A3.375,3.375,0,0,0,37.125,2.25h-27A3.375,3.375,0,0,0,6.75,5.625v18A3.375,3.375,0,0,0,10.125,27h27A3.375,3.375,0,0,0,40.5,23.625ZM18,9a3.375,3.375,0,1,1-3.375-3.375A3.375,3.375,0,0,1,18,9ZM11.25,19.125l3.9-3.9a.844.844,0,0,1,1.193,0L19.125,18l9.528-9.528a.844.844,0,0,1,1.193,0L36,14.625V22.5H11.25Z" transform="translate(0.5 -1.75)" fill="none" stroke="#545454" stroke-width="1"/>
+                    </svg>
+                    IMAGE GALLERY
+                </div>
+                <div class="gallery-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="39.5" height="32.5" viewBox="0 0 39.5 32.5">
+                        <path id="Icon_material-ondemand-video" data-name="Icon material-ondemand-video" d="M36.5,4.5H5A3.488,3.488,0,0,0,1.5,8V29A3.5,3.5,0,0,0,5,32.5h8.75V36h14V32.5H36.5A3.5,3.5,0,0,0,39.983,29L40,8A3.5,3.5,0,0,0,36.5,4.5Zm0,24.5H5V8H36.5ZM27.75,18.5l-12.25,7v-14Z" transform="translate(-1 -4)" fill="none" stroke="#545454" stroke-width="1"/>
+                    </svg>
+                    VIDEO GALLERY
+                </div>
+            </div> 
+        </div>
+    </div>
+ 
+    <!-- START OF GALLERY PHOTOS TABS  -->
+    <div class="gallery-tabs marginTop">
+        <div class="col-12 col-lg-12 col-xxl-8 m-auto mt-5">
+            <div class="gallery-filter-holder">
+                <ul class="gallery-list">
+                    <li class="gallery-filter active">Overview</li>
+                    <li class="gallery-filter">Our Rooms</li>
+                    <li class="gallery-filter">Amalthea Restaurant</li>
+                    <li class="gallery-filter">Nymfes bar</li>
+                    <li class="gallery-filter">Exterior</li>
+                    <li class="gallery-filter">Experiences</li>
+                    <li class="gallery-filter">Plakias</li>
+                    <li class="gallery-filter">Crete</li>
+                </ul>  
             </div>
         </div>
         
         <div class="col-10 m-auto">
-            <div class="restos-data-holder mt-5">
-                <div id="resto-overview" class="resto-data active">
+            <div class="gallerys-data-holder">
+                <div id="gallery-overview" class="gallery-data active">
                     <ul class="clearfix">
                         <li>
-                            <div class="restoPhotos">
+                            <div class="galleryPhotos marginTop">
                                 <div class="container-photos">
                                     <div class="item">
                                         <picture>
@@ -168,10 +542,10 @@
                     </ul>
                 </div>
             
-                <div id="resto-breakfast" class="resto-data">
+                <div id="gallery-ourRooms" class="gallery-data">
                     <ul class="clearfix">
                         <li>
-                            <div class="restoPhotos">
+                            <div class="galleryPhotos marginTop">
                                 <div class="container-photos">
                                     <div class="item">
                                         <picture>
@@ -261,10 +635,10 @@
                     </ul>
                 </div>
 
-                <div id="resto-greekBreakfast" class="resto-data">
+                <div id="gallery-resto" class="gallery-data">
                     <ul class="clearfix">
                         <li>
-                            <div class="restoPhotos">
+                            <div class="galleryPhotos marginTop">
                                 <div class="container-photos">
                                     <div class="item">
                                         <picture>
@@ -352,10 +726,10 @@
                     </ul>
                 </div>
 
-                <div id="resto-lunch" class="resto-data">
+                <div id="gallery-gallery" class="gallery-data">
                     <ul class="clearfix">
                         <li>
-                            <div class="restoPhotos">
+                            <div class="galleryPhotos marginTop">
                                 <div class="container-photos">
                                     <div class="item">
                                         <picture>
@@ -445,10 +819,10 @@
                     </ul>
                 </div>
 
-                <div id="resto-dinner" class="resto-data">
+                <div id="gallery-exterior" class="gallery-data">
                     <ul class="clearfix">
                         <li>
-                            <div class="restoPhotos">
+                            <div class="galleryPhotos marginTop">
                                 <div class="container-photos">
                                     <div class="item">
                                         <picture>
@@ -536,105 +910,10 @@
                     </ul>
                 </div>
 
-                <div id="resto-cretanCuizine" class="resto-data">
+                <div id="gallery-experiences" class="gallery-data">
                     <ul class="clearfix">
                         <li>
-                            <div class="restoPhotos">
-
-                                <div class="container-photos">
-                                    <div class="item">
-                                        <picture>
-                                            <source srcset="./img/xd-photos/team-5.png" type="image/webp" media="(min-width: 992px)">
-                                            <source srcset="./img/xd-photos/team-5.png" type="image/jpeg" media="(min-width: 992px)">
-                                            <source srcset="./img/xd-photos/team-5.png" type="image/jpeg">
-                                            <img src="./img/xd-photos/team-5.png" alt="image 1" class="img-fluid">
-                                        </picture>
-                                    </div>
-                                    <div class="item">
-                                        <picture>
-                                            <source srcset="./img/xd-photos/team-9.png" type="image/webp" media="(min-width: 992px)">
-                                            <source srcset="./img/xd-photos/team-9.png" type="image/jpeg" media="(min-width: 992px)">
-                                            <source srcset="./img/xd-photos/team-9.png" type="image/jpeg">
-                                            <img src="./img/xd-photos/team-9.png" alt="image 1" class="img-fluid">
-                                        </picture>
-                                    </div>
-                                    <div class="item">
-                                        <picture>
-                                            <source srcset="./img/xd-photos/team-12.png" type="image/webp" media="(min-width: 992px)">
-                                            <source srcset="./img/xd-photos/team-12.png" type="image/jpeg" media="(min-width: 992px)">
-                                            <source srcset="./img/xd-photos/team-12.png" type="image/jpeg">
-                                            <img src="./img/xd-photos/team-12.png" alt="image 1" class="img-fluid">
-                                        </picture>
-                                    </div>
-                                    
-                                    <div class="item">
-                                        <picture>
-                                            <source srcset="./img/xd-photos/team-11.png" type="image/webp" media="(min-width: 992px)">
-                                            <source srcset="./img/xd-photos/team-11.png" type="image/jpeg" media="(min-width: 992px)">
-                                            <source srcset="./img/xd-photos/team-11.png" type="image/jpeg">
-                                            <img src="./img/xd-photos/team-11.png" alt="image 1" class="img-fluid">
-                                        </picture>
-                                    </div>
-                                    
-                                    <div class="item">
-                                        <picture>
-                                            <source srcset="./img/xd-photos/team-13.png" type="image/webp" media="(min-width: 992px)">
-                                            <source srcset="./img/xd-photos/team-13.png" type="image/jpeg" media="(min-width: 992px)">
-                                            <source srcset="./img/xd-photos/team-13.png" type="image/jpeg">
-                                            <img src="./img/xd-photos/team-13.png" alt="image 1" class="img-fluid">
-                                        </picture>
-                                    </div>
-                                    <div class="item">
-                                        <picture>
-                                            <source srcset="./img/xd-photos/team-15.png" type="image/webp" media="(min-width: 992px)">
-                                            <source srcset="./img/xd-photos/team-15.png" type="image/jpeg" media="(min-width: 992px)">
-                                            <source srcset="./img/xd-photos/team-15.png" type="image/jpeg">
-                                            <img src="./img/xd-photos/team-15.png" alt="image 1" class="img-fluid">
-                                        </picture>
-                                    </div>
-                                    <div class="item">
-                                        <picture>
-                                            <source srcset="./img/xd-photos/team-16.png" type="image/webp" media="(min-width: 992px)">
-                                            <source srcset="./img/xd-photos/team-16.png" type="image/jpeg" media="(min-width: 992px)">
-                                            <source srcset="./img/xd-photos/team-16.png" type="image/jpeg">
-                                            <img src="./img/xd-photos/team-16.png" alt="image 1" class="img-fluid">
-                                        </picture>
-                                    </div>
-                                    <div class="item">
-                                        <picture>
-                                            <source srcset="./img/xd-photos/team-17.png" type="image/webp" media="(min-width: 992px)">
-                                            <source srcset="./img/xd-photos/team-17.png" type="image/jpeg" media="(min-width: 992px)">
-                                            <source srcset="./img/xd-photos/team-17.png" type="image/jpeg">
-                                            <img src="./img/xd-photos/team-17.png" alt="image 1" class="img-fluid">
-                                        </picture>
-                                    </div>
-                                    <div class="item">
-                                        <picture>
-                                            <source srcset="./img/xd-photos/team-18.png" type="image/webp" media="(min-width: 992px)">
-                                            <source srcset="./img/xd-photos/team-18.png" type="image/jpeg" media="(min-width: 992px)">
-                                            <source srcset="./img/xd-photos/team-18.png" type="image/jpeg">
-                                            <img src="./img/xd-photos/team-18.png" alt="image 1" class="img-fluid">
-                                        </picture>
-                                    </div>
-                                    <div class="item">
-                                        <picture>
-                                            <source srcset="./img/xd-photos/team-19.png" type="image/webp" media="(min-width: 992px)">
-                                            <source srcset="./img/xd-photos/team-19.png" type="image/jpeg" media="(min-width: 992px)">
-                                            <source srcset="./img/xd-photos/team-19.png" type="image/jpeg">
-                                            <img src="./img/xd-photos/team-19.png" alt="image 1" class="img-fluid">
-                                        </picture>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-
-                <div id="resto-chefSuggestions" class="resto-data">
-                    <ul class="clearfix">
-                        <li>
-                            <div class="restoPhotos">
+                            <div class="galleryPhotos marginTop">
 
                                 <div class="container-photos">
                                     <div class="item">
@@ -726,18 +1005,18 @@
                     </ul>
                 </div>
 
-                <div id="resto-privateDinner" class="resto-data">
+                <div id="gallery-plakias" class="gallery-data">
                     <ul class="clearfix">
                         <li>
-                            <div class="restoPhotos">
+                            <div class="galleryPhotos marginTop">
 
                                 <div class="container-photos">
                                     <div class="item">
                                         <picture>
-                                            <source srcset="./img/xd-photos/team-1.png" type="image/webp" media="(min-width: 992px)">
-                                            <source srcset="./img/xd-photos/team-1.png" type="image/jpeg" media="(min-width: 992px)">
-                                            <source srcset="./img/xd-photos/team-1.png" type="image/jpeg">
-                                            <img src="./img/xd-photos/team-1.png" alt="image 1" class="img-fluid">
+                                            <source srcset="./img/xd-photos/team-15.png" type="image/webp" media="(min-width: 992px)">
+                                            <source srcset="./img/xd-photos/team-15.png" type="image/jpeg" media="(min-width: 992px)">
+                                            <source srcset="./img/xd-photos/team-15.png" type="image/jpeg">
+                                            <img src="./img/xd-photos/team-15.png" alt="image 1" class="img-fluid">
                                         </picture>
                                     </div>
                                     <div class="item">
@@ -821,113 +1100,18 @@
                     </ul>
                 </div>
 
-                <div id="resto-celebrationMenu" class="resto-data">
+                <div id="gallery-crete" class="gallery-data">
                     <ul class="clearfix">
                         <li>
-                            <div class="restoPhotos">
+                            <div class="galleryPhotos marginTop">
 
                                 <div class="container-photos">
-                                    <div class="item">
-                                        <picture>
-                                            <source srcset="./img/xd-photos/team-2.png" type="image/webp" media="(min-width: 992px)">
-                                            <source srcset="./img/xd-photos/team-2.png" type="image/jpeg" media="(min-width: 992px)">
-                                            <source srcset="./img/xd-photos/team-2.png" type="image/jpeg">
-                                            <img src="./img/xd-photos/team-2.png" alt="image 1" class="img-fluid">
-                                        </picture>
-                                    </div>
-                                    <div class="item">
-                                        <picture>
-                                            <source srcset="./img/xd-photos/team-9.png" type="image/webp" media="(min-width: 992px)">
-                                            <source srcset="./img/xd-photos/team-9.png" type="image/jpeg" media="(min-width: 992px)">
-                                            <source srcset="./img/xd-photos/team-9.png" type="image/jpeg">
-                                            <img src="./img/xd-photos/team-9.png" alt="image 1" class="img-fluid">
-                                        </picture>
-                                    </div>
-                                    <div class="item">
-                                        <picture>
-                                            <source srcset="./img/xd-photos/team-12.png" type="image/webp" media="(min-width: 992px)">
-                                            <source srcset="./img/xd-photos/team-12.png" type="image/jpeg" media="(min-width: 992px)">
-                                            <source srcset="./img/xd-photos/team-12.png" type="image/jpeg">
-                                            <img src="./img/xd-photos/team-12.png" alt="image 1" class="img-fluid">
-                                        </picture>
-                                    </div>
-                                    
-                                    <div class="item">
-                                        <picture>
-                                            <source srcset="./img/xd-photos/team-11.png" type="image/webp" media="(min-width: 992px)">
-                                            <source srcset="./img/xd-photos/team-11.png" type="image/jpeg" media="(min-width: 992px)">
-                                            <source srcset="./img/xd-photos/team-11.png" type="image/jpeg">
-                                            <img src="./img/xd-photos/team-11.png" alt="image 1" class="img-fluid">
-                                        </picture>
-                                    </div>
-                                    
-                                    <div class="item">
-                                        <picture>
-                                            <source srcset="./img/xd-photos/team-13.png" type="image/webp" media="(min-width: 992px)">
-                                            <source srcset="./img/xd-photos/team-13.png" type="image/jpeg" media="(min-width: 992px)">
-                                            <source srcset="./img/xd-photos/team-13.png" type="image/jpeg">
-                                            <img src="./img/xd-photos/team-13.png" alt="image 1" class="img-fluid">
-                                        </picture>
-                                    </div>
-                                    <div class="item">
-                                        <picture>
-                                            <source srcset="./img/xd-photos/team-15.png" type="image/webp" media="(min-width: 992px)">
-                                            <source srcset="./img/xd-photos/team-15.png" type="image/jpeg" media="(min-width: 992px)">
-                                            <source srcset="./img/xd-photos/team-15.png" type="image/jpeg">
-                                            <img src="./img/xd-photos/team-15.png" alt="image 1" class="img-fluid">
-                                        </picture>
-                                    </div>
                                     <div class="item">
                                         <picture>
                                             <source srcset="./img/xd-photos/team-16.png" type="image/webp" media="(min-width: 992px)">
                                             <source srcset="./img/xd-photos/team-16.png" type="image/jpeg" media="(min-width: 992px)">
                                             <source srcset="./img/xd-photos/team-16.png" type="image/jpeg">
                                             <img src="./img/xd-photos/team-16.png" alt="image 1" class="img-fluid">
-                                        </picture>
-                                    </div>
-                                    <div class="item">
-                                        <picture>
-                                            <source srcset="./img/xd-photos/team-17.png" type="image/webp" media="(min-width: 992px)">
-                                            <source srcset="./img/xd-photos/team-17.png" type="image/jpeg" media="(min-width: 992px)">
-                                            <source srcset="./img/xd-photos/team-17.png" type="image/jpeg">
-                                            <img src="./img/xd-photos/team-17.png" alt="image 1" class="img-fluid">
-                                        </picture>
-                                    </div>
-                                    <div class="item">
-                                        <picture>
-                                            <source srcset="./img/xd-photos/team-18.png" type="image/webp" media="(min-width: 992px)">
-                                            <source srcset="./img/xd-photos/team-18.png" type="image/jpeg" media="(min-width: 992px)">
-                                            <source srcset="./img/xd-photos/team-18.png" type="image/jpeg">
-                                            <img src="./img/xd-photos/team-18.png" alt="image 1" class="img-fluid">
-                                        </picture>
-                                    </div>
-                                    <div class="item">
-                                        <picture>
-                                            <source srcset="./img/xd-photos/team-19.png" type="image/webp" media="(min-width: 992px)">
-                                            <source srcset="./img/xd-photos/team-19.png" type="image/jpeg" media="(min-width: 992px)">
-                                            <source srcset="./img/xd-photos/team-19.png" type="image/jpeg">
-                                            <img src="./img/xd-photos/team-19.png" alt="image 1" class="img-fluid">
-                                        </picture>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-
-                <div id="resto-picnic" class="resto-data">
-                    <ul class="clearfix">
-                        <li>
-                            <div class="restoPhotos">
-
-                                <div class="container-photos">
-                                    <div class="item">
-                                        <picture>
-                                            <source srcset="./img/xd-photos/team-3.png" type="image/webp" media="(min-width: 992px)">
-                                            <source srcset="./img/xd-photos/team-3.png" type="image/jpeg" media="(min-width: 992px)">
-                                            <source srcset="./img/xd-photos/team-3.png" type="image/jpeg">
-                                            <img src="./img/xd-photos/team-3.png" alt="image 1" class="img-fluid">
                                         </picture>
                                     </div>
                                     <div class="item">
@@ -1013,7 +1197,638 @@
             </div>
         </div>
     </div>
-    <!-- END OF restoS TABS  -->
+    <!-- END OF GALLERY PHOTOS TABS  -->
+
+
+      <!-- START OF video PHOTOS TABS  -->
+     <div class="video-tabs marginTop d-none">
+        <div class="col-12 col-lg-12 col-xxl-8 m-auto mt-5">
+            <div class="video-filter-holder">
+                <ul class="video-list">
+                    <li class="video-filter active">Overview</li>
+                    <li class="video-filter">Wishes</li>
+                    <li class="video-filter">Experiences</li>
+                    <li class="video-filter">Meet our team</li>
+                    <li class="video-filter">What our guests say</li>
+                    <li class="video-filter">Activities</li>
+                </ul>  
+            </div>
+        </div>
+        
+        <div class="col-10 m-auto">
+            <div class="videos-data-holder">
+                <div id="video-overview" class="video-data active">
+                    <ul class="clearfix">
+                        <li>
+                            <div class="videoPhotos marginTop">
+                                <div class="container-photos">
+                                    <div class="item">
+                                         <div class="lazy-yt-wrapper">
+                                            <div class="lazy-youtube" data-embed="h8Dmcl0ULiI">
+                                                <div class="lazy-play-btn"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                         <div class="lazy-yt-wrapper">
+                                            <div class="lazy-youtube" data-embed="h8Dmcl0ULiI">
+                                                <div class="lazy-play-btn"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                         <div class="lazy-yt-wrapper">
+                                            <div class="lazy-youtube" data-embed="h8Dmcl0ULiI">
+                                                <div class="lazy-play-btn"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                         <div class="lazy-yt-wrapper">
+                                            <div class="lazy-youtube" data-embed="h8Dmcl0ULiI">
+                                                <div class="lazy-play-btn"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                         <div class="lazy-yt-wrapper">
+                                            <div class="lazy-youtube" data-embed="h8Dmcl0ULiI">
+                                                <div class="lazy-play-btn"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                         <div class="lazy-yt-wrapper">
+                                            <div class="lazy-youtube" data-embed="h8Dmcl0ULiI">
+                                                <div class="lazy-play-btn"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                         <div class="lazy-yt-wrapper">
+                                            <div class="lazy-youtube" data-embed="h8Dmcl0ULiI">
+                                                <div class="lazy-play-btn"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                         <div class="lazy-yt-wrapper">
+                                            <div class="lazy-youtube" data-embed="h8Dmcl0ULiI">
+                                                <div class="lazy-play-btn"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                         <div class="lazy-yt-wrapper">
+                                            <div class="lazy-youtube" data-embed="h8Dmcl0ULiI">
+                                                <div class="lazy-play-btn"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                         <div class="lazy-yt-wrapper">
+                                            <div class="lazy-youtube" data-embed="h8Dmcl0ULiI">
+                                                <div class="lazy-play-btn"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="video-wishes" class="video-data">
+                    <ul class="clearfix">
+                        <li>
+                            <div class="videoPhotos marginTop">
+                                <div class="container-photos">
+                                    <div class="item">
+                                         <div class="lazy-yt-wrapper">
+                                            <div class="lazy-youtube" data-embed="sfmEycxXDvg">
+                                                <div class="lazy-play-btn"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                         <div class="lazy-yt-wrapper">
+                                            <div class="lazy-youtube" data-embed="sfmEycxXDvg">
+                                                <div class="lazy-play-btn"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                         <div class="lazy-yt-wrapper">
+                                            <div class="lazy-youtube" data-embed="sfmEycxXDvg">
+                                                <div class="lazy-play-btn"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                         <div class="lazy-yt-wrapper">
+                                            <div class="lazy-youtube" data-embed="sfmEycxXDvg">
+                                                <div class="lazy-play-btn"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                         <div class="lazy-yt-wrapper">
+                                            <div class="lazy-youtube" data-embed="sfmEycxXDvg">
+                                                <div class="lazy-play-btn"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                         <div class="lazy-yt-wrapper">
+                                            <div class="lazy-youtube" data-embed="sfmEycxXDvg">
+                                                <div class="lazy-play-btn"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                         <div class="lazy-yt-wrapper">
+                                            <div class="lazy-youtube" data-embed="sfmEycxXDvg">
+                                                <div class="lazy-play-btn"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                         <div class="lazy-yt-wrapper">
+                                            <div class="lazy-youtube" data-embed="sfmEycxXDvg">
+                                                <div class="lazy-play-btn"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                         <div class="lazy-yt-wrapper">
+                                            <div class="lazy-youtube" data-embed="sfmEycxXDvg">
+                                                <div class="lazy-play-btn"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                         <div class="lazy-yt-wrapper">
+                                            <div class="lazy-youtube" data-embed="sfmEycxXDvg">
+                                                <div class="lazy-play-btn"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="video-experiences" class="video-data">
+                    <ul class="clearfix">
+                        <li>
+                            <div class="videoPhotos marginTop">
+                                <div class="container-photos">
+                                    <div class="item">
+                                         <div class="lazy-yt-wrapper">
+                                            <div class="lazy-youtube" data-embed="gqnQZskTGoQ">
+                                                <div class="lazy-play-btn"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                         <div class="lazy-yt-wrapper">
+                                            <div class="lazy-youtube" data-embed="gqnQZskTGoQ">
+                                                <div class="lazy-play-btn"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                         <div class="lazy-yt-wrapper">
+                                            <div class="lazy-youtube" data-embed="gqnQZskTGoQ">
+                                                <div class="lazy-play-btn"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                         <div class="lazy-yt-wrapper">
+                                            <div class="lazy-youtube" data-embed="gqnQZskTGoQ">
+                                                <div class="lazy-play-btn"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                         <div class="lazy-yt-wrapper">
+                                            <div class="lazy-youtube" data-embed="gqnQZskTGoQ">
+                                                <div class="lazy-play-btn"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                         <div class="lazy-yt-wrapper">
+                                            <div class="lazy-youtube" data-embed="gqnQZskTGoQ">
+                                                <div class="lazy-play-btn"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                         <div class="lazy-yt-wrapper">
+                                            <div class="lazy-youtube" data-embed="gqnQZskTGoQ">
+                                                <div class="lazy-play-btn"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                         <div class="lazy-yt-wrapper">
+                                            <div class="lazy-youtube" data-embed="gqnQZskTGoQ">
+                                                <div class="lazy-play-btn"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                         <div class="lazy-yt-wrapper">
+                                            <div class="lazy-youtube" data-embed="gqnQZskTGoQ">
+                                                <div class="lazy-play-btn"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                         <div class="lazy-yt-wrapper">
+                                            <div class="lazy-youtube" data-embed="gqnQZskTGoQ">
+                                                <div class="lazy-play-btn"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="video-ourteam" class="video-data">
+                    <ul class="clearfix">
+                        <li>
+                            <div class="videoPhotos marginTop">
+                                <div class="container-photos">
+                                    <div class="item">
+                                         <div class="lazy-yt-wrapper">
+                                            <div class="lazy-youtube" data-embed="3TiD6itupUc">
+                                                <div class="lazy-play-btn"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                         <div class="lazy-yt-wrapper">
+                                            <div class="lazy-youtube" data-embed="3TiD6itupUc">
+                                                <div class="lazy-play-btn"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                         <div class="lazy-yt-wrapper">
+                                            <div class="lazy-youtube" data-embed="3TiD6itupUc">
+                                                <div class="lazy-play-btn"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                         <div class="lazy-yt-wrapper">
+                                            <div class="lazy-youtube" data-embed="3TiD6itupUc">
+                                                <div class="lazy-play-btn"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                         <div class="lazy-yt-wrapper">
+                                            <div class="lazy-youtube" data-embed="3TiD6itupUc">
+                                                <div class="lazy-play-btn"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                         <div class="lazy-yt-wrapper">
+                                            <div class="lazy-youtube" data-embed="3TiD6itupUc">
+                                                <div class="lazy-play-btn"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                         <div class="lazy-yt-wrapper">
+                                            <div class="lazy-youtube" data-embed="3TiD6itupUc">
+                                                <div class="lazy-play-btn"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                         <div class="lazy-yt-wrapper">
+                                            <div class="lazy-youtube" data-embed="3TiD6itupUc">
+                                                <div class="lazy-play-btn"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                         <div class="lazy-yt-wrapper">
+                                            <div class="lazy-youtube" data-embed="3TiD6itupUc">
+                                                <div class="lazy-play-btn"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                         <div class="lazy-yt-wrapper">
+                                            <div class="lazy-youtube" data-embed="3TiD6itupUc">
+                                                <div class="lazy-play-btn"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="video-guests" class="video-data">
+                    <ul class="clearfix">
+                        <li>
+                            <div class="videoPhotos marginTop">
+                                <div class="container-photos">
+                                    <div class="item">
+                                         <div class="lazy-yt-wrapper">
+                                            <div class="lazy-youtube" data-embed="IPQjKMSIiRA">
+                                                <div class="lazy-play-btn"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                         <div class="lazy-yt-wrapper">
+                                            <div class="lazy-youtube" data-embed="IPQjKMSIiRA">
+                                                <div class="lazy-play-btn"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                         <div class="lazy-yt-wrapper">
+                                            <div class="lazy-youtube" data-embed="IPQjKMSIiRA">
+                                                <div class="lazy-play-btn"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                         <div class="lazy-yt-wrapper">
+                                            <div class="lazy-youtube" data-embed="IPQjKMSIiRA">
+                                                <div class="lazy-play-btn"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                         <div class="lazy-yt-wrapper">
+                                            <div class="lazy-youtube" data-embed="IPQjKMSIiRA">
+                                                <div class="lazy-play-btn"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                         <div class="lazy-yt-wrapper">
+                                            <div class="lazy-youtube" data-embed="IPQjKMSIiRA">
+                                                <div class="lazy-play-btn"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                         <div class="lazy-yt-wrapper">
+                                            <div class="lazy-youtube" data-embed="IPQjKMSIiRA">
+                                                <div class="lazy-play-btn"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                         <div class="lazy-yt-wrapper">
+                                            <div class="lazy-youtube" data-embed="IPQjKMSIiRA">
+                                                <div class="lazy-play-btn"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                         <div class="lazy-yt-wrapper">
+                                            <div class="lazy-youtube" data-embed="IPQjKMSIiRA">
+                                                <div class="lazy-play-btn"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                         <div class="lazy-yt-wrapper">
+                                            <div class="lazy-youtube" data-embed="IPQjKMSIiRA">
+                                                <div class="lazy-play-btn"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="video-activities" class="video-data">
+                    <ul class="clearfix">
+                        <li>
+                            <div class="videoPhotos marginTop">
+                                <div class="container-photos">
+                                    <div class="item">
+                                         <div class="lazy-yt-wrapper">
+                                            <div class="lazy-youtube" data-embed="h8Dmcl0ULiI">
+                                                <div class="lazy-play-btn"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                         <div class="lazy-yt-wrapper">
+                                            <div class="lazy-youtube" data-embed="h8Dmcl0ULiI">
+                                                <div class="lazy-play-btn"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                         <div class="lazy-yt-wrapper">
+                                            <div class="lazy-youtube" data-embed="h8Dmcl0ULiI">
+                                                <div class="lazy-play-btn"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                         <div class="lazy-yt-wrapper">
+                                            <div class="lazy-youtube" data-embed="h8Dmcl0ULiI">
+                                                <div class="lazy-play-btn"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                         <div class="lazy-yt-wrapper">
+                                            <div class="lazy-youtube" data-embed="h8Dmcl0ULiI">
+                                                <div class="lazy-play-btn"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                         <div class="lazy-yt-wrapper">
+                                            <div class="lazy-youtube" data-embed="h8Dmcl0ULiI">
+                                                <div class="lazy-play-btn"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                         <div class="lazy-yt-wrapper">
+                                            <div class="lazy-youtube" data-embed="h8Dmcl0ULiI">
+                                                <div class="lazy-play-btn"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                         <div class="lazy-yt-wrapper">
+                                            <div class="lazy-youtube" data-embed="h8Dmcl0ULiI">
+                                                <div class="lazy-play-btn"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                         <div class="lazy-yt-wrapper">
+                                            <div class="lazy-youtube" data-embed="h8Dmcl0ULiI">
+                                                <div class="lazy-play-btn"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                         <div class="lazy-yt-wrapper">
+                                            <div class="lazy-youtube" data-embed="h8Dmcl0ULiI">
+                                                <div class="lazy-play-btn"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+           
+            </div>
+        </div> 
+    </div> 
+    <!-- END OF video PHOTOS TABS  -->
+    
+    <!-- START OF FOOTER SECTION -->
+    <footer class="marginTop">
+      <div class="col-12 col-xl-10 m-auto">
+        <div class="row footer-row g-0">
+          <div class="col-xl-4 d-flex flex-column justify-content-between align-items-center align-items-xl-start text-center text-xl-start mb-5 mb-xl-0">
+              <div class="footer-logo">
+                <img src="./img/xd-photos/logoGreytext.svg" alt="logo">
+              </div>
+              <div class="contact-details my-5">
+                <p>
+                  Alianthos Garden Hotel<br> 
+                  <span>Address:</span>Poseidonos Street,
+                  <br> GR-74060 Plakias<br> 
+                  Rethymno,<br> 
+                  Crete, Greece</p>
+                <p>
+                  <span>E:</span> <a href="mailto:info@alianthos.gr" target="_blank" aria-label="email">info@alianthos.gr</a> <br> 
+                  <span>T:</span> <a href="tel:+302832031280" target="_blank" aria-label="telephone">(+30) 28320 31280</a> <br> 
+                  <span>T (winter):</span> <a href="tel:+306978488117" target="_blank" aria-label="telephone winter">(+30) 6978 488117</a>
+                </p>
+              </div>
+              <ul class="contact-icons d-inline-flex list-unstyled">
+                  <li>
+                    <a href="#"><img src="./img/xd-photos/viber-icon.svg" alt=""></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="./img/xd-photos/whatsapp-icon.svg" alt=""></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="./img/xd-photos/messenger-icon.svg" alt=""></a>
+                  </li>
+              </ul>
+          </div>    
+          <div class="col-xl-4 d-flex flex-column justify-content-between align-items-center pt-5 text-center mb-5 mb-xl-0">
+            <div class="speedTest-title text-center mb-4">
+              <span class="spanText">OUR WIFI</span>
+              <p>by speedtest result<br>ID XXXXXX</p>
+            </div>
+            <div class="speedTest">
+              <div class="speedTest-result mb-5">
+                download
+                <div class="number">
+                  102.29 <sup>Mbps</sup>
+                </div>
+              </div>
+              <div class="speedTest-result">
+                upload
+                <div class="number">
+                  10.29 <sup>Mbps</sup>
+                </div>
+              </div>
+            </div>
+            
+            <ul class="social-icons d-inline-flex justify-content-center list-unstyled mt-5">
+              <li class="shadow">
+                <a href="#"><img src="./img/xd-photos/facebook.svg" alt="" ></a>
+              </li>
+              <li  class="shadow">
+                <a href="#"><img src="./img/xd-photos/instagram.svg" alt=""></a>
+              </li>
+              <li class="shadow">
+                <a href="#"><img src="./img/xd-photos/icons8-youtube.svg" alt=""></a>
+              </li>
+              <li class="shadow">
+                <a href="#"><img src="./img/xd-photos/linkedin.svg" alt=""></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-xl-4 d-flex flex-column justify-content-between align-items-center pt-5">
+            <div class="awards-footer text-center">
+                <span class="spanText">awards</span>
+                <div class="award-icons my-5 col-12 col-md-8 col-xl-10 m-auto">
+                  <a href="./img/xd-photos/award-1.png" data-fancybox="images">
+                    <img src="./img/xd-photos/award-1.png" />
+                  </a>
+                  <a href="./img/xd-photos/award-2.png" data-fancybox="images">
+                    <img src="./img/xd-photos/award-2.png" />
+                  </a>
+                  <a href="./img/xd-photos/award-3.png" data-fancybox="images">
+                    <img src="./img/xd-photos/award-3.png" />
+                  </a>
+                  <a href="./img/xd-photos/award-4.png" data-fancybox="images">
+                    <img src="./img/xd-photos/award-4.png" />
+                  </a>
+                  <a href="./img/xd-photos/award-5.png" data-fancybox="images">
+                    <img src="./img/xd-photos/award-5.png" />
+                  </a>
+                  <a href="./img/xd-photos/award-7.png" data-fancybox="images">
+                    <img src="./img/xd-photos/award-7.png" />
+                  </a>
+                  <a href="./img/xd-photos/award-8.png" data-fancybox="images">
+                    <img src="./img/xd-photos/award-8.png" />
+                  </a>
+                  <a href="./img/xd-photos/award-9.png" data-fancybox="images">
+                    <img src="./img/xd-photos/award-9.png" />
+                  </a>
+                  <a href="./img/xd-photos/award-10.png" data-fancybox="images">
+                    <img src="./img/xd-photos/award-10.png" />
+                  </a>
+                  <a href="./img/xd-photos/award-11.png" data-fancybox="images">
+                    <img src="./img/xd-photos/award-11.png" />
+                  </a>
+                </div>
+
+              </div>
+              <ul class="store-icons d-inline-flex flex-wrap list-unstyled justify-content-center">
+                <li>
+                  <a href="#"><img src="./img/xd-photos/google-play.png" alt=""></a>
+                </li>
+                <li>
+                  <a href="#"><img src="./img/xd-photos/app-store.png" alt=""></a>
+                </li>
+              </ul>
+          </div>
+        </div>
+        <div class="copyright-container row g-0 pt-3 px-5">
+          <div class="col-xl-6 order-2 order-xl-1 text-center text-xl-start">
+            <p>© 2021, Alianthos Gardens All right reserved</p>
+          </div>
+          <div class="col-xl-6 order-1 order-xl-2 text-center text-xl-end">
+            <p>creative direction <a href="https://kd-design.studio/" target="_blank" aria-label="kd design studio">kd design studio</a> | developed by <a href="https://www.eyewide.gr/" target="_blank" aria-label="Eyewide - Hotel Internet Marketing">Eyewide - Hotel Internet Marketing</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- END OF FOOTER SECTION  -->
 
 
     <!-- CDN SCRIPTS -->
@@ -1030,11 +1845,96 @@
 
     <!-- MY SCRIPTS  -->
     <script src="scripts/myscripts.js"></script>
-    <script src="./scripts/plugins.js"></script>
-	<script src="./scripts/sly.min.js"></script>
-	<script src="./scripts/horizontal.js"></script>
+    <!-- SCRIPTS FOR SLY SLIDERS  -->
+    <script src="scripts/horizontal.js"></script>
+    <script src="scripts/plugins.js"></script>
+    <script src="scripts/sly.min.js"></script>
+    <!-- SCRIPTS FOR SLY SLIDERS  -->
+
+    <script src="scripts/weather-widget.js"></script>
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
     <!-- MY SCRIPTS  -->
 
+
+    <!-- αν παίζει βίντεο στο slider  -->
+    <!-- <script>
+        var tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/player_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+        var player;
+        function onYouTubePlayerAPIReady() {
+            player = new YT.Player('ytplayer', {
+                width: '100%',
+                height: '100%',
+                videoId: 'VXnqUOkwNcI',
+                playerVars: {
+                    'rel': 0,
+                    'autoplay': 1,
+                    'showinfo': 0,
+                    'autohide': 1,
+                    'loop': 1,
+                    'controls': 1,
+                    'modestbranding': 0,
+                    'vq': 'hd1080'
+                },
+                events: {
+                    'onReady': onPlayerReady,
+                    'onStateChange': onPlayerStateChange
+                }
+            });
+        }
+        function onPlayerReady(event) {
+            event.target.playVideo();
+        player.mute(); // comment out if you don't want the auto played video muted
+        }
+        function onPlayerStateChange(event) {
+            if (event.data == YT.PlayerState.ENDED) {
+            player.seekTo(0);
+            player.playVideo();
+            }
+        }
+        function stopVideo() {
+            player.stopVideo();
+        }
+    </script> -->
+    <!-- αν παίζει βίντεο στο slider  -->
+
+
+    <script id="rendered-js">
+        (function () {
+        
+          var youtube = document.querySelectorAll(".lazy-youtube");
+        
+          for (var i = 0; i < youtube.length; i++) {if (window.CP.shouldStopExecution(0)) break;
+        
+            var source = "https://img.youtube.com/vi/" + youtube[i].dataset.embed + "/sddefault.jpg";
+        
+            var image = new Image();
+            image.src = source;
+            image.addEventListener("load", function () {
+              youtube[i].appendChild(image);
+            }(i));
+        
+            youtube[i].addEventListener("click", function () {
+        
+              var iframe = document.createElement("iframe");
+        
+              iframe.setAttribute("allow", "autoplay");
+              iframe.setAttribute("frameborder", "0");
+              iframe.setAttribute("allowfullscreen", "");
+              iframe.setAttribute("src", "https://www.youtube.com/embed/" + this.dataset.embed + "?rel=0&showinfo=0&autoplay=1");
+        
+              this.innerHTML = "";
+              this.appendChild(iframe);
+            });
+          }window.CP.exitedLoop(0);;
+        
+        })();
+        //# sourceURL=pen.js
+    </script>
+        
 
 </body>
 </html>

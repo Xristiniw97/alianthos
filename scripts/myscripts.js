@@ -419,6 +419,257 @@ $(document).ready(function() {
 });
 // END OF EXPERIENCES FILTERING 
 
+// START OF BAR FILTERING 
+$(document).ready(function() {  
+    $(".bar-list li:nth-child(1)").on("click" , function(){
+        $(this).addClass("active");
+        $(this).siblings("li").removeClass("active");
+        $(".bars-data-holder .bar-data").siblings().removeClass("active");
+        $(".bars-data-holder .bar-data:nth-child(1)").addClass("active");
+      });
+    
+      $(".bar-list li:nth-child(2)").on("click" , function(){
+        $(this).addClass("active");
+        $(this).siblings("li").removeClass("active");
+        $(".bars-data-holder .bar-data").siblings().removeClass("active");
+        $(".bars-data-holder .bar-data:nth-child(2)").addClass("active");
+      });
+    
+      $(".bar-list li:nth-child(3)").on("click" , function(){
+        $(this).addClass("active");
+        $(this).siblings("li").removeClass("active");
+        $(".bars-data-holder .bar-data").siblings().removeClass("active");
+        $(".bars-data-holder .bar-data:nth-child(3)").addClass("active");
+      });
+    
+      $(".bar-list li:nth-child(4)").on("click" , function(){
+        $(this).addClass("active");
+        $(this).siblings("li").removeClass("active");
+        $(".bars-data-holder .bar-data").siblings().removeClass("active");
+        $(".bars-data-holder .bar-data:nth-child(4)").addClass("active");
+      });
+    
+      $(".bar-list li:nth-child(5)").on("click" , function(){
+        $(this).addClass("active");
+        $(this).siblings("li").removeClass("active");
+        $(".bars-data-holder .bar-data").siblings().removeClass("active");
+        $(".bars-data-holder .bar-data:nth-child(5)").addClass("active");
+      });
+
+      $(".bar-list li:nth-child(6)").on("click" , function(){
+        $(this).addClass("active");
+        $(this).siblings("li").removeClass("active");
+        $(".bars-data-holder .bar-data").siblings().removeClass("active");
+        $(".bars-data-holder .bar-data:nth-child(6)").addClass("active");
+      });
+
+});
+// END OF BAR FILTERING 
+
+// START OF BAR FILTERING 
+$(document).ready(function() {  
+    $(".resto-list li:nth-child(1)").on("click" , function(){
+        $(this).addClass("active");
+        $(this).siblings("li").removeClass("active");
+        $(".restos-data-holder .resto-data").siblings().removeClass("active");
+        $(".restos-data-holder .resto-data:nth-child(1)").addClass("active");
+      });
+    
+      $(".resto-list li:nth-child(2)").on("click" , function(){
+        $(this).addClass("active");
+        $(this).siblings("li").removeClass("active");
+        $(".restos-data-holder .resto-data").siblings().removeClass("active");
+        $(".restos-data-holder .resto-data:nth-child(2)").addClass("active");
+      });
+    
+      $(".resto-list li:nth-child(3)").on("click" , function(){
+        $(this).addClass("active");
+        $(this).siblings("li").removeClass("active");
+        $(".restos-data-holder .resto-data").siblings().removeClass("active");
+        $(".restos-data-holder .resto-data:nth-child(3)").addClass("active");
+      });
+    
+      $(".resto-list li:nth-child(4)").on("click" , function(){
+        $(this).addClass("active");
+        $(this).siblings("li").removeClass("active");
+        $(".restos-data-holder .resto-data").siblings().removeClass("active");
+        $(".restos-data-holder .resto-data:nth-child(4)").addClass("active");
+      });
+    
+      $(".resto-list li:nth-child(5)").on("click" , function(){
+        $(this).addClass("active");
+        $(this).siblings("li").removeClass("active");
+        $(".restos-data-holder .resto-data").siblings().removeClass("active");
+        $(".restos-data-holder .resto-data:nth-child(5)").addClass("active");
+      });
+
+      $(".resto-list li:nth-child(6)").on("click" , function(){
+        $(this).addClass("active");
+        $(this).siblings("li").removeClass("active");
+        $(".restos-data-holder .resto-data").siblings().removeClass("active");
+        $(".restos-data-holder .resto-data:nth-child(6)").addClass("active");
+      });
+
+      $(".resto-list li:nth-child(7)").on("click" , function(){
+        $(this).addClass("active");
+        $(this).siblings("li").removeClass("active");
+        $(".restos-data-holder .resto-data").siblings().removeClass("active");
+        $(".restos-data-holder .resto-data:nth-child(7)").addClass("active");
+      });
+
+      $(".resto-list:nth-child(2) li:nth-child(1)").on("click" , function(){
+        $(this).addClass("active");
+        $(this).siblings("li").removeClass("active");
+        $(".restos-data-holder .resto-data").siblings().removeClass("active");
+        $(".restos-data-holder .resto-data:nth-child(8)").addClass("active");
+      });
+      
+      $(".resto-list:nth-child(2) li:nth-child(2)").on("click" , function(){
+        $(this).addClass("active");
+        $(this).siblings("li").removeClass("active");
+        $(".restos-data-holder .resto-data").siblings().removeClass("active");
+        $(".restos-data-holder .resto-data:nth-child(9)").addClass("active");
+      });
+
+      $(".resto-list:nth-child(2) li:nth-child(3)").on("click" , function(){
+        $(this).addClass("active");
+        $(this).siblings("li").removeClass("active");
+        $(".restos-data-holder .resto-data").siblings().removeClass("active");
+        $(".restos-data-holder .resto-data:nth-child(10)").addClass("active");
+      });
+});
+// END OF BAR FILTERING 
+
+
+// START OF GALLLERY PHOTO FILTERING 
+$(document).ready(function() {  
+    $(".gallery-list li:nth-child(1)").on("click" , function(){
+        $(this).addClass("active");
+        $(this).siblings("li").removeClass("active");
+        $(".gallerys-data-holder .gallery-data").siblings().removeClass("active");
+        $(".gallerys-data-holder .gallery-data:nth-child(1)").addClass("active");
+      });
+    
+      $(".gallery-list li:nth-child(2)").on("click" , function(){
+        $(this).addClass("active");
+        $(this).siblings("li").removeClass("active");
+        $(".gallerys-data-holder .gallery-data").siblings().removeClass("active");
+        $(".gallerys-data-holder .gallery-data:nth-child(2)").addClass("active");
+      });
+    
+      $(".gallery-list li:nth-child(3)").on("click" , function(){
+        $(this).addClass("active");
+        $(this).siblings("li").removeClass("active");
+        $(".gallerys-data-holder .gallery-data").siblings().removeClass("active");
+        $(".gallerys-data-holder .gallery-data:nth-child(3)").addClass("active");
+      });
+    
+      $(".gallery-list li:nth-child(4)").on("click" , function(){
+        $(this).addClass("active");
+        $(this).siblings("li").removeClass("active");
+        $(".gallerys-data-holder .gallery-data").siblings().removeClass("active");
+        $(".gallerys-data-holder .gallery-data:nth-child(4)").addClass("active");
+      });
+    
+      $(".gallery-list li:nth-child(5)").on("click" , function(){
+        $(this).addClass("active");
+        $(this).siblings("li").removeClass("active");
+        $(".gallerys-data-holder .gallery-data").siblings().removeClass("active");
+        $(".gallerys-data-holder .gallery-data:nth-child(5)").addClass("active");
+      });
+
+      $(".gallery-list li:nth-child(6)").on("click" , function(){
+        $(this).addClass("active");
+        $(this).siblings("li").removeClass("active");
+        $(".gallerys-data-holder .gallery-data").siblings().removeClass("active");
+        $(".gallerys-data-holder .gallery-data:nth-child(6)").addClass("active");
+      });
+
+      $(".gallery-list li:nth-child(7)").on("click" , function(){
+        $(this).addClass("active");
+        $(this).siblings("li").removeClass("active");
+        $(".gallerys-data-holder .gallery-data").siblings().removeClass("active");
+        $(".gallerys-data-holder .gallery-data:nth-child(7)").addClass("active");
+      });
+
+      $(".gallery-list li:nth-child(8)").on("click" , function(){
+        $(this).addClass("active");
+        $(this).siblings("li").removeClass("active");
+        $(".gallerys-data-holder .gallery-data").siblings().removeClass("active");
+        $(".gallerys-data-holder .gallery-data:nth-child(8)").addClass("active");
+      });
+
+     
+});
+// END OF GALLERY PHOTO FILTERING 
+
+
+// START OF GALLLERY PHOTO FILTERING 
+$(document).ready(function() {  
+    $(".video-list li:nth-child(1)").on("click" , function(){
+        $(this).addClass("active");
+        $(this).siblings("li").removeClass("active");
+        $(".videos-data-holder .video-data").siblings().removeClass("active");
+        $(".videos-data-holder .video-data:nth-child(1)").addClass("active");
+      });
+    
+      $(".video-list li:nth-child(2)").on("click" , function(){
+        $(this).addClass("active");
+        $(this).siblings("li").removeClass("active");
+        $(".videos-data-holder .video-data").siblings().removeClass("active");
+        $(".videos-data-holder .video-data:nth-child(2)").addClass("active");
+      });
+    
+      $(".video-list li:nth-child(3)").on("click" , function(){
+        $(this).addClass("active");
+        $(this).siblings("li").removeClass("active");
+        $(".videos-data-holder .video-data").siblings().removeClass("active");
+        $(".videos-data-holder .video-data:nth-child(3)").addClass("active");
+      });
+    
+      $(".video-list li:nth-child(4)").on("click" , function(){
+        $(this).addClass("active");
+        $(this).siblings("li").removeClass("active");
+        $(".videos-data-holder .video-data").siblings().removeClass("active");
+        $(".videos-data-holder .video-data:nth-child(4)").addClass("active");
+      });
+    
+      $(".video-list li:nth-child(5)").on("click" , function(){
+        $(this).addClass("active");
+        $(this).siblings("li").removeClass("active");
+        $(".videos-data-holder .video-data").siblings().removeClass("active");
+        $(".videos-data-holder .video-data:nth-child(5)").addClass("active");
+      });
+
+      $(".video-list li:nth-child(6)").on("click" , function(){
+        $(this).addClass("active");
+        $(this).siblings("li").removeClass("active");
+        $(".videos-data-holder .video-data").siblings().removeClass("active");
+        $(".videos-data-holder .video-data:nth-child(6)").addClass("active");
+      });
+     
+});
+// END OF video PHOTO FILTERING 
+
+$(document).ready(function() {  
+    $(".gallery-button:nth-child(1)").on("click" , function(){
+        $(this).addClass("active");
+        $(".gallery-tabs").removeClass("d-none");
+        $(".gallery-tabs").addClass("d-block");
+        $(".gallery-button:nth-child(2)").removeClass("active");
+        $(".video-tabs").removeClass("d-block");
+        $(".video-tabs").addClass("d-none");
+    });
+    $(".gallery-button:nth-child(2)").on("click" , function(){
+        $(this).addClass("active");
+        $(".video-tabs").removeClass("d-none");
+        $(".video-tabs").addClass("d-block");
+        $(".gallery-button:nth-child(1)").removeClass("active");
+        $(".gallery-tabs").removeClass("d-block");
+        $(".gallery-tabs").addClass("d-none");
+    });
+});
+
 
 //START  HOME VIDEO SLIDER 
 // Targeting video element 
