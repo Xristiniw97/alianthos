@@ -469,6 +469,7 @@ $(document).ready(function() {
 // START OF BAR FILTERING 
 $(document).ready(function() {  
     $(".resto-list li:nth-child(1)").on("click" , function(){
+        $(".resto-inside-list").removeClass("d-flex");
         $(this).addClass("active");
         $(this).siblings("li").removeClass("active");
         $(".restos-data-holder .resto-data").siblings().removeClass("active");
@@ -476,6 +477,7 @@ $(document).ready(function() {
       });
     
       $(".resto-list li:nth-child(2)").on("click" , function(){
+        $(".resto-inside-list").removeClass("d-flex");
         $(this).addClass("active");
         $(this).siblings("li").removeClass("active");
         $(".restos-data-holder .resto-data").siblings().removeClass("active");
@@ -483,6 +485,7 @@ $(document).ready(function() {
       });
     
       $(".resto-list li:nth-child(3)").on("click" , function(){
+        $(".resto-inside-list").removeClass("d-flex");
         $(this).addClass("active");
         $(this).siblings("li").removeClass("active");
         $(".restos-data-holder .resto-data").siblings().removeClass("active");
@@ -490,6 +493,7 @@ $(document).ready(function() {
       });
     
       $(".resto-list li:nth-child(4)").on("click" , function(){
+        $(".resto-inside-list").removeClass("d-flex");
         $(this).addClass("active");
         $(this).siblings("li").removeClass("active");
         $(".restos-data-holder .resto-data").siblings().removeClass("active");
@@ -497,6 +501,7 @@ $(document).ready(function() {
       });
     
       $(".resto-list li:nth-child(5)").on("click" , function(){
+        $(".resto-inside-list").removeClass("d-flex");
         $(this).addClass("active");
         $(this).siblings("li").removeClass("active");
         $(".restos-data-holder .resto-data").siblings().removeClass("active");
@@ -504,6 +509,7 @@ $(document).ready(function() {
       });
 
       $(".resto-list li:nth-child(6)").on("click" , function(){
+        $(".resto-inside-list").removeClass("d-flex");
         $(this).addClass("active");
         $(this).siblings("li").removeClass("active");
         $(".restos-data-holder .resto-data").siblings().removeClass("active");
@@ -513,6 +519,7 @@ $(document).ready(function() {
       $(".resto-list li:nth-child(7)").on("click" , function(){
         $(this).addClass("active");
         $(this).siblings("li").removeClass("active");
+        $(".resto-inside-list").addClass("d-flex");
         $(".restos-data-holder .resto-data").siblings().removeClass("active");
         $(".restos-data-holder .resto-data:nth-child(7)").addClass("active");
       });
@@ -520,6 +527,7 @@ $(document).ready(function() {
       $(".resto-list:nth-child(2) li:nth-child(1)").on("click" , function(){
         $(this).addClass("active");
         $(this).siblings("li").removeClass("active");
+        $(".resto-inside-list").addClass("d-flex");
         $(".restos-data-holder .resto-data").siblings().removeClass("active");
         $(".restos-data-holder .resto-data:nth-child(8)").addClass("active");
       });
@@ -527,6 +535,7 @@ $(document).ready(function() {
       $(".resto-list:nth-child(2) li:nth-child(2)").on("click" , function(){
         $(this).addClass("active");
         $(this).siblings("li").removeClass("active");
+        $(".resto-inside-list").addClass("d-flex");
         $(".restos-data-holder .resto-data").siblings().removeClass("active");
         $(".restos-data-holder .resto-data:nth-child(9)").addClass("active");
       });
@@ -534,9 +543,11 @@ $(document).ready(function() {
       $(".resto-list:nth-child(2) li:nth-child(3)").on("click" , function(){
         $(this).addClass("active");
         $(this).siblings("li").removeClass("active");
+        $(".resto-inside-list").addClass("d-flex");
         $(".restos-data-holder .resto-data").siblings().removeClass("active");
         $(".restos-data-holder .resto-data:nth-child(10)").addClass("active");
       });
+      
 });
 // END OF BAR FILTERING 
 
@@ -669,6 +680,9 @@ $(document).ready(function() {
         $(".gallery-tabs").addClass("d-none");
     });
 });
+
+
+
 
 
 //START  HOME VIDEO SLIDER 

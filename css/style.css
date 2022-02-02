@@ -2418,6 +2418,11 @@ nav {
   text-align: center;
   overflow-x: auto;
   overflow-y: hidden;
+  position: relative;
+}
+
+.resto-filter-holder {
+  min-height: 120px !important;
 }
 
 .review-filter-holder::-webkit-scrollbar,
@@ -3719,11 +3724,14 @@ nav {
   }
 }
 
+.resto-list {
+  width: 1150px;
+}
+
 .resto-inside-list {
   border: none;
-  display: inline-flex;
-  position: relative;
-  float: right;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .resto-inside-list .resto-filter::after {
