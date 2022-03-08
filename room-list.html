@@ -33,7 +33,7 @@
     <!-- FANCYBOX  -->
     <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-     <!-- FANCYBOX  -->
+    <!-- FANCYBOX  -->
 
     <!-- MY STYLE -->
     <link rel="preload" as="style" href="./css/style.css">
@@ -55,43 +55,44 @@
 <body class="innerPage">
 
 
-
-  <!-- START OF SLIDER CAROUSEL -->
-  <div id="carouselExampleControls" class="carousel slide slider-carousel" data-bs-interval="5000" data-ride="carousel" data-pause="hover">
-    <div class="carousel-inner">
-        <div class="carousel-item active" style="background: url('./img/xd-photos/for-desktop/alianthos02.jpg') no-repeat center center/cover;">
-        
-        </div>
-        <!-- σε περίπτωση που θέλουν βίντεο στην αρχική πρίν τις εικόνες  -->
-        <!-- <div class="carousel-item active">
-            <div class="intro-video-bg">
-                <div class="embed-responsive embed-responsive-16by9" id="video">
-                    <div id="background-video" class="background-video"><div id="ytplayer"></div></div> 
-                </div>
+    <!-- στην σελίδα δεν θα υπάρχει εναλλαγή εικόνων  -->
+    <!-- Παρόλα αυτά εγώ έχω φτιάξει slider για να είμαστε έτοιμοι  -->
+    <!-- START OF SLIDER CAROUSEL -->
+    <div id="carouselExampleControls" class="carousel slide slider-carousel" data-bs-interval="5000" data-ride="carousel" data-pause="hover">
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="background: url('./img/xd-photos/for-desktop/alianthos02.jpg') no-repeat center center/cover;">
+            
             </div>
+            <!-- σε περίπτωση που θέλουν βίντεο στην αρχική πρίν τις εικόνες  -->
+            <!-- <div class="carousel-item active">
+                <div class="intro-video-bg">
+                    <div class="embed-responsive embed-responsive-16by9" id="video">
+                        <div id="background-video" class="background-video"><div id="ytplayer"></div></div> 
+                    </div>
+                </div>
+            </div> -->
+        <!-- <div class="carousel-item" style="background: url('./img/xd-photos/for-desktop/alianthos01.jpg') no-repeat center center/cover;">
+            
+        </div>
+        <div class="carousel-item" style="background: url('./img/xd-photos/for-desktop/alianthos02.jpg') no-repeat center center/cover;">
+            
+        </div>
+        <div class="carousel-item" style="background: url('./img/xd-photos/for-desktop/alianthos01.jpg') no-repeat center center/cover;">
+        
         </div> -->
-      <div class="carousel-item" style="background: url('./img/xd-photos/for-desktop/alianthos01.jpg') no-repeat center center/cover;">
-        
-      </div>
-      <div class="carousel-item" style="background: url('./img/xd-photos/for-desktop/alianthos02.jpg') no-repeat center center/cover;">
-        
-      </div>
-      <div class="carousel-item" style="background: url('./img/xd-photos/for-desktop/alianthos01.jpg') no-repeat center center/cover;">
-       
-      </div>
+        </div>
+        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+        </button> -->
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-  <!-- END OF SLIDER CAROUSEL -->
+    <!-- END OF SLIDER CAROUSEL -->
 
-     <!-- START OF HEADER  -->
+    <!-- START OF HEADER  -->
     <header class="header fixed-top" id="header-desktop">
         <div class="row g-0 align-items-center">
             <div class="col-1 col-xxl-2">
@@ -330,28 +331,28 @@
     
     <!-- START OF ROOM LINKS SECTION -->
     <div class="roomLinks d-none d-lg-block">
-        <div class="col-10 m-auto border-top pt-4">
+        <div class="col-10 col-lg-9 m-auto border-top pt-4">
             <div class="row">
                 <div class="col px-xl-5">
                     <a href="#">Single room</a>
                 </div>
                 <div class="col px-xl-5">
-                    <a href="#">Double room with Sea View</a>
-                    <a href="#">Double room with Side Sea View</a>
-                    <a href="#">Double room with Garden View</a>
+                    <a href="#">Double room <br>with Sea View</a>
+                    <a href="#">Double room <br>with Side Sea View</a>
+                    <a href="#">Double room <br>with Garden View</a>
                 </div>
                 <div class="col px-xl-5">
-                    <a href="#">Triple room with Sea View</a>
-                    <a href="#">Triple room with Side Sea View</a>
+                    <a href="#">Triple room <br>with Sea View</a>
+                    <a href="#">Triple room <br>with Side Sea View</a>
     
                 </div>
                 <div class="col px-xl-5">
-                    <a href="#">Studio with Garden View</a>
+                    <a href="#">Studio with <br>Garden View</a>
     
                 </div>
                 <div class="col px-xl-5">
                     <a href="#">Apartment</a>
-                    <a href="#">Imperial Apartment with Mountain View</a>
+                    <a href="#">Imperial Apartment <br>with Mountain View</a>
                 </div>
             </div>
         </div>
@@ -360,7 +361,7 @@
     
     <!-- START OF BREADCRUMBS  -->
     <div class="breadcrumbs my-5">
-        <div class="col-10 m-auto text-center d-flex justify-content-center justify-content-lg-start">
+        <div class="col-10 col-xl-9 m-auto text-center d-flex justify-content-center justify-content-lg-start">
             <ul class="list-unstyled d-inline-flex flex-wrap justify-content-center">
                 <li><a href="#">HOME</a></li>
                 <li class="active"><a href="#">ACCOMMODATION</a></li>
@@ -371,551 +372,561 @@
 
     <!-- START OF TEXT ONLY WITH LINK BLOCK  -->
     <section class="text-center text-lg-start">
-        <div class="col-10 m-auto">
-            <div class="genContainer">
-                <span class="spanText">FEEL AT HOME AT ALIANTHOS GARDEN HOTEL</span>
-                <h1>FIND A COSY & ELEGANT ACCOMMODATION IN PLAKIAS, CRETE</h1>
-                <p>Prepare yourself for a fantastic journey into the Cretan tradition, history, and nature. Find an authentic, quiet, hospitable hotel in Plakias, Crete, and pamper yourself with quality services and modern amenities. Choose Alianthos Garden Hotel for a cosy and elegant accommodation in Plakias and immerse yourself in a family-like atmosphere for a memorable experience in Crete. Meet travellers from all over the world and join a multicultural ambience while experiencing the renowned Cretan hospitality to the fullest.</p>
+        <div class="col-10 col-xl-9 m-auto">
+            <div class="col-12 col-lg-10">
+                <div class="genContainer">
+                    <span class="spanText">FEEL AT HOME AT ALIANTHOS GARDEN HOTEL</span>
+                    <h1>FIND A COSY & ELEGANT ACCOMMODATION IN PLAKIAS, CRETE</h1>
+                    <p>Prepare yourself for a fantastic journey into the Cretan tradition, history, and nature. Find an authentic, quiet, hospitable hotel in Plakias, Crete, and pamper yourself with quality services and modern amenities. Choose Alianthos Garden Hotel for a cosy and elegant accommodation in Plakias and immerse yourself in a family-like atmosphere for a memorable experience in Crete. Meet travellers from all over the world and join a multicultural ambience while experiencing the renowned Cretan hospitality to the fullest.</p>
+                </div>
             </div>
         </div>
     </section>
     <!-- END OF TEXT ONLY WITH LINK BLOCK  -->
 
-
-     <!-- START OF ROOMS  -->
-     <div class="rooms marginTop">
-        <div class="col-12 col-md-10 m-auto">
+    <!-- START OF ROOMS  -->
+    <div class="rooms marginTop">
+        <div class="col-12 col-md-10 col-xl-9 m-auto">
             <div class="row g-0">
                 <div class="col-lg-6 mb-5">
                     <div class="room-photos vertical-room m-auto">
-                        <div class="owl-carousel oneImageCarousel">
-                            <div class="item">
-                                <div class="item-image">
-                                  <picture>
-                                      <source srcset="./img/xd-photos/for-desktop/room1.webp" type="image/webp" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-desktop/room1.jpg" type="image/jpeg" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-mobile/room1.jpg" type="image/jpeg">
-                                      <img src="./img/xd-photos/for-mobile/room1.webp" alt="image 1" class="img-fluid">
-                                  </picture>
+                        <div class="room-list-box">
+                            <div class="owl-carousel oneImageCarousel">
+                                <div class="item">
+                                    <div class="item-image">
+                                      <picture>
+                                          <source srcset="./img/xd-photos/for-desktop/room1.webp" type="image/webp" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-desktop/room1.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-mobile/room1.jpg" type="image/jpeg">
+                                          <img src="./img/xd-photos/for-mobile/room1.webp" alt="image 1" class="img-fluid">
+                                      </picture>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-image">
+                                      <picture>
+                                          <source srcset="./img/xd-photos/for-desktop/room2.webp" type="image/webp" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-desktop/room2.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-mobile/room2.jpg" type="image/jpeg">
+                                          <img src="./img/xd-photos/for-mobile/room2.webp" alt="image 1" class="img-fluid">
+                                      </picture>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-image">
+                                      <picture>
+                                          <source srcset="./img/xd-photos/for-desktop/room1.webp" type="image/webp" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-desktop/room1.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-mobile/room1.jpg" type="image/jpeg">
+                                          <img src="./img/xd-photos/for-mobile/room1.webp" alt="image 1" class="img-fluid">
+                                      </picture>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-image">
+                                      <picture>
+                                          <source srcset="./img/xd-photos/for-desktop/room2.webp" type="image/webp" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-desktop/room2.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-mobile/room2.jpg" type="image/jpeg">
+                                          <img src="./img/xd-photos/for-mobile/room2.webp" alt="image 1" class="img-fluid">
+                                      </picture>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="item">
-                                <div class="item-image">
-                                  <picture>
-                                      <source srcset="./img/xd-photos/for-desktop/room2.webp" type="image/webp" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-desktop/room2.jpg" type="image/jpeg" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-mobile/room2.jpg" type="image/jpeg">
-                                      <img src="./img/xd-photos/for-mobile/room2.webp" alt="image 1" class="img-fluid">
-                                  </picture>
-                                </div>
+                            <div class="room-desc text-center">
+                                <a href="#" class="title">
+                                    Double room with Sea View
+                                </a>
+                                <p class="desc">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum beatae quibusdam assumenda ipsa ab voluptatibus obcaecati quisquam molestiae. Incidunt quas libero esse vitae modi non tempore quia ut. Amet, quam.
+                                </p>
                             </div>
-                            <div class="item">
-                                <div class="item-image">
-                                  <picture>
-                                      <source srcset="./img/xd-photos/for-desktop/room1.webp" type="image/webp" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-desktop/room1.jpg" type="image/jpeg" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-mobile/room1.jpg" type="image/jpeg">
-                                      <img src="./img/xd-photos/for-mobile/room1.webp" alt="image 1" class="img-fluid">
-                                  </picture>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="item-image">
-                                  <picture>
-                                      <source srcset="./img/xd-photos/for-desktop/room2.webp" type="image/webp" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-desktop/room2.jpg" type="image/jpeg" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-mobile/room2.jpg" type="image/jpeg">
-                                      <img src="./img/xd-photos/for-mobile/room2.webp" alt="image 1" class="img-fluid">
-                                  </picture>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="room-desc text-center">
-                            <div class="title">
-                                Double room with Sea View
-                            </div>
-                            <p class="desc">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum beatae quibusdam assumenda ipsa ab voluptatibus obcaecati quisquam molestiae. Incidunt quas libero esse vitae modi non tempore quia ut. Amet, quam.
-                            </p>
                         </div>
                         <div class="room-details text-center mt-3">
                             <p class="capacity">Can host 2 Adults & 1 Child</p>
                             <p class="room-view">Sea View</p>
                         </div>
                     </div>
-                    
                 </div>
                 <div class="col-lg-6 mb-5 mt-0 mt-lg-5">
                     <div class="room-photos horizontal-room m-auto">
-                        <div class="owl-carousel oneImageCarousel">
-                            <div class="item">
-                                <div class="item-image">
-                                  <picture>
-                                      <source srcset="./img/xd-photos/for-desktop/room1.webp" type="image/webp" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-desktop/room1.jpg" type="image/jpeg" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-mobile/room1.jpg" type="image/jpeg">
-                                      <img src="./img/xd-photos/for-mobile/room1.webp" alt="image 1" class="img-fluid">
-                                  </picture>
+                        <div class="room-list-box">
+                            <div class="owl-carousel oneImageCarousel">
+                                <div class="item">
+                                    <div class="item-image">
+                                      <picture>
+                                          <source srcset="./img/xd-photos/for-desktop/room1.webp" type="image/webp" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-desktop/room1.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-mobile/room1.jpg" type="image/jpeg">
+                                          <img src="./img/xd-photos/for-mobile/room1.webp" alt="image 1" class="img-fluid">
+                                      </picture>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-image">
+                                      <picture>
+                                          <source srcset="./img/xd-photos/for-desktop/room2.webp" type="image/webp" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-desktop/room2.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-mobile/room2.jpg" type="image/jpeg">
+                                          <img src="./img/xd-photos/for-mobile/room2.webp" alt="image 1" class="img-fluid">
+                                      </picture>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-image">
+                                      <picture>
+                                          <source srcset="./img/xd-photos/for-desktop/room1.webp" type="image/webp" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-desktop/room1.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-mobile/room1.jpg" type="image/jpeg">
+                                          <img src="./img/xd-photos/for-mobile/room1.webp" alt="image 1" class="img-fluid">
+                                      </picture>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-image">
+                                      <picture>
+                                          <source srcset="./img/xd-photos/for-desktop/room2.webp" type="image/webp" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-desktop/room2.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-mobile/room2.jpg" type="image/jpeg">
+                                          <img src="./img/xd-photos/for-mobile/room2.webp" alt="image 1" class="img-fluid">
+                                      </picture>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="item">
-                                <div class="item-image">
-                                  <picture>
-                                      <source srcset="./img/xd-photos/for-desktop/room2.webp" type="image/webp" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-desktop/room2.jpg" type="image/jpeg" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-mobile/room2.jpg" type="image/jpeg">
-                                      <img src="./img/xd-photos/for-mobile/room2.webp" alt="image 1" class="img-fluid">
-                                  </picture>
-                                </div>
+                            <div class="room-desc text-center">
+                                <a href="#" class="title">
+                                    Double room with Sea View
+                                </a>
+                                <p class="desc">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum beatae quibusdam assumenda ipsa ab voluptatibus obcaecati quisquam molestiae. Incidunt quas libero esse vitae modi non tempore quia ut. Amet, quam.
+                                </p>
                             </div>
-                            <div class="item">
-                                <div class="item-image">
-                                  <picture>
-                                      <source srcset="./img/xd-photos/for-desktop/room1.webp" type="image/webp" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-desktop/room1.jpg" type="image/jpeg" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-mobile/room1.jpg" type="image/jpeg">
-                                      <img src="./img/xd-photos/for-mobile/room1.webp" alt="image 1" class="img-fluid">
-                                  </picture>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="item-image">
-                                  <picture>
-                                      <source srcset="./img/xd-photos/for-desktop/room2.webp" type="image/webp" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-desktop/room2.jpg" type="image/jpeg" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-mobile/room2.jpg" type="image/jpeg">
-                                      <img src="./img/xd-photos/for-mobile/room2.webp" alt="image 1" class="img-fluid">
-                                  </picture>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="room-desc text-center">
-                            <div class="title">
-                                Double room with Sea View
-                            </div>
-                            <p class="desc">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum beatae quibusdam assumenda ipsa ab voluptatibus obcaecati quisquam molestiae. Incidunt quas libero esse vitae modi non tempore quia ut. Amet, quam.
-                            </p>
                         </div>
                         <div class="room-details text-center mt-3">
                             <p class="capacity">Can host 2 Adults & 1 Child</p>
                             <p class="room-view">Sea View</p>
                         </div>
                     </div>
-                    
                 </div>
                 <div class="col-lg-6 mb-5 mt-0 mt-lg-5">
                     <div class="room-photos horizontal-room m-auto">
-                        <div class="owl-carousel oneImageCarousel">
-                            <div class="item">
-                                <div class="item-image">
-                                  <picture>
-                                      <source srcset="./img/xd-photos/for-desktop/room1.webp" type="image/webp" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-desktop/room1.jpg" type="image/jpeg" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-mobile/room1.jpg" type="image/jpeg">
-                                      <img src="./img/xd-photos/for-mobile/room1.webp" alt="image 1" class="img-fluid">
-                                  </picture>
+                        <div class="room-list-box">
+                            <div class="owl-carousel oneImageCarousel">
+                                <div class="item">
+                                    <div class="item-image">
+                                      <picture>
+                                          <source srcset="./img/xd-photos/for-desktop/room1.webp" type="image/webp" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-desktop/room1.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-mobile/room1.jpg" type="image/jpeg">
+                                          <img src="./img/xd-photos/for-mobile/room1.webp" alt="image 1" class="img-fluid">
+                                      </picture>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-image">
+                                      <picture>
+                                          <source srcset="./img/xd-photos/for-desktop/room2.webp" type="image/webp" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-desktop/room2.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-mobile/room2.jpg" type="image/jpeg">
+                                          <img src="./img/xd-photos/for-mobile/room2.webp" alt="image 1" class="img-fluid">
+                                      </picture>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-image">
+                                      <picture>
+                                          <source srcset="./img/xd-photos/for-desktop/room1.webp" type="image/webp" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-desktop/room1.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-mobile/room1.jpg" type="image/jpeg">
+                                          <img src="./img/xd-photos/for-mobile/room1.webp" alt="image 1" class="img-fluid">
+                                      </picture>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-image">
+                                      <picture>
+                                          <source srcset="./img/xd-photos/for-desktop/room2.webp" type="image/webp" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-desktop/room2.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-mobile/room2.jpg" type="image/jpeg">
+                                          <img src="./img/xd-photos/for-mobile/room2.webp" alt="image 1" class="img-fluid">
+                                      </picture>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="item">
-                                <div class="item-image">
-                                  <picture>
-                                      <source srcset="./img/xd-photos/for-desktop/room2.webp" type="image/webp" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-desktop/room2.jpg" type="image/jpeg" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-mobile/room2.jpg" type="image/jpeg">
-                                      <img src="./img/xd-photos/for-mobile/room2.webp" alt="image 1" class="img-fluid">
-                                  </picture>
-                                </div>
+                            <div class="room-desc text-center">
+                                <a href="#" class="title">
+                                    Double room with Sea View
+                                </a>
+                                <p class="desc">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum beatae quibusdam assumenda ipsa ab voluptatibus obcaecati quisquam molestiae. Incidunt quas libero esse vitae modi non tempore quia ut. Amet, quam.
+                                </p>
                             </div>
-                            <div class="item">
-                                <div class="item-image">
-                                  <picture>
-                                      <source srcset="./img/xd-photos/for-desktop/room1.webp" type="image/webp" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-desktop/room1.jpg" type="image/jpeg" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-mobile/room1.jpg" type="image/jpeg">
-                                      <img src="./img/xd-photos/for-mobile/room1.webp" alt="image 1" class="img-fluid">
-                                  </picture>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="item-image">
-                                  <picture>
-                                      <source srcset="./img/xd-photos/for-desktop/room2.webp" type="image/webp" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-desktop/room2.jpg" type="image/jpeg" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-mobile/room2.jpg" type="image/jpeg">
-                                      <img src="./img/xd-photos/for-mobile/room2.webp" alt="image 1" class="img-fluid">
-                                  </picture>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="room-desc text-center">
-                            <div class="title">
-                                Double room with Sea View
-                            </div>
-                            <p class="desc">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum beatae quibusdam assumenda ipsa ab voluptatibus obcaecati quisquam molestiae. Incidunt quas libero esse vitae modi non tempore quia ut. Amet, quam.
-                            </p>
                         </div>
                         <div class="room-details text-center mt-3">
                             <p class="capacity">Can host 2 Adults & 1 Child</p>
                             <p class="room-view">Sea View</p>
                         </div>
                     </div>
-                    
                 </div>
                 <div class="col-lg-6 mb-5">
                     <div class="room-photos vertical-room m-auto">
-                        <div class="owl-carousel oneImageCarousel">
-                            <div class="item">
-                                <div class="item-image">
-                                  <picture>
-                                      <source srcset="./img/xd-photos/for-desktop/room1.webp" type="image/webp" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-desktop/room1.jpg" type="image/jpeg" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-mobile/room1.jpg" type="image/jpeg">
-                                      <img src="./img/xd-photos/for-mobile/room1.webp" alt="image 1" class="img-fluid">
-                                  </picture>
+                        <div class="room-list-box">
+                            <div class="owl-carousel oneImageCarousel">
+                                <div class="item">
+                                    <div class="item-image">
+                                      <picture>
+                                          <source srcset="./img/xd-photos/for-desktop/room1.webp" type="image/webp" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-desktop/room1.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-mobile/room1.jpg" type="image/jpeg">
+                                          <img src="./img/xd-photos/for-mobile/room1.webp" alt="image 1" class="img-fluid">
+                                      </picture>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-image">
+                                      <picture>
+                                          <source srcset="./img/xd-photos/for-desktop/room2.webp" type="image/webp" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-desktop/room2.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-mobile/room2.jpg" type="image/jpeg">
+                                          <img src="./img/xd-photos/for-mobile/room2.webp" alt="image 1" class="img-fluid">
+                                      </picture>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-image">
+                                      <picture>
+                                          <source srcset="./img/xd-photos/for-desktop/room1.webp" type="image/webp" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-desktop/room1.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-mobile/room1.jpg" type="image/jpeg">
+                                          <img src="./img/xd-photos/for-mobile/room1.webp" alt="image 1" class="img-fluid">
+                                      </picture>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-image">
+                                      <picture>
+                                          <source srcset="./img/xd-photos/for-desktop/room2.webp" type="image/webp" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-desktop/room2.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-mobile/room2.jpg" type="image/jpeg">
+                                          <img src="./img/xd-photos/for-mobile/room2.webp" alt="image 1" class="img-fluid">
+                                      </picture>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="item">
-                                <div class="item-image">
-                                  <picture>
-                                      <source srcset="./img/xd-photos/for-desktop/room2.webp" type="image/webp" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-desktop/room2.jpg" type="image/jpeg" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-mobile/room2.jpg" type="image/jpeg">
-                                      <img src="./img/xd-photos/for-mobile/room2.webp" alt="image 1" class="img-fluid">
-                                  </picture>
-                                </div>
+                            <div class="room-desc text-center">
+                                <a href="#" class="title">
+                                    Double room with Sea View
+                                </a>
+                                <p class="desc">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum beatae quibusdam assumenda ipsa ab voluptatibus obcaecati quisquam molestiae. Incidunt quas libero esse vitae modi non tempore quia ut. Amet, quam.
+                                </p>
                             </div>
-                            <div class="item">
-                                <div class="item-image">
-                                  <picture>
-                                      <source srcset="./img/xd-photos/for-desktop/room1.webp" type="image/webp" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-desktop/room1.jpg" type="image/jpeg" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-mobile/room1.jpg" type="image/jpeg">
-                                      <img src="./img/xd-photos/for-mobile/room1.webp" alt="image 1" class="img-fluid">
-                                  </picture>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="item-image">
-                                  <picture>
-                                      <source srcset="./img/xd-photos/for-desktop/room2.webp" type="image/webp" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-desktop/room2.jpg" type="image/jpeg" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-mobile/room2.jpg" type="image/jpeg">
-                                      <img src="./img/xd-photos/for-mobile/room2.webp" alt="image 1" class="img-fluid">
-                                  </picture>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="room-desc text-center">
-                            <div class="title">
-                                Double room with Sea View
-                            </div>
-                            <p class="desc">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum beatae quibusdam assumenda ipsa ab voluptatibus obcaecati quisquam molestiae. Incidunt quas libero esse vitae modi non tempore quia ut. Amet, quam.
-                            </p>
                         </div>
                         <div class="room-details text-center mt-3">
                             <p class="capacity">Can host 2 Adults & 1 Child</p>
                             <p class="room-view">Sea View</p>
                         </div>
                     </div>
-                    
                 </div>
                 <div class="col-lg-6 mb-5">
                     <div class="room-photos vertical-room m-auto">
-                        <div class="owl-carousel oneImageCarousel">
-                            <div class="item">
-                                <div class="item-image">
-                                  <picture>
-                                      <source srcset="./img/xd-photos/for-desktop/room1.webp" type="image/webp" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-desktop/room1.jpg" type="image/jpeg" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-mobile/room1.jpg" type="image/jpeg">
-                                      <img src="./img/xd-photos/for-mobile/room1.webp" alt="image 1" class="img-fluid">
-                                  </picture>
+                        <div class="room-list-box">
+                            <div class="owl-carousel oneImageCarousel">
+                                <div class="item">
+                                    <div class="item-image">
+                                      <picture>
+                                          <source srcset="./img/xd-photos/for-desktop/room1.webp" type="image/webp" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-desktop/room1.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-mobile/room1.jpg" type="image/jpeg">
+                                          <img src="./img/xd-photos/for-mobile/room1.webp" alt="image 1" class="img-fluid">
+                                      </picture>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-image">
+                                      <picture>
+                                          <source srcset="./img/xd-photos/for-desktop/room2.webp" type="image/webp" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-desktop/room2.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-mobile/room2.jpg" type="image/jpeg">
+                                          <img src="./img/xd-photos/for-mobile/room2.webp" alt="image 1" class="img-fluid">
+                                      </picture>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-image">
+                                      <picture>
+                                          <source srcset="./img/xd-photos/for-desktop/room1.webp" type="image/webp" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-desktop/room1.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-mobile/room1.jpg" type="image/jpeg">
+                                          <img src="./img/xd-photos/for-mobile/room1.webp" alt="image 1" class="img-fluid">
+                                      </picture>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-image">
+                                      <picture>
+                                          <source srcset="./img/xd-photos/for-desktop/room2.webp" type="image/webp" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-desktop/room2.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-mobile/room2.jpg" type="image/jpeg">
+                                          <img src="./img/xd-photos/for-mobile/room2.webp" alt="image 1" class="img-fluid">
+                                      </picture>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="item">
-                                <div class="item-image">
-                                  <picture>
-                                      <source srcset="./img/xd-photos/for-desktop/room2.webp" type="image/webp" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-desktop/room2.jpg" type="image/jpeg" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-mobile/room2.jpg" type="image/jpeg">
-                                      <img src="./img/xd-photos/for-mobile/room2.webp" alt="image 1" class="img-fluid">
-                                  </picture>
-                                </div>
+                            <div class="room-desc text-center">
+                                <a href="#" class="title">
+                                    Double room with Sea View
+                                </a>
+                                <p class="desc">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum beatae quibusdam assumenda ipsa ab voluptatibus obcaecati quisquam molestiae. Incidunt quas libero esse vitae modi non tempore quia ut. Amet, quam.
+                                </p>
                             </div>
-                            <div class="item">
-                                <div class="item-image">
-                                  <picture>
-                                      <source srcset="./img/xd-photos/for-desktop/room1.webp" type="image/webp" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-desktop/room1.jpg" type="image/jpeg" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-mobile/room1.jpg" type="image/jpeg">
-                                      <img src="./img/xd-photos/for-mobile/room1.webp" alt="image 1" class="img-fluid">
-                                  </picture>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="item-image">
-                                  <picture>
-                                      <source srcset="./img/xd-photos/for-desktop/room2.webp" type="image/webp" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-desktop/room2.jpg" type="image/jpeg" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-mobile/room2.jpg" type="image/jpeg">
-                                      <img src="./img/xd-photos/for-mobile/room2.webp" alt="image 1" class="img-fluid">
-                                  </picture>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="room-desc text-center">
-                            <div class="title">
-                                Double room with Sea View
-                            </div>
-                            <p class="desc">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum beatae quibusdam assumenda ipsa ab voluptatibus obcaecati quisquam molestiae. Incidunt quas libero esse vitae modi non tempore quia ut. Amet, quam.
-                            </p>
                         </div>
                         <div class="room-details text-center mt-3">
                             <p class="capacity">Can host 2 Adults & 1 Child</p>
                             <p class="room-view">Sea View</p>
                         </div>
                     </div>
-                    
                 </div>
                 <div class="col-lg-6 mb-5 mt-0 mt-lg-5">
                     <div class="room-photos horizontal-room m-auto">
-                        <div class="owl-carousel oneImageCarousel">
-                            <div class="item">
-                                <div class="item-image">
-                                  <picture>
-                                      <source srcset="./img/xd-photos/for-desktop/room1.webp" type="image/webp" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-desktop/room1.jpg" type="image/jpeg" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-mobile/room1.jpg" type="image/jpeg">
-                                      <img src="./img/xd-photos/for-mobile/room1.webp" alt="image 1" class="img-fluid">
-                                  </picture>
+                        <div class="room-list-box">
+                            <div class="owl-carousel oneImageCarousel">
+                                <div class="item">
+                                    <div class="item-image">
+                                      <picture>
+                                          <source srcset="./img/xd-photos/for-desktop/room1.webp" type="image/webp" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-desktop/room1.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-mobile/room1.jpg" type="image/jpeg">
+                                          <img src="./img/xd-photos/for-mobile/room1.webp" alt="image 1" class="img-fluid">
+                                      </picture>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-image">
+                                      <picture>
+                                          <source srcset="./img/xd-photos/for-desktop/room2.webp" type="image/webp" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-desktop/room2.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-mobile/room2.jpg" type="image/jpeg">
+                                          <img src="./img/xd-photos/for-mobile/room2.webp" alt="image 1" class="img-fluid">
+                                      </picture>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-image">
+                                      <picture>
+                                          <source srcset="./img/xd-photos/for-desktop/room1.webp" type="image/webp" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-desktop/room1.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-mobile/room1.jpg" type="image/jpeg">
+                                          <img src="./img/xd-photos/for-mobile/room1.webp" alt="image 1" class="img-fluid">
+                                      </picture>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-image">
+                                      <picture>
+                                          <source srcset="./img/xd-photos/for-desktop/room2.webp" type="image/webp" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-desktop/room2.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-mobile/room2.jpg" type="image/jpeg">
+                                          <img src="./img/xd-photos/for-mobile/room2.webp" alt="image 1" class="img-fluid">
+                                      </picture>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="item">
-                                <div class="item-image">
-                                  <picture>
-                                      <source srcset="./img/xd-photos/for-desktop/room2.webp" type="image/webp" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-desktop/room2.jpg" type="image/jpeg" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-mobile/room2.jpg" type="image/jpeg">
-                                      <img src="./img/xd-photos/for-mobile/room2.webp" alt="image 1" class="img-fluid">
-                                  </picture>
-                                </div>
+                            <div class="room-desc text-center">
+                                <a href="#" class="title">
+                                    Double room with Sea View
+                                </a>
+                                <p class="desc">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum beatae quibusdam assumenda ipsa ab voluptatibus obcaecati quisquam molestiae. Incidunt quas libero esse vitae modi non tempore quia ut. Amet, quam.
+                                </p>
                             </div>
-                            <div class="item">
-                                <div class="item-image">
-                                  <picture>
-                                      <source srcset="./img/xd-photos/for-desktop/room1.webp" type="image/webp" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-desktop/room1.jpg" type="image/jpeg" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-mobile/room1.jpg" type="image/jpeg">
-                                      <img src="./img/xd-photos/for-mobile/room1.webp" alt="image 1" class="img-fluid">
-                                  </picture>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="item-image">
-                                  <picture>
-                                      <source srcset="./img/xd-photos/for-desktop/room2.webp" type="image/webp" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-desktop/room2.jpg" type="image/jpeg" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-mobile/room2.jpg" type="image/jpeg">
-                                      <img src="./img/xd-photos/for-mobile/room2.webp" alt="image 1" class="img-fluid">
-                                  </picture>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="room-desc text-center">
-                            <div class="title">
-                                Double room with Sea View
-                            </div>
-                            <p class="desc">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum beatae quibusdam assumenda ipsa ab voluptatibus obcaecati quisquam molestiae. Incidunt quas libero esse vitae modi non tempore quia ut. Amet, quam.
-                            </p>
                         </div>
                         <div class="room-details text-center mt-3">
                             <p class="capacity">Can host 2 Adults & 1 Child</p>
                             <p class="room-view">Sea View</p>
                         </div>
                     </div>
-                    
                 </div>
                 <div class="col-lg-6 mb-5 mt-0 mt-lg-5">
                     <div class="room-photos horizontal-room m-auto">
-                        <div class="owl-carousel oneImageCarousel">
-                            <div class="item">
-                                <div class="item-image">
-                                  <picture>
-                                      <source srcset="./img/xd-photos/for-desktop/room1.webp" type="image/webp" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-desktop/room1.jpg" type="image/jpeg" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-mobile/room1.jpg" type="image/jpeg">
-                                      <img src="./img/xd-photos/for-mobile/room1.webp" alt="image 1" class="img-fluid">
-                                  </picture>
+                        <div class="room-list-box">
+                            <div class="owl-carousel oneImageCarousel">
+                                <div class="item">
+                                    <div class="item-image">
+                                      <picture>
+                                          <source srcset="./img/xd-photos/for-desktop/room1.webp" type="image/webp" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-desktop/room1.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-mobile/room1.jpg" type="image/jpeg">
+                                          <img src="./img/xd-photos/for-mobile/room1.webp" alt="image 1" class="img-fluid">
+                                      </picture>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-image">
+                                      <picture>
+                                          <source srcset="./img/xd-photos/for-desktop/room2.webp" type="image/webp" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-desktop/room2.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-mobile/room2.jpg" type="image/jpeg">
+                                          <img src="./img/xd-photos/for-mobile/room2.webp" alt="image 1" class="img-fluid">
+                                      </picture>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-image">
+                                      <picture>
+                                          <source srcset="./img/xd-photos/for-desktop/room1.webp" type="image/webp" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-desktop/room1.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-mobile/room1.jpg" type="image/jpeg">
+                                          <img src="./img/xd-photos/for-mobile/room1.webp" alt="image 1" class="img-fluid">
+                                      </picture>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-image">
+                                      <picture>
+                                          <source srcset="./img/xd-photos/for-desktop/room2.webp" type="image/webp" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-desktop/room2.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-mobile/room2.jpg" type="image/jpeg">
+                                          <img src="./img/xd-photos/for-mobile/room2.webp" alt="image 1" class="img-fluid">
+                                      </picture>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="item">
-                                <div class="item-image">
-                                  <picture>
-                                      <source srcset="./img/xd-photos/for-desktop/room2.webp" type="image/webp" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-desktop/room2.jpg" type="image/jpeg" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-mobile/room2.jpg" type="image/jpeg">
-                                      <img src="./img/xd-photos/for-mobile/room2.webp" alt="image 1" class="img-fluid">
-                                  </picture>
-                                </div>
+                            <div class="room-desc text-center">
+                                <a href="#" class="title">
+                                    Double room with Sea View
+                                </a>
+                                <p class="desc">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum beatae quibusdam assumenda ipsa ab voluptatibus obcaecati quisquam molestiae. Incidunt quas libero esse vitae modi non tempore quia ut. Amet, quam.
+                                </p>
                             </div>
-                            <div class="item">
-                                <div class="item-image">
-                                  <picture>
-                                      <source srcset="./img/xd-photos/for-desktop/room1.webp" type="image/webp" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-desktop/room1.jpg" type="image/jpeg" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-mobile/room1.jpg" type="image/jpeg">
-                                      <img src="./img/xd-photos/for-mobile/room1.webp" alt="image 1" class="img-fluid">
-                                  </picture>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="item-image">
-                                  <picture>
-                                      <source srcset="./img/xd-photos/for-desktop/room2.webp" type="image/webp" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-desktop/room2.jpg" type="image/jpeg" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-mobile/room2.jpg" type="image/jpeg">
-                                      <img src="./img/xd-photos/for-mobile/room2.webp" alt="image 1" class="img-fluid">
-                                  </picture>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="room-desc text-center">
-                            <div class="title">
-                                Double room with Sea View
-                            </div>
-                            <p class="desc">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum beatae quibusdam assumenda ipsa ab voluptatibus obcaecati quisquam molestiae. Incidunt quas libero esse vitae modi non tempore quia ut. Amet, quam.
-                            </p>
                         </div>
                         <div class="room-details text-center mt-3">
                             <p class="capacity">Can host 2 Adults & 1 Child</p>
                             <p class="room-view">Sea View</p>
                         </div>
                     </div>
-                    
                 </div>
                 <div class="col-lg-6 mb-5">
                     <div class="room-photos vertical-room m-auto">
-                        <div class="owl-carousel oneImageCarousel">
-                            <div class="item">
-                                <div class="item-image">
-                                  <picture>
-                                      <source srcset="./img/xd-photos/for-desktop/room1.webp" type="image/webp" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-desktop/room1.jpg" type="image/jpeg" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-mobile/room1.jpg" type="image/jpeg">
-                                      <img src="./img/xd-photos/for-mobile/room1.webp" alt="image 1" class="img-fluid">
-                                  </picture>
+                        <div class="room-list-box">
+                            <div class="owl-carousel oneImageCarousel">
+                                <div class="item">
+                                    <div class="item-image">
+                                      <picture>
+                                          <source srcset="./img/xd-photos/for-desktop/room1.webp" type="image/webp" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-desktop/room1.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-mobile/room1.jpg" type="image/jpeg">
+                                          <img src="./img/xd-photos/for-mobile/room1.webp" alt="image 1" class="img-fluid">
+                                      </picture>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-image">
+                                      <picture>
+                                          <source srcset="./img/xd-photos/for-desktop/room2.webp" type="image/webp" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-desktop/room2.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-mobile/room2.jpg" type="image/jpeg">
+                                          <img src="./img/xd-photos/for-mobile/room2.webp" alt="image 1" class="img-fluid">
+                                      </picture>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-image">
+                                      <picture>
+                                          <source srcset="./img/xd-photos/for-desktop/room1.webp" type="image/webp" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-desktop/room1.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-mobile/room1.jpg" type="image/jpeg">
+                                          <img src="./img/xd-photos/for-mobile/room1.webp" alt="image 1" class="img-fluid">
+                                      </picture>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-image">
+                                      <picture>
+                                          <source srcset="./img/xd-photos/for-desktop/room2.webp" type="image/webp" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-desktop/room2.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-mobile/room2.jpg" type="image/jpeg">
+                                          <img src="./img/xd-photos/for-mobile/room2.webp" alt="image 1" class="img-fluid">
+                                      </picture>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="item">
-                                <div class="item-image">
-                                  <picture>
-                                      <source srcset="./img/xd-photos/for-desktop/room2.webp" type="image/webp" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-desktop/room2.jpg" type="image/jpeg" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-mobile/room2.jpg" type="image/jpeg">
-                                      <img src="./img/xd-photos/for-mobile/room2.webp" alt="image 1" class="img-fluid">
-                                  </picture>
-                                </div>
+                            <div class="room-desc text-center">
+                                <a href="#" class="title">
+                                    Double room with Sea View
+                                </a>
+                                <p class="desc">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum beatae quibusdam assumenda ipsa ab voluptatibus obcaecati quisquam molestiae. Incidunt quas libero esse vitae modi non tempore quia ut. Amet, quam.
+                                </p>
                             </div>
-                            <div class="item">
-                                <div class="item-image">
-                                  <picture>
-                                      <source srcset="./img/xd-photos/for-desktop/room1.webp" type="image/webp" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-desktop/room1.jpg" type="image/jpeg" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-mobile/room1.jpg" type="image/jpeg">
-                                      <img src="./img/xd-photos/for-mobile/room1.webp" alt="image 1" class="img-fluid">
-                                  </picture>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="item-image">
-                                  <picture>
-                                      <source srcset="./img/xd-photos/for-desktop/room2.webp" type="image/webp" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-desktop/room2.jpg" type="image/jpeg" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-mobile/room2.jpg" type="image/jpeg">
-                                      <img src="./img/xd-photos/for-mobile/room2.webp" alt="image 1" class="img-fluid">
-                                  </picture>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="room-desc text-center">
-                            <div class="title">
-                                Double room with Sea View
-                            </div>
-                            <p class="desc">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum beatae quibusdam assumenda ipsa ab voluptatibus obcaecati quisquam molestiae. Incidunt quas libero esse vitae modi non tempore quia ut. Amet, quam.
-                            </p>
                         </div>
                         <div class="room-details text-center mt-3">
                             <p class="capacity">Can host 2 Adults & 1 Child</p>
                             <p class="room-view">Sea View</p>
                         </div>
                     </div>
-                    
                 </div>
                 <div class="col-lg-6 mb-5">
                     <div class="room-photos vertical-room m-auto">
-                        <div class="owl-carousel oneImageCarousel">
-                            <div class="item">
-                                <div class="item-image">
-                                  <picture>
-                                      <source srcset="./img/xd-photos/for-desktop/room1.webp" type="image/webp" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-desktop/room1.jpg" type="image/jpeg" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-mobile/room1.jpg" type="image/jpeg">
-                                      <img src="./img/xd-photos/for-mobile/room1.webp" alt="image 1" class="img-fluid">
-                                  </picture>
+                        <div class="room-list-box">
+                            <div class="owl-carousel oneImageCarousel">
+                                <div class="item">
+                                    <div class="item-image">
+                                      <picture>
+                                          <source srcset="./img/xd-photos/for-desktop/room1.webp" type="image/webp" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-desktop/room1.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-mobile/room1.jpg" type="image/jpeg">
+                                          <img src="./img/xd-photos/for-mobile/room1.webp" alt="image 1" class="img-fluid">
+                                      </picture>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-image">
+                                      <picture>
+                                          <source srcset="./img/xd-photos/for-desktop/room2.webp" type="image/webp" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-desktop/room2.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-mobile/room2.jpg" type="image/jpeg">
+                                          <img src="./img/xd-photos/for-mobile/room2.webp" alt="image 1" class="img-fluid">
+                                      </picture>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-image">
+                                      <picture>
+                                          <source srcset="./img/xd-photos/for-desktop/room1.webp" type="image/webp" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-desktop/room1.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-mobile/room1.jpg" type="image/jpeg">
+                                          <img src="./img/xd-photos/for-mobile/room1.webp" alt="image 1" class="img-fluid">
+                                      </picture>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-image">
+                                      <picture>
+                                          <source srcset="./img/xd-photos/for-desktop/room2.webp" type="image/webp" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-desktop/room2.jpg" type="image/jpeg" media="(min-width: 992px)">
+                                          <source srcset="./img/xd-photos/for-mobile/room2.jpg" type="image/jpeg">
+                                          <img src="./img/xd-photos/for-mobile/room2.webp" alt="image 1" class="img-fluid">
+                                      </picture>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="item">
-                                <div class="item-image">
-                                  <picture>
-                                      <source srcset="./img/xd-photos/for-desktop/room2.webp" type="image/webp" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-desktop/room2.jpg" type="image/jpeg" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-mobile/room2.jpg" type="image/jpeg">
-                                      <img src="./img/xd-photos/for-mobile/room2.webp" alt="image 1" class="img-fluid">
-                                  </picture>
-                                </div>
+                            <div class="room-desc text-center">
+                                <a href="https://xd.adobe.com/view/8556d777-a777-41c0-89ea-2a24b509db12-d005/" class="title">
+                                    Double room with Sea View
+                                </a>
+                                <p class="desc">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum beatae quibusdam assumenda ipsa ab voluptatibus obcaecati quisquam molestiae. Incidunt quas libero esse vitae modi non tempore quia ut. Amet, quam.
+                                </p>
                             </div>
-                            <div class="item">
-                                <div class="item-image">
-                                  <picture>
-                                      <source srcset="./img/xd-photos/for-desktop/room1.webp" type="image/webp" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-desktop/room1.jpg" type="image/jpeg" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-mobile/room1.jpg" type="image/jpeg">
-                                      <img src="./img/xd-photos/for-mobile/room1.webp" alt="image 1" class="img-fluid">
-                                  </picture>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="item-image">
-                                  <picture>
-                                      <source srcset="./img/xd-photos/for-desktop/room2.webp" type="image/webp" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-desktop/room2.jpg" type="image/jpeg" media="(min-width: 992px)">
-                                      <source srcset="./img/xd-photos/for-mobile/room2.jpg" type="image/jpeg">
-                                      <img src="./img/xd-photos/for-mobile/room2.webp" alt="image 1" class="img-fluid">
-                                  </picture>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="room-desc text-center">
-                            <div class="title">
-                                Double room with Sea View
-                            </div>
-                            <p class="desc">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum beatae quibusdam assumenda ipsa ab voluptatibus obcaecati quisquam molestiae. Incidunt quas libero esse vitae modi non tempore quia ut. Amet, quam.
-                            </p>
                         </div>
                         <div class="room-details text-center mt-3">
                             <p class="capacity">Can host 2 Adults & 1 Child</p>
                             <p class="room-view">Sea View</p>
                         </div>
                     </div>
-                    
                 </div>
             </div>
         </div>
@@ -924,35 +935,39 @@
 
     <!-- START OF TEXT ONLY BLOCK  -->
     <div class="text-center text-lg-start">
-        <div class="col-10 m-auto">
-            <div class="genContainer">
-                <span class="spanText">LIVE MOMENTS OF ABSOLUTE RELAXATION</span>
-                <div class="h1">DISCOVER THE ALIANTHOS GARDEN HOTEL PLAKIAS ROOMS, STUDIOS & APARTMENTS</div>
-                <p>Live moments of absolute relaxation and soak up the friendly vibes in one of the thoughtfully designed Plakias rooms and apartments for a pleasant stay. Select among fully equipped with modern amenities accommodation facilities and relax in a soothing environment while taking in the fantastic views of the imposing mountains or the crystal clear, azure sea. Sip a drink at the comfort of your private terrace and unwind in a calm setting decorated in earthy tones, inspired by the Aegean allure. Clear your mind, get a good night’s rest and recharge your energy in an environment created for a serene accommodation experience in Plakias, Crete.</p>
+        <div class="col-10 col-xl-9 m-auto">
+            <div class="col-12 col-lg-10">
+                <div class="genContainer">
+                    <span class="spanText">LIVE MOMENTS OF ABSOLUTE RELAXATION</span>
+                    <div class="h1">DISCOVER THE ALIANTHOS GARDEN HOTEL PLAKIAS ROOMS, STUDIOS & APARTMENTS</div>
+                    <p>Live moments of absolute relaxation and soak up the friendly vibes in one of the thoughtfully designed Plakias rooms and apartments for a pleasant stay. Select among fully equipped with modern amenities accommodation facilities and relax in a soothing environment while taking in the fantastic views of the imposing mountains or the crystal clear, azure sea. Sip a drink at the comfort of your private terrace and unwind in a calm setting decorated in earthy tones, inspired by the Aegean allure. Clear your mind, get a good night’s rest and recharge your energy in an environment created for a serene accommodation experience in Plakias, Crete.</p>
+                </div>
             </div>
         </div>
     </div>
     <!-- END OF TEXT ONLY BLOCK  -->
 
     <!-- START OF BGIMAGE BLOCK  -->
-    <div class="col-10 mx-auto bgImage marginTop" style="background: url('img/xd-photos/for-desktop/image-19.jpg') no-repeat center center/ cover;"></div>
+    <div class="col-10 col-xl-9 mx-auto bgImage marginTop" style="background: url('img/xd-photos/for-desktop/image-19.jpg') no-repeat center center/ cover;"></div>
     <!-- END OF BGIMAGE BLOCK  -->
 
     <!-- START OF TEXT ONLY BLOCK  -->
-    <div class="text-center text-lg-start marginTop">
-        <div class="col-10 m-auto">
-            <div class="genContainer">
-                <span class="spanText">ALIANTHOS GARDEN PLAKIAS AMENITIES AND SERVICES</span>
-                <div class="h1">TAKE ADVANTAGE OF ALIANTHOS GARDEN PLAKIAS ACCOMMODATION AMENITIES AND SERVICES</div>
-                <p>Enjoy fantastic amenities and services while vacationing in Plakias. Most rooms and apartments are equipped with smart satellite TVs and feature different spacious living areas with a separate bath or shower, ideal for families with kids and couples alike. Baby equipment is available upon request, while top-quality duvets and linens are provided to the guests for a comfortable stay in Plakias.</p>
+    <div class="text-center text-lg-start mt-5">
+        <div class="col-10 col-xl-9 m-auto">
+            <div class="col-12 col-lg-10">
+                <div class="genContainer">
+                    <span class="spanText">ALIANTHOS GARDEN PLAKIAS AMENITIES AND SERVICES</span>
+                    <div class="h1">TAKE ADVANTAGE OF ALIANTHOS GARDEN PLAKIAS ACCOMMODATION AMENITIES AND SERVICES</div>
+                    <p>Enjoy fantastic amenities and services while vacationing in Plakias. Most rooms and apartments are equipped with smart satellite TVs and feature different spacious living areas with a separate bath or shower, ideal for families with kids and couples alike. Baby equipment is available upon request, while top-quality duvets and linens are provided to the guests for a comfortable stay in Plakias.</p>
+                </div>
             </div>
         </div>
     </div>
     <!-- END OF TEXT ONLY BLOCK  -->
 
     <!-- START OF AMENITIES SECTION  -->
-     <div class="marginTop">
-        <div class="col-10 m-auto">
+    <div class="marginTop">
+        <div class="col-10 col-xl-9 m-auto">
           <div class="genContainer2">
             <span class="spanText">MODERN AMENITIES</span>
             <div class="h1">MODERN AMENITIES IN ALIANTHOS GARDEN ROOMS & APARTMENTS INCLUDE:</div>
@@ -988,26 +1003,27 @@
             </div>
           </div>
         </div>
-      </div>
-      <!-- END OF AMENITIES SECTION  -->
-    
+    </div>
+    <!-- END OF AMENITIES SECTION  -->
 
     <!-- START OF TEXT ONLY BLOCK  -->
     <div class="text-center text-lg-start marginTop">
-        <div class="col-10 m-auto">
-            <div class="genContainer">
-                <span class="spanText">ACCOMMODATION TYPES</span>
-                <div class="h1">BROWSE THROUGH THE PLAKIAS ACCOMMODATION TYPES</div>
-                <p>Seek relaxation and comfort at one of the Plakias rooms and apartments designed to cater to your needs and find out why over 90% of Alianthos Garden guests keep returning to the hotel for a unique holiday to Plakias. Browse through a large selection of accommodation types available for different kinds of travellers, and pick the one that best suits your needs and taste. Whether you’re travelling with family, friends, or your significant other, at Alianthos Hotel in Plakias Crete, you’re up for a memorable accommodation experience in Greece.</p>
+        <div class="col-10 col-xl-9 m-auto">
+            <div class="col-12 col-lg-10">
+                <div class="genContainer">
+                    <span class="spanText">ACCOMMODATION TYPES</span>
+                    <div class="h1">BROWSE THROUGH THE PLAKIAS ACCOMMODATION TYPES</div>
+                    <p>Seek relaxation and comfort at one of the Plakias rooms and apartments designed to cater to your needs and find out why over 90% of Alianthos Garden guests keep returning to the hotel for a unique holiday to Plakias. Browse through a large selection of accommodation types available for different kinds of travellers, and pick the one that best suits your needs and taste. Whether you’re travelling with family, friends, or your significant other, at Alianthos Hotel in Plakias Crete, you’re up for a memorable accommodation experience in Greece.</p>
+                </div>
             </div>
         </div>
     </div>
     <!-- END OF TEXT ONLY BLOCK  -->       
 
-     <!-- START OF BLUE SECTION BLOCK -->
-     <div class="text-center marginTop">
-        <div class="col-10 m-auto bgBlue">
-            <div class="container p-3 p-md-5">
+    <!-- START OF BLUE SECTION BLOCK -->
+    <div class="text-center marginTop">
+        <div class="col-10 col-xl-9 m-auto bgBlue">
+            <div class="container p-3 px-md-5 py-5">
                 <div class="h1">BOOK YOUR HOLIDAYS TO PLAKIAS, CRETE</div>
                 <p>Explore the different accomodation options offered at Alianthos Garden Hotel in Plakias, Crete, and get further inspiration. Learn more about each room type and let your dream holiday come true, in tailored to your liking facilities. Keep in mind that whether you’re a mountain person or a sun and sea gazer, the views from the rooms are going to satisfy your soul, offering moments of relaxation and disconnection from the hectic reality. At Alianthos Garden Hotel, we’re looking forward to welcoming you to our family! Book your accommodation in Plakias</p>
                 <p class="title mt-5">At Alianthos Garden Hotel, we're looking forward to welcoming you to our family!</p>
@@ -1022,128 +1038,179 @@
 
     <!-- START OF FOOTER SECTION -->
     <footer class="marginTop">
-      <div class="col-12 col-xl-10 m-auto">
+    <div class="col-12 col-xxl-10 m-auto">
         <div class="row footer-row g-0">
-          <div class="col-xl-4 d-flex flex-column justify-content-between align-items-center align-items-xl-start text-center text-xl-start mb-5 mb-xl-0">
-              <div class="footer-logo">
-                <img src="./img/xd-photos/logoGreytext.svg" alt="logo">
-              </div>
-              <div class="contact-details my-5">
-                <p>
-                  Alianthos Garden Hotel<br> 
-                  <span>Address:</span>Poseidonos Street,
-                  <br> GR-74060 Plakias<br> 
-                  Rethymno,<br> 
-                  Crete, Greece</p>
-                <p>
-                  <span>E:</span> <a href="mailto:info@alianthos.gr" target="_blank" aria-label="email">info@alianthos.gr</a> <br> 
-                  <span>T:</span> <a href="tel:+302832031280" target="_blank" aria-label="telephone">(+30) 28320 31280</a> <br> 
-                  <span>T (winter):</span> <a href="tel:+306978488117" target="_blank" aria-label="telephone winter">(+30) 6978 488117</a>
-                </p>
-              </div>
-              <ul class="contact-icons d-inline-flex list-unstyled">
-                  <li>
-                    <a href="#"><img src="./img/xd-photos/viber-icon.svg" alt=""></a>
-                  </li>
-                  <li>
-                    <a href="#"><img src="./img/xd-photos/whatsapp-icon.svg" alt=""></a>
-                  </li>
-                  <li>
-                    <a href="#"><img src="./img/xd-photos/messenger-icon.svg" alt=""></a>
-                  </li>
-              </ul>
-          </div>    
-          <div class="col-xl-4 d-flex flex-column justify-content-between align-items-center pt-5 text-center mb-5 mb-xl-0">
-            <div class="speedTest-title text-center mb-4">
-              <span class="spanText">OUR WIFI</span>
-              <p>by speedtest result<br>ID XXXXXX</p>
+            <div class="col-xl-4 d-flex flex-column justify-content-between align-items-center align-items-xl-start text-center text-xl-start mb-5 mb-xl-0">
+                <div class="footer-logo">
+                    <img src="./img/xd-photos/logoGreytext.svg" alt="logo">
+                </div>
+                <div class="contact-details my-5">
+                    <p>
+                    Alianthos Garden Hotel<br> 
+                    <span>Address:</span>Poseidonos Street,
+                    <br> GR-74060 Plakias<br> 
+                    Rethymno,<br> 
+                    Crete, Greece</p>
+                    <p>
+                    <span>E:</span> <a href="mailto:info@alianthos.gr" target="_blank" aria-label="email">info@alianthos.gr</a> <br> 
+                    <span>T:</span> <a href="tel:+302832031280" target="_blank" aria-label="telephone">(+30) 28320 31280</a> <br> 
+                    <span>T (winter):</span> <a href="tel:+306978488117" target="_blank" aria-label="telephone winter">(+30) 6978 488117</a>
+                    </p>
+                </div>
+                <ul class="contact-icons d-inline-flex list-unstyled">
+                    <li>
+                        <a href="#"><img src="./img/xd-photos/viber-icon.svg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./img/xd-photos/whatsapp-icon.svg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./img/xd-photos/messenger-icon.svg" alt=""></a>
+                    </li>
+                </ul>
+            </div>    
+            <div class="col-xl-4 d-flex flex-column justify-content-between align-items-center pt-5 text-center mb-5 mb-xl-0">
+                <div class="speedTest-title text-center mb-4">
+                <span class="spanText">OUR WIFI</span>
+                <p>by speedtest result<br>ID XXXXXX</p>
+                </div>
+                <div class="speedTest">
+                <div class="speedTest-result mb-5">
+                    download
+                    <div class="number">
+                    102.29 <sup>Mbps</sup>
+                    </div>
+                </div>
+                <div class="speedTest-result">
+                    upload
+                    <div class="number">
+                    10.29 <sup>Mbps</sup>
+                    </div>
+                </div>
+                </div>
+                
+                
+                <ul class="social-icons d-inline-flex justify-content-center list-unstyled mt-5">
+                <li class="shadow">
+                    <a href="#"><img src="./img/xd-photos/facebook.svg" alt="" ></a>
+                </li>
+                <li  class="shadow">
+                    <a href="#"><img src="./img/xd-photos/instagram.svg" alt=""></a>
+                </li>
+                <li class="shadow">
+                    <a href="#"><img src="./img/xd-photos/icons8-youtube.svg" alt=""></a>
+                </li>
+                <li class="shadow">
+                    <a href="#"><img src="./img/xd-photos/linkedin.svg" alt=""></a>
+                </li>
+                </ul>
             </div>
-            <div class="speedTest">
-              <div class="speedTest-result mb-5">
-                download
-                <div class="number">
-                  102.29 <sup>Mbps</sup>
-                </div>
-              </div>
-              <div class="speedTest-result">
-                upload
-                <div class="number">
-                  10.29 <sup>Mbps</sup>
-                </div>
-              </div>
-            </div>
-            
-            <ul class="social-icons d-inline-flex justify-content-center list-unstyled mt-5">
-              <li class="shadow">
-                <a href="#"><img src="./img/xd-photos/facebook.svg" alt="" ></a>
-              </li>
-              <li  class="shadow">
-                <a href="#"><img src="./img/xd-photos/instagram.svg" alt=""></a>
-              </li>
-              <li class="shadow">
-                <a href="#"><img src="./img/xd-photos/icons8-youtube.svg" alt=""></a>
-              </li>
-              <li class="shadow">
-                <a href="#"><img src="./img/xd-photos/linkedin.svg" alt=""></a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-xl-4 d-flex flex-column justify-content-between align-items-center pt-5">
-            <div class="awards-footer text-center">
-                <span class="spanText">awards</span>
-                <div class="award-icons my-5 col-12 col-md-8 col-xl-10 m-auto">
-                  <a href="./img/xd-photos/award-1.png" data-fancybox="images">
-                    <img src="./img/xd-photos/award-1.png" />
-                  </a>
-                  <a href="./img/xd-photos/award-2.png" data-fancybox="images">
-                    <img src="./img/xd-photos/award-2.png" />
-                  </a>
-                  <a href="./img/xd-photos/award-3.png" data-fancybox="images">
-                    <img src="./img/xd-photos/award-3.png" />
-                  </a>
-                  <a href="./img/xd-photos/award-4.png" data-fancybox="images">
-                    <img src="./img/xd-photos/award-4.png" />
-                  </a>
-                  <a href="./img/xd-photos/award-5.png" data-fancybox="images">
-                    <img src="./img/xd-photos/award-5.png" />
-                  </a>
-                  <a href="./img/xd-photos/award-7.png" data-fancybox="images">
-                    <img src="./img/xd-photos/award-7.png" />
-                  </a>
-                  <a href="./img/xd-photos/award-8.png" data-fancybox="images">
-                    <img src="./img/xd-photos/award-8.png" />
-                  </a>
-                  <a href="./img/xd-photos/award-9.png" data-fancybox="images">
-                    <img src="./img/xd-photos/award-9.png" />
-                  </a>
-                  <a href="./img/xd-photos/award-10.png" data-fancybox="images">
-                    <img src="./img/xd-photos/award-10.png" />
-                  </a>
-                  <a href="./img/xd-photos/award-11.png" data-fancybox="images">
-                    <img src="./img/xd-photos/award-11.png" />
-                  </a>
-                </div>
+            <div class="col-xl-4 d-flex flex-column justify-content-between align-items-center pt-5">
+                <div class="awards-footer text-center">
+                    <span class="spanText">awards</span>
+                    <div class="award-icons my-5">
+                        <div class="col-4 col-sm-3">
+                            <a href="./img/xd-photos/award-3.png" data-fancybox="images">
+                                <img src="./img/xd-photos/award-3.png" />
+                            </a>
+                        </div>
+                        <div class="col-4 col-sm-3">
+                            <a href="./img/xd-photos/award-4.png" data-fancybox="images">
+                                <img src="./img/xd-photos/award-4.png" />
+                            </a>
+                        </div>
+                        <div class="col-4 col-sm-3">
+                            <a href="./img/xd-photos/award-3.png" data-fancybox="images">
+                                <img src="./img/xd-photos/award-3.png" />
+                            </a>
+                        </div>
+                        <div class="col-4 col-sm-3">
+                            <a href="./img/xd-photos/award-4.png" data-fancybox="images">
+                                <img src="./img/xd-photos/award-4.png" />
+                            </a>
+                        </div>
+                        <div class="col-4 col-sm-3">
+                            <a href="./img/xd-photos/award-3.png" data-fancybox="images">
+                                <img src="./img/xd-photos/award-3.png" />
+                            </a>
+                        </div>
+                        <div class="col-4 col-sm-3">
+                            <a href="./img/xd-photos/award-4.png" data-fancybox="images">
+                                <img src="./img/xd-photos/award-4.png" />
+                            </a>
+                        </div>
+                        <div class="col-4 col-sm-3">
+                            <a href="./img/xd-photos/award-3.png" data-fancybox="images">
+                                <img src="./img/xd-photos/award-3.png" />
+                            </a>
+                        </div>
+                        <div class="col-4 col-sm-3">
+                            <a href="./img/xd-photos/award-4.png" data-fancybox="images">
+                                <img src="./img/xd-photos/award-4.png" />
+                            </a>
+                        </div>
+                        <div class="col-4 col-sm-3">
+                            <a href="./img/xd-photos/award-3.png" data-fancybox="images">
+                                <img src="./img/xd-photos/award-3.png" />
+                            </a>
+                        </div>
+                        <div class="col-4 col-sm-3">
+                            <a href="./img/xd-photos/award-4.png" data-fancybox="images">
+                                <img src="./img/xd-photos/award-4.png" />
+                            </a>
+                        </div>
+                        <div class="col-4 col-sm-3">
+                            <a href="./img/xd-photos/award-3.png" data-fancybox="images">
+                                <img src="./img/xd-photos/award-3.png" />
+                            </a>
+                        </div>
+                        <div class="col-4 col-sm-3">
+                            <a href="./img/xd-photos/award-4.png" data-fancybox="images">
+                                <img src="./img/xd-photos/award-4.png" />
+                            </a>
+                        </div>
+                        <div class="col-4 col-sm-3">
+                            <a href="./img/xd-photos/award-3.png" data-fancybox="images">
+                                <img src="./img/xd-photos/award-3.png" />
+                            </a>
+                        </div>
+                        <div class="col-4 col-sm-3">
+                            <a href="./img/xd-photos/award-4.png" data-fancybox="images">
+                                <img src="./img/xd-photos/award-4.png" />
+                            </a>
+                        </div>
+                        <div class="col-4 col-sm-3">
+                            <a href="./img/xd-photos/award-3.png" data-fancybox="images">
+                                <img src="./img/xd-photos/award-3.png" />
+                            </a>
+                        </div>
+                        <div class="col-4 col-sm-3">
+                            <a href="./img/xd-photos/award-4.png" data-fancybox="images">
+                                <img src="./img/xd-photos/award-4.png" />
+                            </a>
+                        </div>
+                    </div>
 
-              </div>
-              <ul class="store-icons d-inline-flex flex-wrap list-unstyled justify-content-center">
-                <li>
-                  <a href="#"><img src="./img/xd-photos/google-play.png" alt=""></a>
-                </li>
-                <li>
-                  <a href="#"><img src="./img/xd-photos/app-store.png" alt=""></a>
-                </li>
-              </ul>
-          </div>
+                </div>
+                <ul class="store-icons d-inline-flex flex-wrap list-unstyled justify-content-center">
+                    <li>
+                    <a href="#"><img src="./img/xd-photos/google-play.png" alt=""></a>
+                    </li>
+                    <li>
+                    <a href="#"><img src="./img/xd-photos/app-store.png" alt=""></a>
+                    </li>
+                </ul>
+            </div>
         </div>
         <div class="copyright-container row g-0 pt-3 px-5">
-          <div class="col-xl-6 order-2 order-xl-1 text-center text-xl-start">
-            <p>© 2021, Alianthos Gardens All right reserved</p>
-          </div>
-          <div class="col-xl-6 order-1 order-xl-2 text-center text-xl-end">
-            <p>creative direction <a href="https://kd-design.studio/" target="_blank" aria-label="kd design studio">kd design studio</a> | developed by <a href="https://www.eyewide.gr/" target="_blank" aria-label="Eyewide - Hotel Internet Marketing">Eyewide - Hotel Internet Marketing</a></p>
-          </div>
+            <div class="col-xl-6 order-2 order-xl-1 text-center text-xl-start">
+                <p>© 2021, Alianthos Gardens All right reserved</p>
+            </div>
+            <div class="col-xl-6 order-1 order-xl-2 text-center text-xl-end">
+                <p>creative direction <a href="https://kd-design.studio/" target="_blank" aria-label="kd design studio">kd design studio</a> | developed by <a href="https://www.eyewide.gr/" target="_blank" aria-label="Eyewide - Hotel Internet Marketing">Eyewide - Hotel Internet Marketing</a></p>
+            </div>
         </div>
-      </div>
+    </div>
     </footer>
     <!-- END OF FOOTER SECTION  -->
 
@@ -1192,11 +1259,13 @@
     <script src="scripts/sly.min.js"></script>
     <!-- SCRIPTS FOR SLY SLIDERS  -->
 
+    <!-- SCRIPT FOR WEATHER  -->
     <script src="scripts/weather-widget.js"></script>
+    <!-- SCRIPT FOR WEATHER  -->
     <!-- MY SCRIPTS  -->
 
     <!-- αν παίζει βίντεο στο slider  -->
-    <script>
+    <!-- <script>
         var tag = document.createElement('script');
         tag.src = "https://www.youtube.com/player_api";
         var firstScriptTag = document.getElementsByTagName('script')[0];
@@ -1237,7 +1306,7 @@
         function stopVideo() {
             player.stopVideo();
         }
-    </script>
+    </script> -->
     <!-- αν παίζει βίντεο στο slider  -->
 
 </body>

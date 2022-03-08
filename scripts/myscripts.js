@@ -25,30 +25,30 @@ $(document).ready(function () {
 
 // if we dont have touchscreen 
 
-$(".navNext").on( "mouseover", function() {
+$(".navNext").on( "click", function() {
     mainSlider.trigger('next.owl.carousel', [300]);
     return false;
 });
 
-$(".navPrev").on( "mouseover", function() {
+$(".navPrev").on( "click", function() {
     mainSlider.trigger('prev.owl.carousel', [300]);
     return false;
 });
 
 //if we have touchscreen
-if(window.matchMedia("(pointer: coarse)").matches) {
+// if(window.matchMedia("(pointer: coarse)").matches) {
     
    
-    $('.navNext').on('click', function () {
-        mainSlider.trigger('next.owl.carousel', [300]);
-        return false;
-    });
+//     $('.navNext').on('click', function () {
+//         mainSlider.trigger('next.owl.carousel', [300]);
+//         return false;
+//     });
     
-    $('.navPrev').on('click', function () {
-        mainSlider.trigger('prev.owl.carousel', [300]);
-        return false;
-    });
-}
+//     $('.navPrev').on('click', function () {
+//         mainSlider.trigger('prev.owl.carousel', [300]);
+//         return false;
+//     });
+// }
 // END OF HOME DINING CAROUSEL 
 
 $(document).ready(function () {
@@ -67,7 +67,7 @@ $(document).ready(function () {
                 nav:true
             },
             480:{
-                items:3,
+                items:2,
                 nav:true
             },
             575:{
@@ -75,15 +75,15 @@ $(document).ready(function () {
                 nav:true
             },
             767:{
-                items:6,
-                nav:true
-            },
-            1000:{
                 items:8,
                 nav:true
             },
+            1000:{
+                items:12,
+                nav:true
+            },
             1500:{
-                items:15
+                items:16
             }
         }
     });
@@ -121,11 +121,11 @@ $(document).ready(function () {
                 items:1,
                 nav:true
             },
-            992:{
+            1100:{
                 items:2,
                 nav:true
             },
-            1400:{
+            1600:{
                 items:3,
                 nav:false
             }
@@ -200,7 +200,7 @@ $(window).on("scroll touchmove", function () {
 $(document).ready(function(){
     setTimeout(function() {
         $('#whyBookModal').modal('show');
-    }, 3000);
+    }, 10000);
 });    
 // END OF MODAL  
 
@@ -263,11 +263,14 @@ $(window).on("scroll", function() {
     if($(window).scrollTop() > 50) {
         $(".stickyBottom").removeClass("unvisible");
         $(".stickyBottom").addClass("visible");
+        $(".stickyBottomRightButton").removeClass("unvisible");
+        $(".stickyBottomRightButton").addClass("visible");
     } else {
         //remove the background property so it comes transparent again (defined in your css)
         $(".stickyBottom").removeClass("visible");
         $(".stickyBottom").addClass("unvisible");
-
+        $(".stickyBottomRightButton").removeClass("visible");
+        $(".stickyBottomRightButton").addClass("unvisible");
     }
 });
 //END STICKY BOTTOM
@@ -307,13 +310,6 @@ $(document).ready(function() {
         $(this).siblings("li").removeClass("active");
         $(".accommodations-data-holder .accommodation-data").siblings().removeClass("active");
         $(".accommodations-data-holder .accommodation-data:nth-child(5)").addClass("active");
-      });
-
-      $(".accommodation-list li:nth-child(6)").on("click" , function(){
-        $(this).addClass("active");
-        $(this).siblings("li").removeClass("active");
-        $(".accommodations-data-holder .accommodation-data").siblings().removeClass("active");
-        $(".accommodations-data-holder .accommodation-data:nth-child(6)").addClass("active");
       });
 });
 // END OF ACCOMMODATION FILTERING 

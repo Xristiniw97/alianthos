@@ -1,0 +1,42 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 4383078, 2022-02-24T16:31:05-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: ZonaPro-Bold by Intelligent Design
+ * URL: https://www.myfonts.com/fonts/intelligent-foundry/zona-pro/bold/
+ * 
+ * Webfont: ZonaPro-Light by Intelligent Design
+ * URL: https://www.myfonts.com/fonts/intelligent-foundry/zona-pro/light/
+ * 
+ * Webfont: ZonaPro-Regular by Intelligent Design
+ * URL: https://www.myfonts.com/fonts/intelligent-foundry/zona-pro/regular/
+ * 
+ * 
+ * Webfonts copyright: Copyright (c) 2014 by Kostas Bartsokas. All rights reserved.
+ * 
+ * © 2022 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/42e166");
+  
+@font-face {
+  font-family: "ZonaPro-Bold";
+  src: url('webFonts/ZonaProBold/font.woff2') format('woff2'), url('webFonts/ZonaProBold/font.woff') format('woff');
+}
+@font-face {
+  font-family: "ZonaPro-Regular";
+  src: url('webFonts/ZonaProRegular/font.woff2') format('woff2'), url('webFonts/ZonaProRegular/font.woff') format('woff');
+}
+@font-face {
+  font-family: "ZonaPro-Light";
+  src: url('webFonts/ZonaProLight/font.woff2') format('woff2'), url('webFonts/ZonaProLight/font.woff') format('woff');
+}
+
